@@ -1,0 +1,175 @@
+{
+  "/academy/admin/categories": [],
+  "/academy/admin/instructors": [],
+  "/academy/admin/courses": [],
+  "/academy/admin/courses/101": {
+    "id": 101,
+    "title": "หลักสูตรสังเคราะห์",
+    "lessons": [],
+    "outcomes": [],
+    "quiz": []
+  },
+  "/academy/admin/reviews": [],
+  "/academy/admin/refunds": [],
+  "/academy/admin/orders": {
+    "items": [],
+    "total": 0
+  },
+  "/academy/admin/enrollments": {
+    "items": [],
+    "total": 0
+  },
+  "/academy/admin/cpe": [],
+  "/academy/instructors": [],
+  "/academy/reviews": [],
+  "/academy/categories": [
+    {
+      "id": 101,
+      "name": "หมวดทดสอบ",
+      "description": "สังเคราะห์",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "color": "#85851e",
+      "courseCount": 1
+    }
+  ],
+  "/academy/courses": [
+    {
+      "id": 101,
+      "title": "หลักสูตรทดสอบสังเคราะห์",
+      "summary": "เนื้อหาสำหรับทดสอบออฟไลน์",
+      "coverUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "durationLabel": "30 นาที",
+      "cpeLabel": "1 CPE",
+      "categoryName": "หมวดทดสอบ",
+      "categoryColor": "#85851e",
+      "instructorName": "ผู้สอนทดสอบ",
+      "instructorTitle": "Fixture",
+      "studentCount": 1,
+      "rating": 5,
+      "reviewCount": 1,
+      "outcomes": [
+        "ทดสอบแบบออฟไลน์"
+      ],
+      "isFeatured": true,
+      "format": "online",
+      "venue": null,
+      "trainingStartsAt": null,
+      "trainingEndsAt": null,
+      "cpeCredits": "1",
+      "conferenceCode": null,
+      "price": "0",
+      "audience": "all",
+      "instructorExpertise": null,
+      "instructorImageUrl": null,
+      "lessons": [
+        {
+          "id": 101,
+          "title": "บทเรียนสังเคราะห์",
+          "description": "บทเรียนออฟไลน์"
+        }
+      ]
+    }
+  ],
+  "/academy/courses/101": {
+    "id": 101,
+    "title": "หลักสูตรทดสอบสังเคราะห์",
+    "summary": "เนื้อหาสำหรับทดสอบออฟไลน์",
+    "coverUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "durationLabel": "30 นาที",
+    "cpeLabel": "1 CPE",
+    "categoryName": "หมวดทดสอบ",
+    "categoryColor": "#85851e",
+    "instructorName": "ผู้สอนทดสอบ",
+    "instructorTitle": "Fixture",
+    "studentCount": 1,
+    "rating": 5,
+    "reviewCount": 1,
+    "outcomes": [
+      "ทดสอบแบบออฟไลน์"
+    ],
+    "isFeatured": true,
+    "format": "online",
+    "venue": null,
+    "trainingStartsAt": null,
+    "trainingEndsAt": null,
+    "cpeCredits": "1",
+    "conferenceCode": null,
+    "price": "0",
+    "audience": "all",
+    "instructorExpertise": null,
+    "instructorImageUrl": null,
+    "lessons": [
+      {
+        "id": 101,
+        "title": "บทเรียนสังเคราะห์",
+        "description": "บทเรียนออฟไลน์"
+      }
+    ]
+  },
+  "/academy/stats": {
+    "courseCount": 1,
+    "learnerCount": 1,
+    "instructorCount": 1
+  },
+  "/api/academy/courses/101": {
+    "id": 101,
+    "title": "หลักสูตรทดสอบสังเคราะห์",
+    "summary": "เนื้อหาสำหรับทดสอบออฟไลน์",
+    "coverUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "durationLabel": "30 นาที",
+    "cpeLabel": "1 CPE",
+    "categoryName": "หมวดทดสอบ",
+    "categoryColor": "#85851e",
+    "instructorName": "ผู้สอนทดสอบ",
+    "instructorTitle": "Fixture",
+    "studentCount": 1,
+    "rating": 5,
+    "reviewCount": 1,
+    "outcomes": [
+      "ทดสอบแบบออฟไลน์"
+    ],
+    "isFeatured": true,
+    "format": "online",
+    "venue": null,
+    "trainingStartsAt": null,
+    "trainingEndsAt": null,
+    "cpeCredits": "1",
+    "conferenceCode": null,
+    "price": "0",
+    "audience": "all",
+    "instructorExpertise": null,
+    "instructorImageUrl": null,
+    "lessons": [
+      {
+        "id": 101,
+        "title": "บทเรียนสังเคราะห์",
+        "description": "ออฟไลน์",
+        "videoUrl": null,
+        "completed": true,
+        "documents": [],
+        "quiz": []
+      }
+    ],
+    "enrolled": true,
+    "progressPercent": 100,
+    "examPassed": true,
+    "exam": []
+  },
+  "/api/academy/courses/101/certificate": {
+    "code": "CERT-FIXTURE",
+    "issuedAt": "2026-10-14T00:00:00Z",
+    "learnerName": "Fixture Member",
+    "pharmacistLicense": "FIX-0001",
+    "courseTitle": "หลักสูตรทดสอบสังเคราะห์",
+    "cpeCredits": "1",
+    "conferenceCode": null
+  },
+  "/api/academy/enrollments": [
+    {
+      "courseId": 101,
+      "title": "หลักสูตรทดสอบสังเคราะห์",
+      "status": "active",
+      "progressPercent": 100
+    }
+  ]
+}

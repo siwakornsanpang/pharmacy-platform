@@ -1,0 +1,20 @@
+import { beforeEach, afterEach, expect, it, vi } from 'vitest';
+import { NextRequest } from 'next/server';
+vi.mock('server-only', () => ({}));
+const origin = 'https://app.example.test';
+const csrf = 'a'.repeat(64);
+beforeEach(() => { vi.stubEnv('NODE_ENV', 'production'); vi.stubEnv('BACKEND_API_URL', 'https://backend.example.test'); vi.stubEnv('BACKOFFICE_ORIGIN', origin); vi.stubEnv('ALLOW_LOCAL_UI_BYPASS', 'false'); });
+afterEach(() => vi.unstubAllEnvs());
+it('CSRF issuer reuses a valid established host-only nonce for concurrent transports', async () => {
+    const { GET: issue } = await import('../src/app/api/auth/staff/csrf/route');
+    const first = await issue(new NextRequest(origin + '/api/auth/staff/csrf', { headers: { cookie: `__Host-pharmacy_csrf=${csrf}` } }));
+    const second = await issue(new NextRequest(origin + '/api/auth/staff/csrf', { headers: { cookie: `__Host-pharmacy_csrf=${csrf}` } }));
+    expect(await first.json()).toEqual({ csrfToken: csrf });
+    expect(await second.json()).toEqual({ csrfToken: csrf });
+    const fresh = await issue(new NextRequest(origin + '/api/auth/staff/csrf'));
+    const freshAgain = await issue(new NextRequest(origin + '/api/auth/staff/csrf'));
+    const one = await fresh.json();
+    const two = await freshAgain.json();
+    expect(one.csrfToken).toMatch(/^[a-f0-9]{64}$/);
+    expect(one.csrfToken).not.toBe(two.csrfToken);
+});

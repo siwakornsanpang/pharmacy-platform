@@ -1,0 +1,81 @@
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #eef0e4 0%, #f8f8f1 44%, #eef0e4 88%);
+  background-size: 220% 100%;
+  animation: shimmer 1.35s ease-in-out infinite;
+}
+
+.circle {
+  border-radius: 999px;
+}
+
+.page {
+  padding: 2rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.25rem;
+  border: 1px solid #eef0e5;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #eef0e5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f0f1ea;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.menuItem {
+  height: 48px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.22) 48%, rgba(255, 255, 255, 0.1) 96%);
+  background-size: 220% 100%;
+  animation: shimmer 1.35s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 120% 0;
+  }
+
+  100% {
+    background-position: -120% 0;
+  }
+}

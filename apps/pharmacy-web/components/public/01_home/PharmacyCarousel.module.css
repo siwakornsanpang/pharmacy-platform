@@ -1,0 +1,522 @@
+/* === Section Wrapper === */
+.section {
+  padding: 4rem 1.5rem 3rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sectionInner {
+  max-width: var(--max-width-2xl);
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #111827;
+  margin: 0 0 1rem;
+  letter-spacing: -0.03em;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin: 0 0 3rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.headerGroup {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.subtitleBreak {
+  display: none;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Carousel Container === */
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 440px;
+  margin-bottom: 2rem;
+  perspective: 1200px;
+  animation: scaleIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.carouselWrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(115, 115, 0, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.carouselTrack {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Individual Card === */
+.card {
+  position: absolute;
+  width: 340px; 
+  height: 420px; 
+  border-radius: 24px; 
+  overflow: hidden;
+  cursor: pointer;
+  backface-visibility: hidden;
+  background: #f3f4f6;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.4s ease,
+              filter 0.4s ease;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #f3f4f6;
+  position: relative;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.cardActive:hover .slideImage {
+  transform: scale(1.1);
+}
+
+.cardShine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+  z-index: 2;
+}
+
+.card:hover .cardShine {
+  left: 125%;
+}
+
+/* 🔴 Card Positions */
+.cardActive {
+  z-index: 10;
+  transform: translateX(0) scale(1.05) translateY(-20px);
+  opacity: 1;
+  box-shadow: 0 30px 60px rgba(115, 115, 0, 0.15), 0 10px 25px rgba(0, 0, 0, 0.1);
+  filter: brightness(1);
+}
+
+.cardActive:hover {
+  transform: translateX(0) scale(1.08) translateY(-25px);
+  box-shadow: 0 40px 80px rgba(115, 115, 0, 0.2), 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.cardLeft1 {
+  z-index: 4;
+  transform: translateX(-75%) scale(0.85) rotateY(15deg);
+  opacity: 0.8;
+  filter: blur(1px) brightness(0.9);
+}
+
+.cardLeft2 {
+  z-index: 3;
+  transform: translateX(-140%) scale(0.7) rotateY(30deg);
+  opacity: 0.4;
+  filter: blur(2px) brightness(0.8);
+}
+
+.cardRight1 {
+  z-index: 4;
+  transform: translateX(75%) scale(0.85) rotateY(-15deg);
+  opacity: 0.8;
+  filter: blur(1px) brightness(0.9);
+}
+
+.cardRight2 {
+  z-index: 3;
+  transform: translateX(140%) scale(0.7) rotateY(-30deg);
+  opacity: 0.4;
+  filter: blur(2px) brightness(0.8);
+}
+
+.cardHidden {
+  z-index: 0;
+  transform: scale(0.5); 
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 🔴 Bottom Section */
+.bottomSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* === Navigation Arrows === */
+.navBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgba(115, 115, 0, 0.2);
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #737300;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navBtn:hover {
+  background: #737300;
+  color: #ffffff;
+  border-color: #737300;
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 0 10px 25px rgba(115, 115, 0, 0.3);
+}
+
+.navBtn:active {
+  transform: scale(0.9);
+}
+
+/* === Slide Text Content === */
+.slideContent {
+  flex: 1;
+  padding: 2rem 3rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: rgba(249, 250, 251, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.slideTitle {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #111827;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+  animation: slideInText 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.slideDesc {
+  font-size: 1.15rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.7;
+  white-space: pre-line;
+  animation: slideInText 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s forwards both;
+}
+
+@keyframes slideInText {
+  from { 
+    opacity: 0; 
+    transform: translateY(15px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* === Counter === */
+.counter {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #737300;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  display: block;
+}
+
+/* === Dots === */
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #d1d5db; /* สีเทาอ่อน */
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.dotActive {
+  width: 24px; /* ขยายเป็นวงรี */
+  border-radius: 4px;
+  background: #737300; /* สีเขียวมะกอก */
+}
+
+/* === Responsive === */
+@media (min-width: 641px) and (max-width: 1440px) {
+  .section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .sectionInner {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card { width: 280px; height: 360px; }
+  .carouselTrack { height: 380px; }
+  .carouselWrapper { min-height: 400px; }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle { font-size: 1.8rem; }
+  .card { width: 220px; height: 280px; }
+  .carouselTrack { height: 300px; }
+  .carouselWrapper { min-height: 320px; }
+  
+  .cardLeft1 { transform: translateX(-60%) scale(0.85); }
+  .cardRight1 { transform: translateX(60%) scale(0.85); }
+  
+  /* ซ่อนการ์ดใบที่ 4-5 ในจอมือถือ/แท็บเล็ตให้ดูไม่รก */
+  .cardLeft2, .cardRight2 {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .slideTitle { font-size: 1.4rem; }
+  /* แสดงปุ่มในมือถือ แต่ย่อขนาดลง */
+  .navBtn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  } 
+
+  /* จัดเรียงให้ปุ่มอยู่ข้างข้อความ หรือด้านล่าง */
+  .bottomSection {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .card { width: 180px; height: 240px; }
+  .carouselTrack { height: 260px; }
+  .carouselWrapper { min-height: 280px; }
+  
+  .cardLeft1 { transform: translateX(-50%) scale(0.85); }
+  .cardRight1 { transform: translateX(50%) scale(0.85); }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 1.5rem 0 1.25rem;
+  }
+
+  .sectionInner {
+    width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 1.5rem 1.6rem;
+    opacity: 1;
+    animation: none;
+  }
+
+  .subtitleBreak {
+    display: inline;
+  }
+
+  .carouselWrapper {
+    min-height: 0;
+    margin-bottom: 0;
+  }
+
+  .carouselWrapper::before {
+    display: none;
+  }
+
+  .carouselTrack {
+    height: calc(44vw + 36px);
+  }
+
+  .card {
+    width: 52vw;
+    height: 38vw;
+    border-radius: 16px;
+  }
+
+  .cardActive,
+  .cardActive:hover {
+    width: 43vw;
+    height: 44vw;
+    transform: translateX(0) translateY(0) scale(1);
+    box-shadow: 0 22px 36px rgba(17, 24, 39, 0.14);
+  }
+
+  .cardActive:hover .slideImage {
+    transform: none;
+  }
+
+  .card:hover .cardShine {
+    left: -100%;
+  }
+
+  .cardLeft1,
+  .cardRight1 {
+    filter: none;
+    opacity: 1;
+    box-shadow: 0 8px 16px rgba(17, 24, 39, 0.06);
+  }
+
+  .cardLeft1 {
+    transform: translateX(-44%) rotateY(0);
+  }
+
+  .cardRight1 {
+    transform: translateX(44%) rotateY(0);
+  }
+
+  .cardLeft2,
+  .cardRight2,
+  .cardHidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .bottomSection {
+    position: static;
+    z-index: auto;
+    max-width: none;
+    width: 100%;
+    margin: 1.15rem 0 0;
+    padding: 0 1rem;
+    gap: 0.4rem;
+    pointer-events: auto;
+    align-items: center;
+  }
+
+  .navBtn {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid #737300;
+    background: #fff;
+    color: #737300;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .navBtn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slideContent {
+    flex: 1;
+    min-height: 112px;
+    width: auto;
+    padding: 1.35rem 0.85rem 1.2rem;
+    background: #f9fafb;
+    border: 0;
+    border-radius: 24px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .slideTitle,
+  .slideDesc {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .slideTitle {
+    color: #1f2937;
+    font-size: 1.3rem;
+    margin: 0 0 0.55rem;
+  }
+
+  .slideDesc {
+    display: block;
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .pagination {
+    padding-top: 0.85rem;
+  }
+}

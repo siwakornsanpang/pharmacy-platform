@@ -1,0 +1,431 @@
+/* page.module.css */
+
+/* --- Container & Layout --- */
+.container {
+  /* ไม่ต้องใส่ padding เยอะเพราะ Layout หลักมี p-6 ให้อยู่แล้ว */
+  max-width: 1400px; /* จำกัดความกว้างไม่ให้ยืดจนน่าเกลียดบนจอใหญ่ */
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* System Fonts */
+  -webkit-font-smoothing: antialiased; /* ทำให้ตัวหนังสือบน Mac คมขึ้น ไม่บวม */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Header --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem; /* เพิ่มระยะห่างจากส่วนเนื้อหา */
+}
+
+.titleGroup h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.breadcrumb {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.mainActionBtn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.6rem 1.25rem; /* ปุ่มใหญ่ขึ้น */
+  border-radius: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.mainActionBtn:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+/* --- Form Section (Card) --- */
+.formCard {
+  background: white;
+  border-radius: 1rem; /* โค้งมนมากขึ้น */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); /* เงาละมุนสไตล์ Mac */
+  border: 1px solid var(--color-bg-hover);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.formHeader {
+  background-color: var(--color-bg-subtle);
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.formTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.formBody {
+  padding: 2rem; /* เพิ่ม Padding ภายในให้ไม่อึดอัด */
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* ระยะห่างระหว่างช่อง Input */
+}
+
+@media (min-width: 1024px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr); /* จอใหญ่แบ่ง 2 คอลัมน์ */
+  }
+}
+
+/* --- Inputs Standard (Mac/Windows Consistent) --- */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.925rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.required {
+  color: var(--color-danger);
+  margin-left: 0.25rem;
+}
+
+/* Reset Input Style เพื่อให้เหมือนกันทุก OS */
+.input, .select {
+  appearance: none; /* ลบ default style ของ OS ทิ้ง */
+  -webkit-appearance: none;
+  width: 100%;
+  height: 48px; /* สูงขึ้น นิ้วจิ้มง่าย */
+  padding: 0 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 0.95rem;
+  color: #1f2937;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus, .select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* Focus Ring สวยๆ */
+}
+
+/* File Input Custom Design */
+.fileUploadBox {
+  border: 2px dashed #d1d5db;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: var(--color-bg-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.fileUploadBox:hover {
+  border-color: #3b82f6;
+  background-color: var(--color-primary-light);
+}
+
+.fileUploadText {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.fileUploadHint {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+}
+
+/* Form Actions */
+.formActions {
+  display: flex;
+  justify-content: flex-end; /* ปุ่มอยู่ขวาล่าง */
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-bg-hover);
+}
+
+.cancelBtn {
+  padding: 0.6rem 1.5rem;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: var(--color-text-secondary);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancelBtn:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.saveBtn {
+  padding: 0.6rem 1.5rem;
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.saveBtn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* --- Table Section --- */
+.tableCard {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden; /* เพื่อให้มุมโค้งบังตาราง */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+  padding: 1.25rem 1.5rem; /* เพิ่ม Padding ให้แถวไม่เบียด */
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover {
+  background-color: #f8fafc; /* Highlight แถวตอนเอาเมาส์ชี้ */
+}
+
+/* Link Style */
+.pdfLink {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  transition: background 0.2s;
+}
+
+.pdfLink:hover {
+  background-color: var(--color-primary-light);
+}
+
+.deleteBtn {
+  color: var(--color-danger);
+  background: white;
+  border: 1px solid #fca5a5;
+  padding: 0.4rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBtn:hover {
+  background-color: #fef2f2;
+  border-color: var(--color-danger);
+}
+
+
+.btnEdit {
+      color: #3182ce;
+  background: white;
+   border: 1px solid #90cdf4;
+  padding: 0.4rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnEdit:hover {
+    background-color: #ebf8ff;
+    border-color: #63b3ed;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+  user-select: none; /* กัน User ลากคลุมดำตอนกดรัวๆ */
+}
+
+.statusBadge:hover {
+  transform: scale(1.05); /* ขยายหน่อยๆ ตอนเอาเมาส์ชี้ */
+}
+
+.statusOnline {
+  background-color: #dcfce7; /* เขียวอ่อน */
+  color: #166534;           /* เขียวเข้ม */
+  border-color: #bbf7d0;
+}
+.statusOnline:hover {
+  background-color: #bbf7d0; /* เขียวเข้มขึ้นตอนชี้ */
+}
+
+.statusOffline {
+  background-color: var(--color-bg-hover); /* เทาอ่อน */
+  color: #4b5563;           /* เทาเข้ม */
+  border-color: var(--color-border);
+}
+.statusOffline:hover {
+  background-color: var(--color-border); /* เทาเข้มขึ้นตอนชี้ */
+}
+
+/* เพิ่ม Icon หมุนๆ ตอนกำลังโหลดสถานะ (เผื่อไว้) */
+.loadingSpin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+
+
+
+
+
+
+
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap; /* ให้ปัดบรรทัดใหม่ได้ถ้าจอเล็ก */
+}
+
+/* ช่องค้นหา (Search) */
+.searchWrapper {
+  position: relative;
+  flex: 1; /* ยืดกินพื้นที่ว่างที่เหลือ */
+  min-width: 250px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.6rem 0.75rem 0.6rem 2.5rem; /* เว้นที่ซ้ายให้ไอคอน */
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* ตัวกรอง (Filters) */
+.filterGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.filterInput, .filterSelect {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  outline: none;
+  cursor: pointer;
+}
+
+.filterInput:focus, .filterSelect:focus {
+  border-color: #3b82f6;
+}
+
+.dateLabel {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* ปุ่ม Add เดิม (ปรับนิดหน่อยให้เข้าพวก) */
+.mainActionBtn {
+  /* ...ค่าเดิม... */
+  white-space: nowrap; /* ห้ามตัดบรรทัด */
+  height: 42px; /* สูงเท่า input */
+}

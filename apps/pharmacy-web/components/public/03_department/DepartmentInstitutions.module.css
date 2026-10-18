@@ -1,0 +1,242 @@
+/* === Department Institutions Section === */
+.section {
+  position: relative;
+  background-color: #f7f7f0;
+  padding: 4rem 0 5rem;
+  overflow: hidden;
+}
+
+/* Background Decoration */
+.bgDecoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bgDecoration svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+}
+
+.container {
+  max-width: var(--max-width-2xl);
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 2.5rem 0;
+}
+
+/* === 3-Column List === */
+.listGrid {
+  column-count: 3;
+  column-gap: 3rem;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  break-inside: avoid;
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.listItem:hover {
+  color: #8A9040;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8A9040;
+  flex-shrink: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .listGrid {
+    column-count: 2;
+  }
+}
+
+.showAllToggle {
+  display: none;
+}
+
+.titleRow {
+  display: contents;
+}
+
+.count {
+  display: none;
+}
+
+.showAllBtn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .listGrid {
+    column-count: 1;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .listItem {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 1.4rem 0 1.6rem;
+  }
+
+  .bgDecoration {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 1.15rem;
+  }
+
+  .titleRow {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .title {
+    margin-bottom: 0;
+    font-size: 1.35rem;
+  }
+
+  .count {
+    display: block;
+    flex-shrink: 0;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .listItem {
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-bottom: 0;
+    padding: 0.62rem 0;
+    border-bottom: none;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .listGrid .listItem:nth-child(n + 9) {
+    display: none;
+  }
+
+  .itemName {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .bullet {
+    width: 8px;
+    height: 8px;
+    margin-top: 0.4rem;
+    background: #8a9040;
+  }
+
+  .listItem::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    margin-top: 0.4rem;
+    margin-left: 0.6rem;
+    border-top: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  .showAllBtn {
+    display: block;
+    width: min(100%, 16rem);
+    margin: 1.1rem auto 0;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(17, 24, 39, 0.06);
+    color: #737300;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .showAllToggle:checked ~ .container .listItem {
+    display: flex;
+  }
+
+  .showAllToggle:checked ~ .container .showAllBtn {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: var(--max-width-2xl);
+    padding: 0;
+  }
+
+  .title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .listGrid {
+    column-count: 3;
+    column-gap: 24px;
+  }
+
+  .listItem {
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}

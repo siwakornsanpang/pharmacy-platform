@@ -1,0 +1,164 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { ChevronDown, ChevronRight, LogOut, User } from "lucide-react";
+import {
+  MODULE_SUBMENUS,
+  filterMenuByPermission,
+  getActiveBigModule,
+  type MenuItem,
+} from "@/app/config/menu";
+import styles from "./Sidebar.module.css";
+import { getRoleLabel } from "@/app/config/roles";
+import { useStaff } from "@/features/access/StaffProvider";
+import { logoutStaff } from "@/features/access/api";
+
+interface SidebarProps {
+  isOpen: boolean;
+  userRole: string;
+  userName: string;
+}
+
+function pathMatches(pathname: string, href?: string) {
+  if (!href) return false;
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function itemOrChildActive(pathname: string, item: MenuItem): boolean {
+  if (pathMatches(pathname, item.href)) return true;
+  return Boolean(item.submenu?.some((child) => itemOrChildActive(pathname, child)));
+}
+
+export default function Sidebar({ isOpen, userRole, userName }: SidebarProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const staff = useStaff();
+  const activeModule = getActiveBigModule(pathname);
+  const rawItems: MenuItem[] = activeModule
+    ? MODULE_SUBMENUS[activeModule.id] ?? []
+    : [];
+  const visibleMenuItems = filterMenuByPermission(rawItems, staff.permissions);
+  const displayName = userName || staff.displayName;
+  const displayRole = userRole || staff.role;
+
+  const handleLogout = async () => {
+    try { await logoutStaff(); } catch { /* local navigation still clears the shell */ }
+    router.refresh();
+    router.replace("/login");
+  };
+
+  return (
+    <aside
+      className={styles.sidebar}
+      style={{
+        transform: isOpen ? "translateX(0)" : "translateX(-100%)",
+        transition: "transform 0.3s ease-in-out",
+        visibility: isOpen ? "visible" : "hidden",
+      }}
+    >
+      <div className={styles.sidebarContent}>
+        {visibleMenuItems.length === 0 ? (
+          <div className={styles.emptyHint}>ไม่มีเมนูย่อย</div>
+        ) : (
+          visibleMenuItems.map((item) => (
+            <SidebarItem key={item.id} item={item} />
+          ))
+        )}
+      </div>
+
+      <div className={styles.sidebarFooter}>
+        <div className={styles.userProfile}>
+          <div className={styles.avatar}>
+            <User size={22} strokeWidth={2} />
+          </div>
+          <div className={styles.userInfo}>
+            <span className={styles.userName}>
+              {displayName && displayName !== "User" && displayName !== "ผู้ดูแลระบบ"
+                ? displayName
+                : "Administrator"}
+            </span>
+            <span className={styles.userRole}>
+              {getRoleLabel(displayRole)}
+            </span>
+          </div>
+          <button
+            className={styles.logoutBtn}
+            onClick={handleLogout}
+            title="ออกจากระบบ"
+          >
+            <LogOut size={20} />
+          </button>
+        </div>
+      </div>
+    </aside>
+  );
+}
+
+function SidebarItem({ item, depth = 0 }: { item: MenuItem; depth?: number }) {
+  const pathname = usePathname();
+  const hasChildren = Boolean(item.submenu && item.submenu.length > 0);
+  const childActive = itemOrChildActive(pathname, item);
+  const [open, setOpen] = useState(childActive);
+
+  useEffect(() => {
+    if (childActive) setOpen(true);
+  }, [childActive]);
+
+  const href = item.href || "#";
+  const isExactActive = pathMatches(pathname, href) && !hasChildren;
+  const isGroupActive = hasChildren && childActive;
+
+  if (hasChildren) {
+    return (
+      <div className={`${styles.itemWrapper} ${open ? styles.expandedGroup : ""}`}>
+        <button
+          type="button"
+          className={`${styles.menuItem} ${isGroupActive ? styles.groupActive : ""}`}
+          style={{ paddingLeft: depth === 0 ? "12px" : "18px" }}
+          title={item.title}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <div className={styles.labelContainer}>
+            {item.icon && <span className={styles.icon}>{item.icon}</span>}
+            <span className={styles.labelText}>{item.title}</span>
+          </div>
+          <span className={styles.chevron}>
+            {open ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+          </span>
+        </button>
+        {open && (
+          <div className={styles.submenuContainer}>
+            {item.submenu!.map((child) => (
+              <SidebarItem key={child.id} item={child} depth={depth + 1} />
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className={styles.itemWrapper}>
+      <Link href={href} className={styles.menuLink}>
+        <div
+          className={`${styles.menuItem} ${isExactActive ? styles.active : ""} ${depth > 0 ? styles.subItem : ""}`}
+          style={{ paddingLeft: depth === 0 ? "12px" : "14px" }}
+          title={item.title}
+        >
+          <div className={styles.labelContainer}>
+            {item.icon && (
+              <span
+                className={`${styles.icon} ${isExactActive ? styles.iconActive : ""}`}
+              >
+                {item.icon}
+              </span>
+            )}
+            <span className={styles.labelText}>{item.title}</span>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
+}

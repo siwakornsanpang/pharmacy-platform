@@ -1,0 +1,30 @@
+.page {
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.container {
+    max-width: var(--max-width-xl);
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.comingSoon {
+    padding: 6rem 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.inner h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.inner p {
+    font-size: 1.1rem;
+    color: #636e72;
+}

@@ -1,0 +1,862 @@
+/* src/app/backoffice/module/council-web/about/council/council.module.css */
+
+/* --- Layout & Text --- */
+.container {
+  max-width: 1280px; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif; /* Standard Font Stack */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem; /* 2xl */
+  font-weight: 700;
+  color: #1f2937; /* gray-800 */
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-text-muted); /* gray-500 */
+  font-size: 0.875rem; /* sm */
+  margin: 0.25rem 0 0 0;
+}
+
+/* --- Buttons --- */
+.btnAdd {
+  background-color: var(--color-primary); /* blue-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+}
+.btnAdd:hover {
+  background-color: var(--color-primary-hover);
+} /* blue-700 */
+
+.btnIconEdit {
+  padding: 0.5rem;
+  color: var(--color-primary);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  border: 1px solid #90cdf4;
+  background: none;
+  cursor: pointer;
+}
+.btnIconEdit:hover {
+  background-color: var(--color-primary-light);
+}
+
+.btnIconDelete {
+  padding: 0.5rem;
+  color: var(--color-danger);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  border: 1px solid #fa5252;
+  background: none;
+  cursor: pointer;
+}
+.btnIconDelete:hover {
+  background-color: #fef2f2;
+}
+
+.btnCancel {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  color: var(--color-text-secondary);
+  border-radius: 0.5rem;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btnCancel:hover {
+  background-color: var(--color-bg-subtle);
+}
+
+.btnSubmit {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.btnSubmit:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btnBack {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2563eb; /* blue-600 */
+  font-size: 0.875rem; /* sm */
+  margin-bottom: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.btnBack:hover {
+  color: #1e40af; /* blue-800 */
+  text-decoration: underline;
+}
+
+/* --- Table --- */
+.tableContainer {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tableHead {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid var(--color-bg-hover);
+}
+.tableTh {
+  padding: 1rem;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Sortable Header */
+.thSortable {
+  cursor: pointer;
+  transition: background 0.2s;
+  padding-right: 1.5rem !important;
+  position: relative;
+}
+
+.thSortable:hover {
+  background-color: #e9ecef;
+}
+
+.sortIcon {
+  font-size: 0.7rem;
+  margin-left: 4px;
+  color: #adb5bd;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sortIconActive {
+  font-size: 0.7rem;
+  margin-left: 4px;
+  color: #495057;
+  font-weight: bold;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tableTd {
+  padding: 1rem;
+  vertical-align: middle;
+}
+.tableRow {
+  border-bottom: 1px solid var(--color-bg-hover);
+  transition: background-color 0.2s;
+}
+.tableRow:hover {
+  background-color: var(--color-bg-subtle);
+}
+
+.orderBadge {
+  background-color: var(--color-bg-hover);
+  color: #4b5563;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.avatarContainer {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-bg-hover);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatarPlaceholder {
+  color: var(--color-text-light);
+}
+
+.badgeElected,
+.badgeAppointed {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.badgeElected {
+  background-color: #dcfce7;
+  color: #166534;
+} /* green-100, green-800 */
+.badgeAppointed {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+} /* purple-100, purple-800 */
+
+/* --- Modal --- */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050; /* 🔥 เพิ่มค่านี้ให้สูงๆ (สูงกว่า Header หรือ Table) */
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modalBox {
+  background-color: white;
+  border-radius: 0.75rem; /* แทน rounded-xl */
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04); /* แทน shadow-xl */
+  width: 100%; /* แทน w-full */
+  max-width: 32rem; /* แทน max-w-lg */
+  overflow: hidden;
+  
+  /* 🔥 แก้ปัญหาจอเล็ก popup ทะลุ */
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+
+  /* Animation */
+  animation: modalIn 0.2s ease-out;
+}
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modalHeader {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-bg-hover);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-subtle);
+}
+.modalTitle {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin: 0;
+}
+.btnClose {
+  color: var(--color-text-light);
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.btnClose:hover {
+  color: #4b5563;
+}
+
+.modalBody {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto; /* 🔥 เลื่อนในกล่องได้ถ้าเนื้อหายาวกว่าจอ */
+}
+
+/* --- Form Inputs --- */
+.formGroup {
+  margin-bottom: 1rem;
+}
+.formLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+.formInput,
+.formSelect {
+  width: 100%;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  background-color: white; /* Ensure white bg on all platforms */
+  color: #1f2937;
+}
+.formInput::placeholder {
+  color: var(--color-text-light);
+}
+.formInput:focus,
+.formSelect:focus {
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* blue ring */
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.imageUploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ตัว Label ครอบทั้งหมด (รูป + ข้อความ) */
+.imageUploadLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem; /* ระยะห่างระหว่างรูปกับข้อความ */
+  cursor: pointer;
+}
+
+/* กรอบวงกลม */
+.circleWrapper {
+  position: relative;
+  width: 8rem; /* 128px */
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-bg-subtle);
+  border: 2px dashed #d1d5db; /* ขอบประสีเทา */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ตอนเอาเมาส์ชี้ที่ Label ใหญ่ -> ให้กรอบวงกลมเปลี่ยนสี */
+.imageUploadLabel:hover .circleWrapper {
+  border-color: #3b82f6; /* สีฟ้า */
+  background-color: var(--color-primary-light);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); /* เงาฟุ้งๆ */
+}
+
+/* ข้อความใต้รูป */
+.helperText {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s;
+}
+
+/* ตอนเอาเมาส์ชี้ -> ข้อความเปลี่ยนสีด้วย */
+.imageUploadLabel:hover .helperText {
+  color: var(--color-primary);
+}
+
+/* รูปภาพ Preview */
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ไอคอน Placeholder ตอนยังไม่มีรูป */
+.placeholderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text-light);
+  gap: 0.25rem;
+}
+.imageUploadLabel:hover .placeholderContent {
+  color: #3b82f6;
+}
+
+/* Overlay ทับรูป (ตอนมีรูปแล้ว + เอาเมาส์ชี้) */
+.uploadOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังดำจางๆ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.imageUploadLabel:hover .uploadOverlay {
+  opacity: 1;
+}
+
+.clickableAvatar {
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  position: relative;
+}
+.clickableAvatar:hover {
+  transform: scale(1.1); /* ขยายเล็กน้อยตอนชี้ */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2); /* เงาสีฟ้าเรืองแสง */
+  z-index: 10;
+}
+
+/* 🔥 Styles สำหรับ Popup รูปขนาดจริง */
+.imagePreviewOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999; /* ให้สูงที่สุด ทับทุกอย่าง (แก้จาก 999 เป็น 9999 เพื่อทับ Header) */
+  background-color: rgba(0, 0, 0, 0.85); /* พื้นหลังดำโปร่งแสง */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); /* เบลอฉากหลัง */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.imagePreviewContent {
+  position: relative;
+  width: 90vw;
+  max-width: 800px;
+  aspect-ratio: 4 / 3;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); /* เอฟเฟกต์เด้งดึ๋ง */
+}
+
+.fullSizeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  background-color: transparent; /* เผื่อรูป PNG พื้นใส จะได้เห็นชัด */
+}
+
+.closePreviewBtn {
+  position: absolute;  /* อยู่มุมขวาบนของ container */
+  top: -1rem;          /* ห่างจากขอบบนของรูป */
+  right: -1rem;        /* ห่างจากขอบขวาของรูป */
+  z-index: 1000;       /* 🔥 สำคัญมาก! ต้องเลขสูงๆ เพื่อให้ลอยอยู่บนสุด */
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังสีดำจางๆ */
+  border: none;
+  border-radius: 50%;  /* ทำเป็นวงกลม */
+  width: 3rem;         /* กำหนดความกว้าง */
+  height: 3rem;        /* กำหนดความสูง */
+
+  display: flex;       /* จัดไอคอน X ให้อยู่ตรงกลาง */
+  align-items: center;
+  justify-content: center;
+  
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.closePreviewBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoomOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* ดำจางๆ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0; /* ซ่อนไว้ก่อน */
+    transition: opacity 0.2s;
+    -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+/* พอเอาเมาส์ชี้ที่รูป -> ให้โชว์แว่นขยาย */
+.clickableAvatar:hover .zoomOverlay {
+    opacity: 1;
+}
+
+
+.imageCell {
+  display: flex;
+  flex-direction: column; /* เรียงลงแนวตั้ง */
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem; /* ระยะห่างระหว่างรูปกับข้อความ */
+}
+
+/* 🔥 เพิ่มใหม่: ข้อความ "ดูภาพเต็ม" */
+.viewImageLabel {
+  font-size: 0.7rem; /* ตัวเล็กๆ ไม่รก */
+  color: var(--color-text-muted);    /* สีเทา */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+
+.viewImageLabel:hover, 
+.imageCell:hover .viewImageLabel {
+  color: var(--color-primary);    /* สีน้ำเงิน */
+  text-decoration: underline;
+}
+
+
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap; /* เผื่อจอเล็กจะได้ปัดลงมา */
+}
+
+/* กล่องครอบช่องค้นหา (เพื่อให้มีไอคอนแว่นขยายข้างใน) */
+.searchWrapper {
+  position: relative;
+  flex: 1; /* ยืดเต็มพื้นที่ที่เหลือ */
+  min-width: 200px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light); /* gray-400 */
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem; /* เว้นซ้ายให้ไอคอน */
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Dropdown Filter */
+.filterSelect {
+  padding: 0.5rem 2rem 0.5rem 0.75rem; /* เว้นขวาให้ลูกศร */
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: white;
+  color: #4b5563;
+  cursor: pointer;
+  min-width: 150px;
+  
+  /* Custom Arrow (Optional: เพื่อความสวยงามเหมือนในรูป) */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+}
+
+.filterSelect:focus {
+  border-color: #3b82f6;
+}
+
+
+.btnReadBio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-primary);       /* สีน้ำเงิน */
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--color-primary-light); /* พื้นหลังฟ้าอ่อนๆ */
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;     /* ทรงแคปซูล */
+  border: 1px solid #bfdbfe;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+
+.btnReadBio:hover {
+  background-color: #dbeafe;
+  transform: translateY(-1px); /* ลอยขึ้นนิดนึงตอนชี้ */
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.btnReadBioDisabled {
+  color: var(--color-text-light);
+  background-color: var(--color-bg-hover);
+  border: 1px solid var(--color-border);
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+}
+
+/* 🔥 สไตล์กล่องข้อความใน Modal (ให้อ่านง่าย) */
+.bioContent {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;        /* เพิ่มระยะห่างบรรทัดให้อ่านสบายตา */
+  white-space: pre-wrap;   /* ✅ สำคัญ! เพื่อให้เว้นวรรค/ขึ้นบรรทัดใหม่ตามที่พิมพ์มา */
+  background-color: var(--color-bg-subtle);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  max-height: 60vh;        /* ถ้าประวัติยาวมาก ให้ Scroll ได้ */
+  overflow-y: auto;
+}
+
+/* ===========================================
+   Banner-style Crop Modal & Upload Actions
+   =========================================== */
+.changeImageBtn {
+  display: flex; align-items: center; gap: 0.3rem;
+  padding: 0.35rem 1rem; border-radius: 0.4rem;
+  background: none; border: 1px solid #d1d5db;
+  color: #6b7280; cursor: pointer; font-size: 0.8rem;
+  transition: all 0.15s;
+}
+.changeImageBtn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+.imageActionRow {
+  display: flex; gap: 0.5rem; justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.cropModalOverlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.cropModalContent {
+  width: 100%; max-width: 800px;
+  background: #1f2937; border-radius: 1rem;
+  overflow: hidden; display: flex; flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.cropperContainer {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: var(--color-text-primary);
+}
+
+.cropControls {
+  padding: 1.5rem; background: #1f2937;
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+
+.zoomSliderContainer {
+  display: flex; align-items: center; gap: 1rem;
+  color: white; font-size: 0.9rem;
+}
+
+.zoomSlider {
+  flex: 1; height: 6px; border-radius: 4px;
+  background: #4b5563; outline: none;
+  -webkit-appearance: none; appearance: none;
+}
+.zoomSlider::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #3b82f6; cursor: pointer;
+}
+
+.cropActions {
+  display: flex; justify-content: flex-end; gap: 1rem;
+}
+
+.btnCropCancel {
+  padding: 0.75rem 1.5rem; border-radius: 0.5rem;
+  background: transparent; color: #d1d5db; border: 1px solid #4b5563;
+  cursor: pointer; transition: all 0.2s;
+}
+.btnCropCancel:hover { background: var(--color-text-secondary); color: white; }
+
+.btnCropConfirm {
+  padding: 0.75rem 1.5rem; border-radius: 0.5rem;
+  background: var(--color-primary); color: white; border: none;
+  cursor: pointer; font-weight: bold; transition: all 0.2s;
+}
+.btnCropConfirm:hover { background: var(--color-primary-hover); }
+
+.modalUploadArea {
+  display: flex; align-items: center; justify-content: center;
+  border: 2px dashed #d1d5db; border-radius: 0.75rem;
+  background: #f9fafb; cursor: pointer;
+  aspect-ratio: 4/3; overflow: hidden;
+  transition: all 0.2s;
+  width: 260px;
+  margin: 0 auto;
+}
+.modalUploadArea:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+
+.modalUploadPlaceholder {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 0.5rem;
+  color: #9ca3af; font-size: 0.9rem;
+}
+
+.modalPreviewImage {
+  width: 100%; height: 100%; object-fit: contain;
+}
+
+/* ===========================================
+   Tabs System (Elected vs Appointed)
+   =========================================== */
+.tabContainer {
+  display: flex;
+  background-color: #e5e7eb; /* gray-200 */
+  padding: 0.3rem;
+  border-radius: 0.75rem;
+  width: max-content;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.tabButton {
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #6b7280; /* gray-500 */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  color: #374151; /* gray-700 */
+}
+
+.tabButtonActive {
+  background-color: white;
+  color: var(--color-primary); /* blue-600 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}

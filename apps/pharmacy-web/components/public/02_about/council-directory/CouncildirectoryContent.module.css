@@ -1,0 +1,675 @@
+.wrapper {
+    width: 100%;
+    padding: 0 16px 0;
+    background: transparent;
+    font-family: var(--font-kanit), var(--font-geist-sans), sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* EMPTY & LOADING STATE */
+.emptyBox, .loading {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 18px;
+    color: #64748b;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    border: 1px solid rgba(115, 115, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+/* TIMELINE SELECTOR */
+.timelineContainer {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.timelineLabel {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+}
+
+.timelineWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.scrollBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid #737300;
+    background: white;
+    color: #737300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.scrollBtn:hover {
+    background: #737300;
+    border-color: #737300;
+    color: white;
+    box-shadow: 0 6px 14px rgba(115, 115, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.timelineScroll {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    position: relative;
+    /* Room so card shadows aren't clipped into a hard rectangle */
+    padding: 28px 8px 24px;
+    margin: -12px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.timelineScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.timelineLine {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #737300;
+    z-index: 1;
+}
+
+.termsList {
+    display: flex;
+    gap: 18px;
+    padding: 0 12px;
+    position: relative;
+    z-index: 2;
+    align-items: flex-end;
+}
+
+.termNode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    min-width: 110px;
+    user-select: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    scroll-snap-align: center;
+}
+
+.termCard {
+    width: 104px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    box-shadow: none;
+    padding: 12px 6px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.termNode:hover .termCard:not(.activeCard) {
+    transform: translateY(-4px);
+    border-color: rgba(115, 115, 0, 0.35);
+}
+
+.activeCard {
+    background: linear-gradient(180deg, #737300 0%, #5a5a00 100%);
+    border: 1.5px solid #d4af37;
+    border-radius: 18px;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(115, 115, 0, 0.22);
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    width: 118px;
+    height: 118px;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.termNodeLabel {
+    font-size: 12px;
+    color: #8c8c8c;
+    font-weight: 600;
+}
+
+.activeCard .termNodeLabel {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 13px;
+}
+
+.termNodeNum {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 6px 0;
+    line-height: 1;
+}
+
+.activeCard .termNodeNum {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.termNodeYears {
+    font-size: 10px;
+    color: #8c8c8c;
+    white-space: nowrap;
+}
+
+.activeCard .termNodeYears {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.timelineDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #737300;
+    margin-top: 14px;
+    position: relative;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    z-index: 3;
+    box-shadow: none;
+}
+
+.activeDot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #d4af37;
+    border: 2px solid #ffffff;
+    outline: 2px solid #737300;
+    outline-offset: 0;
+    transform: none;
+    box-shadow: none;
+}
+
+.activeDot::after {
+    display: none;
+}
+
+/* DETAIL CARD */
+.detailCard {
+    width: 100%;
+    max-width: 1100px;
+    background: linear-gradient(180deg, #fdfdfa 0%, #f9f9f5 100%);
+    border-radius: 28px;
+    padding: 40px;
+    border: 1px solid rgba(115, 115, 0, 0.15);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.02),
+        0 15px 40px rgba(115, 115, 0, 0.04);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.detailCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(115, 115, 0, 0.03) 0%, transparent 80%);
+    pointer-events: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1.5px solid rgba(115, 115, 0, 0.1);
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+.termTitle {
+    font-size: 38px;
+    font-weight: 800;
+    color: #737300;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.headerDivider {
+    width: 1.5px;
+    height: 42px;
+    background-color: rgba(115, 115, 0, 0.2);
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.committeeLabel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.2px;
+}
+
+.yearBadge {
+    font-size: 14px;
+    color: #5c5c5c;
+    font-weight: 500;
+}
+
+.peopleGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    width: 100%;
+}
+
+.personCard {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid rgba(115, 115, 0, 0.12);
+    border-radius: 20px;
+    padding: 24px;
+    gap: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+}
+
+.personCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(115, 115, 0, 0.08);
+    border-color: rgba(115, 115, 0, 0.25);
+}
+
+.imageBox {
+    width: 170px;
+    height: 226px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #2a3818 0%, #111a0a 100%);
+    padding: 6px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageBoxDecoration {
+    position: absolute;
+    inset: 6px;
+    background-image: radial-gradient(rgba(212, 175, 55, 0.25) 1px, transparent 1px);
+    background-size: 8px 8px;
+    border-radius: 12px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.personCard:hover .imageBox img {
+    transform: scale(1.03);
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0; /* Prevents overflow */
+    gap: 8px;
+}
+
+.roleBadge {
+    background: #737300;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    width: fit-content;
+    letter-spacing: 0.5px;
+}
+
+.personName {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 4px 0;
+    line-height: 1.35;
+}
+
+.familyName {
+    white-space: nowrap; /* keep family name together */
+    display: inline-block;
+}
+
+.nameUnderline {
+    width: 32px;
+    height: 2px;
+    background-color: #d4af37;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .peopleGrid {
+        gap: 20px;
+    }
+    
+    .personCard {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .imageBox {
+        width: 140px;
+        height: 186px;
+    }
+
+    .personName {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .peopleGrid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .personCard {
+        gap: 24px;
+    }
+
+    .imageBox {
+        width: 160px;
+        height: 213px;
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        align-items: stretch;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .timelineContainer {
+        gap: 0.65rem;
+        margin-bottom: 1rem;
+    }
+
+    .timelineLabel {
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: #4b5563;
+        letter-spacing: 0;
+    }
+
+    .timelineLabel::after {
+        content: ":";
+    }
+
+    .scrollBtn,
+    .timelineLine,
+    .timelineDot {
+        display: none;
+    }
+
+    .timelineWrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .timelineScroll {
+        min-width: 0;
+        width: calc(100% + 5vw);
+        margin: 0 -5vw 0 0;
+        padding: 2px 5vw 6px 0;
+    }
+
+    .termsList {
+        width: max-content;
+        align-items: stretch;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .termNode {
+        flex: 0 0 92px;
+        min-width: 92px;
+        scroll-snap-align: start;
+    }
+
+    .termCard,
+    .activeCard {
+        width: 92px;
+        height: 104px;
+        border-radius: 16px;
+        transform: none;
+        box-shadow: none;
+        padding: 8px 6px;
+    }
+
+    .termCard {
+        border: 1.5px solid #8a9040;
+        background: #fff;
+    }
+
+    .activeCard {
+        background: #737300;
+        border: 1.5px solid #737300;
+    }
+
+    .termNodeLabel {
+        font-size: 0.72rem;
+        font-weight: 500;
+        color: #6b7280;
+    }
+
+    .termNodeNum {
+        margin: 2px 0;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .termNodeYears {
+        font-size: 0.68rem;
+        color: #4b5563;
+    }
+
+    .activeCard .termNodeLabel,
+    .activeCard .termNodeYears {
+        color: #fff;
+        font-size: 0.72rem;
+        font-weight: 500;
+    }
+
+    .activeCard .termNodeNum {
+        color: #fff;
+        font-size: 1.85rem;
+        font-weight: 800;
+    }
+
+    .detailCard {
+        gap: 14px;
+        max-width: 100%;
+        padding: 16px 14px 14px;
+        border-radius: 20px;
+        border: 1.5px solid #d3d1b3;
+        background: #fff;
+        box-shadow: none;
+    }
+
+    .detailCard::after {
+        display: none;
+    }
+
+    .cardHeader {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 2px;
+        border-bottom: 0;
+    }
+
+    .termTitle {
+        font-size: 1.65rem;
+        letter-spacing: 0;
+    }
+
+    .headerDivider {
+        width: 1px;
+        height: 36px;
+        background: #e5e7eb;
+    }
+
+    .headerRight {
+        min-width: 0;
+        gap: 2px;
+    }
+
+    .committeeLabel {
+        font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1.35;
+    }
+
+    .yearBadge {
+        font-size: 0.82rem;
+        color: #6b7280;
+    }
+
+    .peopleGrid {
+        gap: 12px;
+        max-width: none;
+    }
+
+    .personCard {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 14px;
+        padding: 12px;
+        border-radius: 18px;
+        border-color: #eceae0;
+        box-shadow: none;
+    }
+
+    .personCard:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .imageBox {
+        width: 108px;
+        height: 132px;
+        padding: 0;
+        border-radius: 16px;
+        box-shadow: none;
+    }
+
+    .imageBoxDecoration {
+        display: none;
+    }
+
+    .imageBox img {
+        border-radius: 16px;
+    }
+
+    .cardInfo {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .roleBadge {
+        margin: 0;
+        padding: 4px 10px;
+        font-size: 0.68rem;
+    }
+
+    .personName {
+        margin: 0;
+        font-size: 1.05rem;
+    }
+
+    .nameUnderline {
+        width: 40px;
+        height: 3px;
+        margin: 0;
+        background: #8a9040;
+    }
+}

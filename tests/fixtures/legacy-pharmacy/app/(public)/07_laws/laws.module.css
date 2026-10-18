@@ -1,0 +1,145 @@
+/* === Laws Page (layout only) === */
+.pageWrapper {
+    
+    background-color: #ffffff;
+
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url('/images/public/laws/imgbglaw.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.bannerOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(30, 40, 20, 0.4) 30%, transparent 70%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0 4.5rem;
+}
+
+.bannerContent {
+    animation: slideUpFade 1s ease-out forwards;
+    color: white;
+    width: 90%;
+    max-width: var(--max-width-2xl);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bannerTitle {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+    line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bannerSubtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.95;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.layoutContainer {
+    max-width: var(--max-width-2xl);
+    width: 90%;
+    margin: 1.25rem auto 0;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .layoutContainer {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner {
+        height: 250px;
+    }
+
+    .bannerOverlay {
+        padding-bottom: 1.25rem;
+    }
+
+    .bannerContent {
+        width: 90%;
+        padding: 0;
+    }
+
+    .bannerTitle {
+        font-size: 1.85rem;
+        line-height: 1.15;
+        margin-bottom: 0.28rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 0.8rem;
+    }
+
+    .layoutContainer {
+        width: 100%;
+        margin-top: 0.75rem;
+        padding: 0 1rem 1.5rem;
+        gap: 0.85rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .banner {
+        height: 300px;
+    }
+
+    .bannerOverlay {
+        padding-bottom: 3rem;
+    }
+
+    .bannerContent {
+        padding: 0;
+    }
+
+    .bannerTitle {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 8px;
+    }
+
+    .bannerSubtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .layoutContainer {
+        flex-direction: row;
+        width: 90%;
+        max-width: var(--max-width-2xl);
+        margin-top: 24px;
+        padding: 0;
+        gap: 24px;
+    }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

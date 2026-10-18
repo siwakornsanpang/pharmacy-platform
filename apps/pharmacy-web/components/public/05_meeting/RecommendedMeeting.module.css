@@ -1,0 +1,312 @@
+.recommendSection {
+    margin-bottom: 2rem;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionHeader h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.sliderButtons {
+    display: flex;
+    gap: 12px;
+}
+
+.sliderBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #8a8a00;
+    background: white;
+    color: #8a8a00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.sliderBtn:hover {
+    background: #fdfdf0;
+}
+
+.recommendCard {
+    display: flex;
+    gap: 2.5rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 24px;
+    margin-top: 1.5rem;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.recommendCard:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    border-color: #dde2c0;
+    transform: translateY(-2px);
+}
+
+.recommendImage {
+    max-width: 420px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: transform 0.4s ease;
+}
+
+.recommendCard:hover .recommendImage {
+    transform: scale(1.03);
+}
+
+.recommendContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.recommendContent h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.cpeBadge {
+    background: #fbfdf0;
+    border: 1px solid #dce2c1;
+    color: #4b5320;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.cpeIcon {
+    font-size: 1.1rem;
+    color: #7b7b1e;
+}
+
+.recommendFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+.participantsInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin: 0 4px;
+}
+
+.tags span {
+    background: #f0f1ed;
+    color: #4b5563;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pharmacistTag {
+    background: #fcf3e0 !important;
+    color: #1a1a1a !important;
+}
+
+.sliderIndicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #eef0f2;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dot.active {
+    width: 36px;
+    border-radius: 12px;
+    background: #8a8a00;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #4b5563;
+}
+
+.infoItem p,
+.infoItem span {
+    margin: 0;
+    color: inherit;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.grayIcon {
+    color: #9ca3af;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+    .recommendCard {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+    .recommendImage {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    .recommendContent h3 {
+        font-size: 1.35rem;
+    }
+    .sectionHeader h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .sectionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .sliderButtons {
+        align-self: flex-end;
+    }
+    .recommendContent h3 {
+        font-size: 1.2rem;
+    }
+    .infoItem p,
+    .infoItem span {
+        font-size: 1rem;
+    }
+    .cpeBadge {
+        width: fit-content;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .sliderIndicators {
+        margin-top: 1.5rem;
+    }
+}
+
+.countAvailable {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid #a7f3d0;
+    display: inline-block;
+}
+
+.countFull {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid #fecaca;
+    display: inline-block;
+}
+
+.sliderWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.recommendCard {
+    margin-top: 0 !important;
+    width: 100%;
+}
+
+.cardArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #eef2f6;
+    background: #ffffff;
+    color: #8a8a00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease;
+    z-index: 10;
+}
+
+.cardArrow:hover {
+    background: #fdfdf0;
+    border-color: #8a8a00;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.cardArrowLeft {
+    left: -20px;
+}
+
+.cardArrowRight {
+    right: -20px;
+}
+
+@media (max-width: 900px) {
+    .cardArrow {
+        display: none; /* Hide card overlay arrows on tablet/mobile and fall back to dots/header buttons */
+    }
+}

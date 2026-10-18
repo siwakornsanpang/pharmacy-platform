@@ -1,0 +1,141 @@
+.section {
+    padding: 6rem 0 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: var(--max-width-xl);
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.sliderContainer {
+    margin-top: 3rem;
+    padding-bottom: 3rem; /* Space for pagination */
+}
+
+.swiper {
+    padding: 1rem 0 3rem 0 !important;
+}
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid #f3f4f6;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(115, 115, 0, 0.08);
+    border-color: rgba(115, 115, 0, 0.1);
+}
+
+.quoteWatermark {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    opacity: 0.05;
+    pointer-events: none;
+    transform: rotate(180deg);
+}
+
+.rating {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.comment {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.courseBadge {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: #f8fafc;
+    border-radius: 0.75rem;
+    border: 1px dashed #e2e8f0;
+}
+
+.courseLabel {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.courseName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-olive);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 1.5rem;
+}
+
+.avatarWrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.role {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0 0;
+    }
+    
+    .card {
+        padding: 2rem;
+    }
+}

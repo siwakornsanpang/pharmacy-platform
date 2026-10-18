@@ -1,0 +1,257 @@
+.pageWrapper {
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #2e3a1f url("/images/public/member/banner.png") center/cover no-repeat;
+  overflow: hidden;
+}
+
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(30, 40, 20, 0.4) 30%,
+    transparent 70%
+  );
+}
+
+.bannerContent {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: var(--max-width-xl, 1200px);
+  color: #fff;
+  z-index: 2;
+}
+
+.bannerTitle {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bannerSubtitle {
+  margin: 0;
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  opacity: 0.95;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width-xl, 1200px);
+  margin: 2rem auto 0;
+
+  flex: 1 0 auto;
+}
+
+.pageInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.35rem;
+  padding: 0.5rem 1.1rem;
+  background: #ffffff;
+  border: 1px solid #d9e0c8;
+  border-radius: 999px;
+  color: #3a4b0f;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(45, 50, 20, 0.06);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.backBtn:hover {
+  background: #f4f7ee;
+  border-color: #c5d09a;
+  color: #3a4b0f;
+  transform: translateY(-1px);
+}
+
+.searchCard {
+  background: #f9f9f9 !important;
+  border-radius: 24px;
+  border: none;
+  box-shadow: none;
+}
+
+.loadingBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 180px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.paginationWrap {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #d9e0c8;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(45, 50, 20, 0.04);
+}
+
+.resultsTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.resultsTable thead {
+  background: #f4f7ee;
+  color: #3a4b0f;
+}
+
+.resultsTable th,
+.resultsTable td {
+  padding: 0.95rem 1.25rem;
+  border-bottom: 1px solid #eef2e3;
+}
+
+.resultsTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.resultsTable tbody tr:hover {
+  background: #fafbf6;
+}
+
+.colIndex {
+  width: 4.5rem;
+  text-align: center;
+}
+
+.colAction {
+  width: 9.5rem;
+  text-align: right;
+}
+
+.indexCell {
+  text-align: center;
+  font-weight: 600;
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
+}
+
+.licenseCell {
+  font-weight: 600;
+  color: #334155;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.nameCell {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.statusNormal,
+.statusAbnormal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusNormal {
+  color: #737300;
+}
+
+.statusAbnormal {
+  color: #b45309;
+}
+
+.actionCell {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.detailBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: #f4f7ee;
+  border: 1px solid #d9e0c8;
+  color: #737300;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+.detailBtn:hover {
+  background: #eef2e0;
+  border-color: #c5d09a;
+  color: #5a5a00;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .banner {
+    height: 250px;
+  }
+
+  .bannerContent {
+    bottom: 1.25rem;
+    width: 90%;
+    padding: 0;
+  }
+
+  .bannerTitle {
+    font-size: 1.85rem;
+    line-height: 1.15;
+    margin-bottom: 0.28rem;
+  }
+
+  .bannerSubtitle {
+    font-size: 0.8rem;
+  }
+
+  .resultsTable th,
+  .resultsTable td {
+    padding: 0.8rem 0.9rem;
+    font-size: 0.88rem;
+  }
+
+  .detailBtn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.82rem;
+  }
+}

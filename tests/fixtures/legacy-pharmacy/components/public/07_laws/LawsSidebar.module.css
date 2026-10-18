@@ -1,0 +1,162 @@
+/* === Laws Sidebar === */
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 165px;
+    z-index: 10;
+    align-self: flex-start;
+    background-color: #F9F9F9;
+    padding: 1rem;
+    border-radius: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 1rem 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.link {
+    display: block;
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    color: #374151;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.link:hover {
+    background: #eeeeee;
+    color: #111827;
+}
+
+.linkActive {
+    background: #f5f5e8;
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .link {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        margin-bottom: 0.35rem;
+    }
+
+    .title {
+        font-size: 1.05rem;
+        margin-bottom: 0.65rem;
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .link {
+        width: auto;
+        flex: none;
+        white-space: nowrap;
+        padding: 0.4rem 0.7rem;
+        border: 1px solid #e4e2d4;
+        border-radius: 999px;
+        background: #fff;
+        font-size: 0.8rem;
+        color: #6b7280;
+    }
+
+    .linkActive {
+        background: #c9c68a;
+        border-color: #c9c68a;
+        color: #1f2937;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .sidebar {
+        width: 232px;
+        position: sticky;
+        top: 165px;
+        margin-bottom: 0;
+        padding: 16px;
+        border-radius: 24px;
+        background-color: #f9f9f9;
+    }
+
+    .title {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 4px;
+        overflow: visible;
+    }
+
+    .link {
+        width: 100%;
+        padding: 9px 12px;
+        border: none;
+        border-radius: 12px;
+        background: none;
+        color: #374151;
+        font-size: 15px;
+        line-height: 22px;
+        white-space: normal;
+    }
+
+    .linkActive {
+        background: #f5f5e8;
+        border-color: transparent;
+        color: #111827;
+        font-weight: 600;
+    }
+}

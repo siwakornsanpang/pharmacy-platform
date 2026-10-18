@@ -1,0 +1,335 @@
+{
+  "/api/conference/public/events": {
+    "data": [
+      {
+        "id": "event-fixture",
+        "code": "FIXTURE",
+        "nameTh": "งานประชุมทดสอบสังเคราะห์",
+        "nameEn": "Fixture Conference",
+        "shortName": "Fixture",
+        "locationName": "สถานที่ทดสอบ",
+        "startAt": "2026-11-01T00:00:00Z",
+        "endAt": "2026-11-02T00:00:00Z",
+        "cpeCredits": "1",
+        "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+        "lifecycleStatus": "upcoming",
+        "eligibleCategories": [],
+        "availability": {
+          "registered": 1,
+          "held": 0,
+          "capacity": 100,
+          "remaining": 99,
+          "status": "available"
+        },
+        "eligibility": {
+          "status": "available",
+          "canRegister": true,
+          "reasonCode": null,
+          "availableOfferingCount": 1
+        }
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 9,
+      "totalItems": 1,
+      "totalPages": 1
+    }
+  },
+  "/api/conference/me/events": {
+    "data": [
+      {
+        "id": "event-fixture",
+        "code": "FIXTURE",
+        "nameTh": "งานประชุมทดสอบสังเคราะห์",
+        "nameEn": "Fixture Conference",
+        "shortName": "Fixture",
+        "locationName": "สถานที่ทดสอบ",
+        "startAt": "2026-11-01T00:00:00Z",
+        "endAt": "2026-11-02T00:00:00Z",
+        "cpeCredits": "1",
+        "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+        "lifecycleStatus": "upcoming",
+        "eligibleCategories": [],
+        "availability": {
+          "registered": 1,
+          "held": 0,
+          "capacity": 100,
+          "remaining": 99,
+          "status": "available"
+        },
+        "eligibility": {
+          "status": "available",
+          "canRegister": true,
+          "reasonCode": null,
+          "availableOfferingCount": 1
+        }
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 9,
+      "totalItems": 1,
+      "totalPages": 1
+    }
+  },
+  "/api/conference/public/events/event-fixture": {
+    "id": "event-fixture",
+    "code": "FIXTURE",
+    "nameTh": "งานประชุมทดสอบสังเคราะห์",
+    "nameEn": "Fixture Conference",
+    "shortName": "Fixture",
+    "locationName": "สถานที่ทดสอบ",
+    "startAt": "2026-11-01T00:00:00Z",
+    "endAt": "2026-11-02T00:00:00Z",
+    "cpeCredits": "1",
+    "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "lifecycleStatus": "upcoming",
+    "eligibleCategories": [],
+    "availability": {
+      "registered": 1,
+      "held": 0,
+      "capacity": 100,
+      "remaining": 99,
+      "status": "available"
+    },
+    "eligibility": {
+      "status": "available",
+      "canRegister": true,
+      "reasonCode": null,
+      "availableOfferingCount": 1
+    },
+    "description": "<p>ข้อมูลทดสอบออฟไลน์</p>",
+    "coverImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "mapEmbedUrl": null,
+    "agendas": [],
+    "documents": []
+  },
+  "/api/conference/me": {
+    "id": "attendee-fixture",
+    "firstName": "Fixture",
+    "lastName": "Member",
+    "displayName": "Fixture Member",
+    "email": "fixture@example.test",
+    "phone": "0000000000",
+    "pharmacistLicense": "FIX-0001",
+    "attendeeCategoryId": "fixture",
+    "categoryCode": "pharmacist",
+    "approvalStatus": "approved"
+  },
+  "/api/conference/me/events/event-fixture/ticket-offerings": {
+    "data": [
+      {
+        "ticketId": "ticket-fixture",
+        "ticketCode": "FIX",
+        "ticketName": "บัตรทดสอบ",
+        "kind": "primary",
+        "quota": 100,
+        "saleStartAt": null,
+        "saleEndAt": null,
+        "priceId": "price-fixture",
+        "amount": "100",
+        "currency": "THB",
+        "priceLabel": "ทั่วไป",
+        "canPurchase": true,
+        "reasonCode": null,
+        "requiresPrimary": false,
+        "availability": {
+          "capacity": 100,
+          "registered": 1,
+          "held": 0,
+          "remaining": 99
+        },
+        "sessions": []
+      }
+    ]
+  },
+  "/api/conference/orders/order-fixture": {
+    "id": "order-fixture",
+    "number": "FIX-2026",
+    "eventId": "event-fixture",
+    "status": "awaitingPayment",
+    "subtotalAmount": "100",
+    "discountAmount": "0",
+    "totalAmount": "100",
+    "currency": "THB",
+    "expiresAt": "2026-10-14T00:15:00Z",
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "event": {
+      "id": "event-fixture",
+      "code": "FIXTURE",
+      "nameTh": "งานประชุมทดสอบสังเคราะห์",
+      "nameEn": "Fixture Conference",
+      "shortName": "Fixture",
+      "locationName": "สถานที่ทดสอบ",
+      "startAt": "2026-11-01T00:00:00Z",
+      "endAt": "2026-11-02T00:00:00Z",
+      "cpeCredits": "1",
+      "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "lifecycleStatus": "upcoming",
+      "eligibleCategories": [],
+      "availability": {
+        "registered": 1,
+        "held": 0,
+        "capacity": 100,
+        "remaining": 99,
+        "status": "available"
+      },
+      "eligibility": {
+        "status": "available",
+        "canRegister": true,
+        "reasonCode": null,
+        "availableOfferingCount": 1
+      }
+    },
+    "attendee": {
+      "id": "attendee-fixture",
+      "firstName": "Fixture",
+      "lastName": "Member",
+      "displayName": "Fixture Member",
+      "email": "fixture@example.test",
+      "phone": "0000000000",
+      "pharmacistLicense": "FIX-0001",
+      "attendeeCategoryId": "fixture",
+      "categoryCode": "pharmacist",
+      "approvalStatus": "approved"
+    },
+    "items": [
+      {
+        "id": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketTypeName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "priceLabel": "ทั่วไป",
+        "amount": "100",
+        "currency": "THB",
+        "grantedSessionsSnapshot": []
+      }
+    ],
+    "taxInvoice": null,
+    "payment": {
+      "id": "payment-fixture",
+      "provider": "ktb",
+      "state": "pending",
+      "amount": "100",
+      "currency": "THB",
+      "latestAttempt": {
+        "id": "attempt-fixture",
+        "paymentId": "payment-fixture",
+        "state": "pending",
+        "expiresAt": "2026-10-14T00:15:00Z",
+        "createdAt": "2026-10-14T00:00:00Z",
+        "updatedAt": "2026-10-14T00:00:00Z"
+      }
+    },
+    "registrations": [
+      {
+        "id": "reg-fixture",
+        "code": "REG-FIXTURE",
+        "status": "confirmed",
+        "issuedAt": "2026-10-14T00:00:00Z",
+        "orderItemId": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "qrPayload": "SYNTHETIC-FIXTURE-ONLY",
+        "sessions": []
+      }
+    ]
+  },
+  "/api/conference/orders/order-paid": {
+    "id": "order-paid",
+    "number": "FIX-2026",
+    "eventId": "event-fixture",
+    "status": "paid",
+    "subtotalAmount": "100",
+    "discountAmount": "0",
+    "totalAmount": "100",
+    "currency": "THB",
+    "expiresAt": "2026-10-14T00:15:00Z",
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "event": {
+      "id": "event-fixture",
+      "code": "FIXTURE",
+      "nameTh": "งานประชุมทดสอบสังเคราะห์",
+      "nameEn": "Fixture Conference",
+      "shortName": "Fixture",
+      "locationName": "สถานที่ทดสอบ",
+      "startAt": "2026-11-01T00:00:00Z",
+      "endAt": "2026-11-02T00:00:00Z",
+      "cpeCredits": "1",
+      "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "lifecycleStatus": "upcoming",
+      "eligibleCategories": [],
+      "availability": {
+        "registered": 1,
+        "held": 0,
+        "capacity": 100,
+        "remaining": 99,
+        "status": "available"
+      },
+      "eligibility": {
+        "status": "available",
+        "canRegister": true,
+        "reasonCode": null,
+        "availableOfferingCount": 1
+      }
+    },
+    "attendee": {
+      "id": "attendee-fixture",
+      "firstName": "Fixture",
+      "lastName": "Member",
+      "displayName": "Fixture Member",
+      "email": "fixture@example.test",
+      "phone": "0000000000",
+      "pharmacistLicense": "FIX-0001",
+      "attendeeCategoryId": "fixture",
+      "categoryCode": "pharmacist",
+      "approvalStatus": "approved"
+    },
+    "items": [
+      {
+        "id": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketTypeName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "priceLabel": "ทั่วไป",
+        "amount": "100",
+        "currency": "THB",
+        "grantedSessionsSnapshot": []
+      }
+    ],
+    "taxInvoice": null,
+    "payment": {
+      "id": "payment-fixture",
+      "provider": "ktb",
+      "state": "pending",
+      "amount": "100",
+      "currency": "THB",
+      "latestAttempt": {
+        "id": "attempt-fixture",
+        "paymentId": "payment-fixture",
+        "state": "pending",
+        "expiresAt": "2026-10-14T00:15:00Z",
+        "createdAt": "2026-10-14T00:00:00Z",
+        "updatedAt": "2026-10-14T00:00:00Z"
+      }
+    },
+    "registrations": [
+      {
+        "id": "reg-fixture",
+        "code": "REG-FIXTURE",
+        "status": "confirmed",
+        "issuedAt": "2026-10-14T00:00:00Z",
+        "orderItemId": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "qrPayload": "SYNTHETIC-FIXTURE-ONLY",
+        "sessions": []
+      }
+    ]
+  }
+}

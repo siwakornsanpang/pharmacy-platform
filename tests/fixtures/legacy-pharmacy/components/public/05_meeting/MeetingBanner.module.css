@@ -1,0 +1,158 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url('/images/public/meeting/meeting-banner.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.bannerOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(30, 40, 20, 0.4) 30%, transparent 70%);
+    padding: 2rem 0 4.5rem;
+}
+
+.backBtn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.25rem 0.5rem 1rem;
+    background: rgba(46, 58, 31, 0.65); /* Dark Olive */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    z-index: 10;
+}
+
+.backBtn:hover {
+    background: rgba(115, 115, 0, 0.9); /* Theme Olive #737300 */
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.backBtn svg {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0.9;
+}
+
+.backBtn:hover svg {
+    transform: translateX(-4px);
+    opacity: 1;
+}
+
+.bannerContent {
+    position: absolute;
+    bottom: 4.5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    max-width: var(--max-width-2xl);
+    width: 90%;
+    padding: 0 1.5rem;
+    z-index: 5;
+    animation: slideUpFade 1s ease-out forwards;
+}
+
+.bannerTitle {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+    line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bannerSubtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.95;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+
+    .bannerOverlay {
+        padding: 0 0 3rem;
+    }
+    
+    .bannerContent {
+        bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 200px;
+    }
+    
+    .bannerOverlay {
+        padding: 0 0 2rem;
+    }
+    
+    .bannerContent {
+        bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .backBtn {
+        left: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner {
+        height: 250px;
+    }
+
+    .bannerOverlay {
+        padding: 0 0 1.25rem;
+    }
+
+    .bannerContent {
+        bottom: 1.25rem;
+        width: 90%;
+        padding: 0;
+    }
+
+    .bannerTitle {
+        font-size: 1.85rem;
+        line-height: 1.15;
+        margin-bottom: 0.28rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 0.8rem;
+    }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

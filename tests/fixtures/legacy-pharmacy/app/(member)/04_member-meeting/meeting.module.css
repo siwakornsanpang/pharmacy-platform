@@ -1,0 +1,86 @@
+.pageWrapper {
+
+    background: white;
+}
+
+.container {
+    max-width: var(--max-width-xl);
+    width: 90%;
+    margin: auto;
+    padding: 3rem 1.5rem 0;
+    overflow-x: hidden;
+}
+
+/* === Search Section (above RecommendedMeeting) === */
+.searchSection {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.searchInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1rem;
+    color: #9ca3af;
+    pointer-events: none;
+    transition: color 0.2s ease;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.9rem 1rem 0.9rem 2.85rem;
+    font-size: 1.1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #1a1a1a;
+}
+
+.searchInput::placeholder {
+    color: #9ca3af;
+}
+
+.searchInput:focus {
+    border-color: #8a8a00;
+    box-shadow: 0 0 0 4px rgba(138, 138, 0, 0.1);
+}
+
+.searchInputWrapper:focus-within .searchIcon {
+    color: #8a8a00;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+    .searchSection {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+    .searchInput {
+        font-size: 1rem;
+        padding: 0.8rem 1rem 0.8rem 2.5rem;
+        border-radius: 12px;
+    }
+    .searchIcon {
+        left: 0.8rem;
+        width: 18px;
+        height: 18px;
+    }
+}

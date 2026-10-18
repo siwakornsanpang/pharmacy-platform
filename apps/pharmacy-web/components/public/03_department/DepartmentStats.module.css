@@ -1,0 +1,63 @@
+/* === Department Stats Section === */
+.section {
+  background: white;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.container {
+  max-width: var(--max-width-2xl);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 2.5rem 0;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.statNumber {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+  margin: 0 0 0.5rem 0;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .statsGrid {
+    gap: 2rem;
+  }
+
+  .statNumber {
+    font-size: 2.5rem;
+  }
+
+  .statItem {
+    min-width: 80px;
+  }
+}

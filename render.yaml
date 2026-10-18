@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: pharmacy-backend
+    runtime: node
+    plan: starter
+    region: singapore
+    buildCommand: npm ci --legacy-peer-deps --include=dev && npm run build:shared && npm run build --workspace apps/backend-api
+    startCommand: npm run start --workspace apps/backend-api
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production

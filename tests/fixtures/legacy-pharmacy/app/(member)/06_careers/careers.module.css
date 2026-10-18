@@ -1,0 +1,36 @@
+.mainContainer {
+
+    background-color: #f8fafc;
+
+}
+
+.container {
+    max-width: var(--max-width-xl);
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchSection {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 20;
+}
+
+.filterSection {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .searchSection {
+        margin-top: 1.5rem;
+    }
+}

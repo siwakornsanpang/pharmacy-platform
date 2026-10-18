@@ -1,0 +1,1448 @@
+{
+  "source": "legacy-pharmacy-fixture",
+  "sourceHead": "2e56e3ce063ec8831ada2487b06d11f2be60528b",
+  "workingTreeStatus": "",
+  "files": [
+    {
+      "path": "app/(member)/01_member-home/home.module.css",
+      "sha256": "6352f49957b0784d0e52d2d42262b8489ce97b15cd1587883638c7338bbf6549"
+    },
+    {
+      "path": "app/(member)/01_member-home/page.tsx",
+      "sha256": "8379950f1341f1df771267cb1ac800acd7fb2e1cf83206de8b5129e256ac6c7d"
+    },
+    {
+      "path": "app/(member)/02_profile/edit/page.tsx",
+      "sha256": "09b4c5a279a63f415e66cbbb3b31d4ef0232126e98d3c3cd43dd80cff5b80881"
+    },
+    {
+      "path": "app/(member)/02_profile/page.tsx",
+      "sha256": "7e43ba7b08fc015a259b65c699baed91c141c083e59c207983f8d663c31dbfeb"
+    },
+    {
+      "path": "app/(member)/02_profile/profile.module.css",
+      "sha256": "b15530247aed285c66c68c477d75b9e74bbf7078330a42739c3350cd6949f463"
+    },
+    {
+      "path": "app/(member)/03_member-service/member-service.module.css",
+      "sha256": "583a1d17bed6c97d2a273aa8c37c99d3795179361cee1b1d9c65067aaf4ba26e"
+    },
+    {
+      "path": "app/(member)/03_member-service/page.tsx",
+      "sha256": "e712f39c0fb8206601d6bc73a64a7a2ff19b2a710eec09e4f34dba7a4370f5af"
+    },
+    {
+      "path": "app/(member)/04_member-meeting/meeting.module.css",
+      "sha256": "444e89a6061a38185bba38de79a3f55828bbbccb383a62321cfbd758fac8ccbd"
+    },
+    {
+      "path": "app/(member)/04_member-meeting/page.tsx",
+      "sha256": "bbb874430de3868256bf28840423802bc1d16985d965e3e65bb22b5854b727de"
+    },
+    {
+      "path": "app/(member)/05_learning/[id]/certificate/certificate.module.css",
+      "sha256": "63b6c0b98466ea8bdf5ed1de3c720b02ff2f661cb6cb06af01d87c5291ab210f"
+    },
+    {
+      "path": "app/(member)/05_learning/[id]/certificate/page.tsx",
+      "sha256": "09bbfc920244a7d3a60fb5154e8709420de4390557ab07d66b65821a9cd639ce"
+    },
+    {
+      "path": "app/(member)/05_learning/[id]/learn/learn.module.css",
+      "sha256": "a15e9f7dd0529751933908f6046c94f9b117eca5d084fcbaee77561e61003bcf"
+    },
+    {
+      "path": "app/(member)/05_learning/[id]/learn/page.tsx",
+      "sha256": "4b86535d433ee6562d983e20efe96a0cc410a1d25433f19dd681d7e5a7c57669"
+    },
+    {
+      "path": "app/(member)/05_learning/[id]/page.tsx",
+      "sha256": "dfeaa9a6c7dba00e417c6621a0a9f1d2aef486661b42f1d842726a8d3d0975df"
+    },
+    {
+      "path": "app/(member)/05_learning/categories/page.tsx",
+      "sha256": "ad3af4172c36b7463e9ad4909318695ed06e6279e08ceb13dbf3616eb42cc25c"
+    },
+    {
+      "path": "app/(member)/05_learning/courses/courses.module.css",
+      "sha256": "1cfa59c62196d33474d89c72f58505b605192dec62b10d336cb94435e857b9cf"
+    },
+    {
+      "path": "app/(member)/05_learning/courses/page.tsx",
+      "sha256": "c809abc63805e2393820a2b52ae0e487ae591de371d770f80f827b62826fde69"
+    },
+    {
+      "path": "app/(member)/05_learning/instructors/page.tsx",
+      "sha256": "c3a22726191360ce2c759a6f2a42a31177d5d2fd0335387d600241b34d969789"
+    },
+    {
+      "path": "app/(member)/05_learning/learning.module.css",
+      "sha256": "cc9efc8167d08c3e934e0059b4b0e197a6a79085162288baf82d070ec61d7cf2"
+    },
+    {
+      "path": "app/(member)/05_learning/mine/page.tsx",
+      "sha256": "3d59b11710ec54d55ae1e526c2f8f5f245ad425a99e05b409c4a45b4fca48d54"
+    },
+    {
+      "path": "app/(member)/05_learning/page.tsx",
+      "sha256": "50ab305f8805f0b71db172fa120e2c1ae85de3074546627d150b466ff52a284e"
+    },
+    {
+      "path": "app/(member)/06_careers/careers.module.css",
+      "sha256": "1e4b5d59b8704703c1c8f2749a5a6e9742fb60e33dfc8fc6db72a35a51e986c7"
+    },
+    {
+      "path": "app/(member)/06_careers/page.tsx",
+      "sha256": "395633730cae8fadf33f35cb917d003077a1ff6eee454a3ca3008d7c30cfa449"
+    },
+    {
+      "path": "app/(member)/07_tools/page.tsx",
+      "sha256": "e37a9166d1ca3eb17ef88d91f808c6ed53fc405781836ceb08ae7addec6915d4"
+    },
+    {
+      "path": "app/(member)/07_tools/tools.module.css",
+      "sha256": "cd472823ccad7867be17dbc904cbd6b4c248ee1dac4c9de0a7538776d5abca8e"
+    },
+    {
+      "path": "app/(member)/08_store/page.tsx",
+      "sha256": "7182cc16abe6d0d0457b99f8137d7114476f2f7230f8a6b2e18e886ef458dc64"
+    },
+    {
+      "path": "app/(member)/08_store/store.module.css",
+      "sha256": "e5ca1c5d3f078e657355c0665d50d07cb9e1f559c54c3c64a10d5b1a5901e1fe"
+    },
+    {
+      "path": "app/(public)/01_home/home.module.css",
+      "sha256": "f7a514f1ffd125052d1fafdb19e7ebd604733ad616938fb57cf77b2f8fb53cab"
+    },
+    {
+      "path": "app/(public)/01_home/page.tsx",
+      "sha256": "482adbf47de179c93d381906798652579b1c9709920f25a003fcac18664e56b7"
+    },
+    {
+      "path": "app/(public)/02_about/about.module.css",
+      "sha256": "9613b95a0952660b7a44bceae43cd63974fbebc3f9ae8f2d35598010ddd9e810"
+    },
+    {
+      "path": "app/(public)/02_about/committee/page.tsx",
+      "sha256": "a58274d4d1cad9c386534514948e41f8ec215bb8dfcec862f225771a2c7fa7f6"
+    },
+    {
+      "path": "app/(public)/02_about/council-directory/page.tsx",
+      "sha256": "6a15a0ebfb8c1b39b126894f412d648bdab15a6b10942ddba6913694c656059f"
+    },
+    {
+      "path": "app/(public)/02_about/hall-of-fame/page.tsx",
+      "sha256": "b82c5a0c24e71ef8f279e9b5686c054544639785a79ba8cc47bdb636764ff630"
+    },
+    {
+      "path": "app/(public)/02_about/history.module.css",
+      "sha256": "3ee6fe3ba1c57b7b1c88dd10142c693fd7ca8adeb2bf9bc9893f8c5739dcba74"
+    },
+    {
+      "path": "app/(public)/02_about/layout.tsx",
+      "sha256": "e905d2635eccbf8668f4f52aa31b878b3e04647591a7d53d29f36fc2725c7b7e"
+    },
+    {
+      "path": "app/(public)/02_about/members/page.tsx",
+      "sha256": "4dd1537bfa23de1f12f22ead3ed13e1985a73cbb84edcf7e4b1e243d5aec44e5"
+    },
+    {
+      "path": "app/(public)/02_about/page.tsx",
+      "sha256": "e9b522d48669f675e3d78bd31e31de9479c3b2724094c2b79a73525677bb725c"
+    },
+    {
+      "path": "app/(public)/02_about/policy/page.tsx",
+      "sha256": "ab935d34f74cfabbda8f6ba0892d1ec3ec56379c2de8c06dd924d09796e1d972"
+    },
+    {
+      "path": "app/(public)/02_about/registrants/page.tsx",
+      "sha256": "f65a3a37a0883f3e9e55c3759ceb3b4675c324e9ee5c5103ea02ce851f016dc2"
+    },
+    {
+      "path": "app/(public)/02_about/subpage.module.css",
+      "sha256": "e590a7d76afdd1d4eb2b8b5caf5d704cafabe3d257f23d93d01bd05a1c6a6ca3"
+    },
+    {
+      "path": "app/(public)/03_department/department.module.css",
+      "sha256": "a0b104b82dd2029faa76d46dea47db2f53869b19436c9629bd0e5fd16eb269f5"
+    },
+    {
+      "path": "app/(public)/03_department/page.tsx",
+      "sha256": "c11a21a8222662fb363fc01db90f16467846cfdfb200c036369b2e33c7432f6a"
+    },
+    {
+      "path": "app/(public)/04_service/e-service/[slug]/[step]/page.tsx",
+      "sha256": "91427018ed5db9fdde9665056b76fc56463cd9be40cf0f8075194320378c87dc"
+    },
+    {
+      "path": "app/(public)/04_service/e-service/[slug]/page.tsx",
+      "sha256": "4246039871de72e7afb5505b3e9ea1645d54400cc27df102bd62c87d5889f2f7"
+    },
+    {
+      "path": "app/(public)/04_service/e-service/page.tsx",
+      "sha256": "f2028e8be52041e2205c6f815ce15a17e5b2f4622410063d3a81e521de06a13a"
+    },
+    {
+      "path": "app/(public)/04_service/page.tsx",
+      "sha256": "c5de8fd76ae2dd25a77c9498846cc565f857b9f1458239fe8847bacfc104e53e"
+    },
+    {
+      "path": "app/(public)/04_service/people-project/[id]/page.tsx",
+      "sha256": "e4626fe492def287ab240f72268e16572e03453a3427132de060f3458fcc829c"
+    },
+    {
+      "path": "app/(public)/04_service/people-project/[id]/people-project-detail.module.css",
+      "sha256": "2bbb852c918863303cf52cb35f4a0b52bd5ea55b282222e40daed8ae191fd386"
+    },
+    {
+      "path": "app/(public)/04_service/people-project/page.tsx",
+      "sha256": "d17fd6e3cd0bdab3c8625d0c742e3aba26e2cbcb6bf41ad409d9e37470c554a9"
+    },
+    {
+      "path": "app/(public)/04_service/people-project/people-project.module.css",
+      "sha256": "a9026cdcb416e0f1b96fb6d8f952558a3f2e6bda6220cff17118f2d9ab2bdca7"
+    },
+    {
+      "path": "app/(public)/04_service/service.module.css",
+      "sha256": "19206d379f7f436ff46346b96cdad1f5a742cc085cc54a01b12f6cd51e1cbc44"
+    },
+    {
+      "path": "app/(public)/05_meeting/[id]/checkout/page.tsx",
+      "sha256": "c7b4c537f03543c452748c92b9e9e736302d1eacc4dfdfbd128914d78908b98d"
+    },
+    {
+      "path": "app/(public)/05_meeting/[id]/meetingDetail.module.css",
+      "sha256": "cc595a6a2f3c6a1842dfdbc03dea5a3ae442b26f62cac2a15f03963705e7f5f0"
+    },
+    {
+      "path": "app/(public)/05_meeting/[id]/page.tsx",
+      "sha256": "286c0ac64809a234df4734a728486a122b5e5a35ab4b2fd1f50667840563d037"
+    },
+    {
+      "path": "app/(public)/05_meeting/[id]/payment/page.tsx",
+      "sha256": "e0a1381a441a415b80f530199a6274820713700dba5ae5713e70cabf51582ffc"
+    },
+    {
+      "path": "app/(public)/05_meeting/[id]/success/page.tsx",
+      "sha256": "a54808b5a6960bc3b5a34657e36481581787fb1d167eb00b446d7be9bda9f9b6"
+    },
+    {
+      "path": "app/(public)/05_meeting/meeting.module.css",
+      "sha256": "0223f0c30defb0aa3cb44887376470c358a33118b286713c13dfebdfce962285"
+    },
+    {
+      "path": "app/(public)/05_meeting/page.tsx",
+      "sha256": "8ad6e6e7a490c7e9a75f94e911055e2796e9b8867f3d5ae459ef92abd95f60e1"
+    },
+    {
+      "path": "app/(public)/06_news/[id]/news-detail.module.css",
+      "sha256": "9cf347a0e7f4ea40ed05d57ae3e715034265ea10461c372d313a7fb558cbb78e"
+    },
+    {
+      "path": "app/(public)/06_news/[id]/page.tsx",
+      "sha256": "0a81da929506cf1381108df5a2bfb45de7600d3562dad48104afa492bbfb1b3c"
+    },
+    {
+      "path": "app/(public)/06_news/news.module.css",
+      "sha256": "e643306b624f6ef31ac9d420312ed31680253caaf58e253fee195d4f595490a3"
+    },
+    {
+      "path": "app/(public)/06_news/page.tsx",
+      "sha256": "4222ae8fe91ef894a772116245992383830cd6b0803e7087ef3a8d5360a85ffd"
+    },
+    {
+      "path": "app/(public)/07_laws/laws.module.css",
+      "sha256": "b721acc03971621d612907bb0f1829863bae071f7ca8b2ac7833136b0bf0ba18"
+    },
+    {
+      "path": "app/(public)/07_laws/page.tsx",
+      "sha256": "6ebe099f0724221eb4a43b1705eaaefc73470863f89aaa1b38b79a4149db24ec"
+    },
+    {
+      "path": "app/(public)/08_other-service/other-service.module.css",
+      "sha256": "020f21588e206d7dbb67cc207ba7e939980c545b6bd9b223b59663755ecb3e05"
+    },
+    {
+      "path": "app/(public)/08_other-service/page.tsx",
+      "sha256": "c02fff6240fdd764b7a3fd1faa16cd61d29115034a2b9c93a10464442353bc98"
+    },
+    {
+      "path": "app/(public)/09_contact/contact.module.css",
+      "sha256": "e3299877b92e2fbce88bdb8d1ed6073d7a2a45b0667ab173e6919832f0d37450"
+    },
+    {
+      "path": "app/(public)/09_contact/page.tsx",
+      "sha256": "701f38b68a9eaa816ad4de58c4ce7d8031655026e5eaee0cda46fdf4d523bef8"
+    },
+    {
+      "path": "app/(public)/10_license-search/[id]/page.tsx",
+      "sha256": "5596ec0269735f593ce9ea3fba1aec4d9cd8223fe8977862ae5ecc5e03b06b9c"
+    },
+    {
+      "path": "app/(public)/10_license-search/page.tsx",
+      "sha256": "d6071465ceeb01a6b35ac6904c955a7e59f3098d5b88ac4462a1d5a6c4f80af7"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/cancel/route.ts",
+      "sha256": "75a3209e5629cc438f053e8771c3d318a10f720ea74d24e4bba1d260f2457b72"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/certificate/route.ts",
+      "sha256": "3a9a8f762e043565ce0eb1e01fae3a79192f88440937db8e92dbde34389cd610"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/enroll/route.ts",
+      "sha256": "796fc798ef507ea9e73f4b1a904e0aed3a41cfbc0a0615d2370c8fd1dbf6d789"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/exam/route.ts",
+      "sha256": "7d367f9fd182f94cde2f04aea28d2fdb0c6493d8f569568c52f46ec62678bf97"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/order/route.ts",
+      "sha256": "5133989bb8890792f9f5ed01658f6914d8964448660e3671f1323c000637b751"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/refund/route.ts",
+      "sha256": "b3908fbecf3faeadcbb07b3c1735c754a8a6cf964690173adeff7f3161f026f1"
+    },
+    {
+      "path": "app/api/academy/courses/[id]/route.ts",
+      "sha256": "49e072e75a49b435d7aeb576d9045ffbcd681d35737329a9e736f36cbeb0b4ad"
+    },
+    {
+      "path": "app/api/academy/enrollments/route.ts",
+      "sha256": "e56df294f367cd8e422d0336d7facf13d617430a0e2d2be9e83cb146a564f01b"
+    },
+    {
+      "path": "app/api/academy/lessons/[id]/complete/route.ts",
+      "sha256": "d52022ee40729acf1f925ac694c57d52cc5b4f44152cda97d387a9a69254053d"
+    },
+    {
+      "path": "app/api/academy/upload/route.ts",
+      "sha256": "b3c29db0000f968e21d681d8c17170e5d54fcb4841faecb7cbdd1ad6e62007c5"
+    },
+    {
+      "path": "app/api/auth/pharmacy/login/route.ts",
+      "sha256": "29150e1d044e255365af2a8e78d92a1dcacf2acccd29defa70657b3309dc0a88"
+    },
+    {
+      "path": "app/api/auth/pharmacy/logout/route.ts",
+      "sha256": "15916a1a5de93226e6212e5409f963cc4f3a93783796c20c17a478dfd6dcb4ae"
+    },
+    {
+      "path": "app/api/auth/pharmacy/me/route.ts",
+      "sha256": "649e38f91f8bdf91cd6bd98a71429c039104061093ed947f5e18861aa3e80a15"
+    },
+    {
+      "path": "app/api/conference/[...path]/route.ts",
+      "sha256": "735bc0c96a08214065f6c05a7c21a9dc359f1023d3aac33a6b475dc8c480c161"
+    },
+    {
+      "path": "app/api/conference/session/route.ts",
+      "sha256": "1c45609793a1eb7df54136bc79dc9ab98a5ba53f7bd35a4b0f3b093525c3da1e"
+    },
+    {
+      "path": "app/favicon.ico",
+      "sha256": "3aeb432d01bbe8a069ddb8d54764e2c2add68f9a50c76109ce01d08220962dbe"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "6b8be57f1f38464aa05b2d2c409c000b88d631aa33436dc3914685b3460c8edd"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "d74481a2a254c319bacea1ccea94ca0ebcdc7f907c71099196a906b1bca7107f"
+    },
+    {
+      "path": "app/login/login.module.css",
+      "sha256": "b47eff4a21b1087eda6adf454857c102cc3fdfe4697d0116d84909eee2b51712"
+    },
+    {
+      "path": "app/login/page.tsx",
+      "sha256": "f9e67b4b4dee5e895050f63534db1e36ea7e8eef9f651213e999e3c61b9808e3"
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "61a48dd05b2edf316e7ae8ea2653021544041bc48b9038f3bf91aee66e02ae8f"
+    },
+    {
+      "path": "components/member/careers/CareersBanner.module.css",
+      "sha256": "ccac173a3897eb95f78fb6d3e31032ed30bd8086c9491d40f3f82b2f8ffda3ba"
+    },
+    {
+      "path": "components/member/careers/CareersBanner.tsx",
+      "sha256": "577c56e0e4ed24bb4d5c82b6012d58aa59fb2bb8c4b48a3f860428c11f7cbe60"
+    },
+    {
+      "path": "components/member/careers/JobCard.module.css",
+      "sha256": "e7ba116609aec85ad69473aa31abed51014646aa7cfcd584fd15c52a9188eef6"
+    },
+    {
+      "path": "components/member/careers/JobCard.tsx",
+      "sha256": "7d34bb7904eaae85dc489d5fe5e956991993a0fd0f2eec0fadd083b00a40ec9a"
+    },
+    {
+      "path": "components/member/careers/JobFilters.module.css",
+      "sha256": "ff275a74602608be9bd61d7e639c14e1af9342130c0dccc032fdd6a8a972c3ed"
+    },
+    {
+      "path": "components/member/careers/JobFilters.tsx",
+      "sha256": "deb25721026bbff3949f9be09107b0260aadc248a2ef5ead80d21b498871d44a"
+    },
+    {
+      "path": "components/member/careers/JobListing.module.css",
+      "sha256": "d2843de729b687f89db6b4fd5ef7ceef52012f6a0b7b112310c8595a66927439"
+    },
+    {
+      "path": "components/member/careers/JobListing.tsx",
+      "sha256": "0aee279c2281e404f2703921e5b04b95e35f2b81de26f9c0a0c27f4a5e6712fe"
+    },
+    {
+      "path": "components/member/careers/JobSearchBanner.module.css",
+      "sha256": "7f0238a1b54e618e7c3541eeb8922d85a49f804699bf4123839476fc096a4260"
+    },
+    {
+      "path": "components/member/careers/JobSearchBanner.tsx",
+      "sha256": "7f90110209c218080dab3af7453005986e5c10a6403dfadce84a415cddd2bb6d"
+    },
+    {
+      "path": "components/member/home/MemberBanner.module.css",
+      "sha256": "62836ec350ce84ac433b1df74dbf1a9239d19125b3177e30ae2a82d8ac2ea9a3"
+    },
+    {
+      "path": "components/member/home/MemberBanner.tsx",
+      "sha256": "68a159049e5d17d043bd8f27e2e6f162077b38ba65e8a1b4112aefe10f008ab3"
+    },
+    {
+      "path": "components/member/home/MemberHighlightSection.tsx",
+      "sha256": "17fbc671dd9e04d412d0faf1ed27aa177e5cb77e3b8f8b41cb963781556b0cda"
+    },
+    {
+      "path": "components/member/home/MemberOnlySection.tsx",
+      "sha256": "3db6bb3a02b782944a9211beae9ca1698e72d83828693531cda1a86106bd0c7a"
+    },
+    {
+      "path": "components/member/home/OtherServiceSection.tsx",
+      "sha256": "3482d5cec9c83f35c1c8e818728187766a7b33463b8f36d3ff85502e16d16d30"
+    },
+    {
+      "path": "components/member/learning/ExperiencedInstructors.module.css",
+      "sha256": "8eb1519953c2364e93502135e4e3d20826a4a378080286ff05f611d988ab35ab"
+    },
+    {
+      "path": "components/member/learning/ExperiencedInstructors.tsx",
+      "sha256": "0d03a7f4b2163f89b1edb070e576d1d6c832f21d5f5a6ec099a8adf93600b132"
+    },
+    {
+      "path": "components/member/learning/FeaturedCourse.module.css",
+      "sha256": "dcdef9efc3c19eaac557ec8a4337f396f5341269748d4e3979d3807435cbef3c"
+    },
+    {
+      "path": "components/member/learning/FeaturedCourse.tsx",
+      "sha256": "2e94b49a5553d11a524edb9c7c9e97d8f771336077f752ab15e186bbe5fb2961"
+    },
+    {
+      "path": "components/member/learning/LearnerReviews.module.css",
+      "sha256": "45acec4273dbfb99d3a4de3bb626f8cce1dad59696044fab2c2a3677e41a17f6"
+    },
+    {
+      "path": "components/member/learning/LearnerReviews.tsx",
+      "sha256": "ceb1350913c03159ee8320b136e0f57cfbfd087df1ce2dd719b650d9b983af98"
+    },
+    {
+      "path": "components/member/learning/LearningBanner.module.css",
+      "sha256": "99a65bf6465a5931c88c48e74545ab2af32864ddf38de96574f9c552b2900133"
+    },
+    {
+      "path": "components/member/learning/LearningBanner.tsx",
+      "sha256": "48da5ab2b9cebb2111bb2753db70e06d1ce0f97836ccec50515bcb9f4a4619e4"
+    },
+    {
+      "path": "components/member/learning/LearningStats.module.css",
+      "sha256": "4a4e5019be9f9a1814c991dc34519697d8379bb99ca79b1293d3417e7b4cd36f"
+    },
+    {
+      "path": "components/member/learning/LearningStats.tsx",
+      "sha256": "651c20242dc48528c9c6dce498da1f6bd35fdfdb11783c632d483b747cff844b"
+    },
+    {
+      "path": "components/member/learning/PopularCategories.module.css",
+      "sha256": "c28c05106427c1fdd7548c6365a890decae1f140232cd4879876b60dfd71d005"
+    },
+    {
+      "path": "components/member/learning/PopularCategories.tsx",
+      "sha256": "abcb7080aa5624f064d66bd71e5733434d3a3f64f4a70bb5f1601aeed04df813"
+    },
+    {
+      "path": "components/member/learning/PopularCourses.module.css",
+      "sha256": "4b7ae46ee69145191d9aeeb1eda031c3eadb7ea82536dce331f3e6941a9a88ec"
+    },
+    {
+      "path": "components/member/learning/PopularCourses.tsx",
+      "sha256": "adcf4bb6d0da40cbc9cedf08d8a123713fce10d7baf0f6eb60f71fb95473dd53"
+    },
+    {
+      "path": "components/member/learning/courses/CourseCard.module.css",
+      "sha256": "71eeadf3d7f91a49190c86e8fbc4480eb0c006784f700afe83b95ac4eb4a2492"
+    },
+    {
+      "path": "components/member/learning/courses/CourseCard.tsx",
+      "sha256": "adc67161100f11e91efaf15c57ceb2bf443ae61a5f5ec94f047722f4dff1d9a8"
+    },
+    {
+      "path": "components/member/learning/courses/CourseFilters.module.css",
+      "sha256": "1aa0172bf28015ee9eb5b412917e9dcd22baf3e44c5728718a7d4b34d72ae1f1"
+    },
+    {
+      "path": "components/member/learning/courses/CourseFilters.tsx",
+      "sha256": "adf929e03b6ccb18dae76de5ef6390da8602469a8d52222f9e37cb0af88979f8"
+    },
+    {
+      "path": "components/member/profile/CertificateSection.tsx",
+      "sha256": "a60a1abfde35b0bdcca69a9f2d0703ee95357e890149d19ea42889ece85f0a5f"
+    },
+    {
+      "path": "components/member/profile/CourseSection.tsx",
+      "sha256": "7255d0be72a70d3361604004547b6b3749b460175acac3839867a89e143b441e"
+    },
+    {
+      "path": "components/member/profile/CreditSection.tsx",
+      "sha256": "d282ca3bc496dd6da78b58ae2b98eb2ac553abe1b01be16ce4ed2766211abaa5"
+    },
+    {
+      "path": "components/member/profile/EditProfileContent.module.css",
+      "sha256": "b871d5fbb9f0790559f7e540e0cdc8ff44a1a49e79c3a87caf2ed1c94ddfa397"
+    },
+    {
+      "path": "components/member/profile/EditProfileContent.tsx",
+      "sha256": "b0352b3d555bfb81be142cc2f0804b90c58c60050cd9fe5115494796d3dbc1c1"
+    },
+    {
+      "path": "components/member/profile/MeetingSection.tsx",
+      "sha256": "59835d4b0837ef0a002ebbbf15140f7ca408c8a67bd0d995825c2c48688b8953"
+    },
+    {
+      "path": "components/member/profile/PassportProfileContent.module.css",
+      "sha256": "273923e5d7bc2609879f72d91287ea71f2524505ee3c543a9ed1f969eb70ed71"
+    },
+    {
+      "path": "components/member/profile/PassportProfileContent.tsx",
+      "sha256": "dcdf5bf3ea929b60e9974fe5f673b76137a05d4a0f4175d7c43373a758b67f07"
+    },
+    {
+      "path": "components/member/profile/PharmacistInfoCard.tsx",
+      "sha256": "e0572d2924b984b9ea0399d3d4ca496bcc600d65c5d7522207dcac597b9025fe"
+    },
+    {
+      "path": "components/member/profile/ProfileBanner.tsx",
+      "sha256": "737b2b2bd586b84e7e44d1336b6e2d4f32fe9e242a894d166557a532fd5e2185"
+    },
+    {
+      "path": "components/member/profile/ProfileComponents.module.css",
+      "sha256": "438a3336f0778f800902c5cb9f7f4a66a5bf95ee8241919d73ece807d3b256b1"
+    },
+    {
+      "path": "components/member/service/EServiceBanner.module.css",
+      "sha256": "a2eab44bd93c77b2bd3d67cce4094b91cd67a296e66c40a497787bdd79d82b65"
+    },
+    {
+      "path": "components/member/service/EServiceBanner.tsx",
+      "sha256": "fbe8d0276cef0dbd4c136457a7c0a594dda725200e6b7ebfd8de09a63f89905c"
+    },
+    {
+      "path": "components/member/service/PopularServices.module.css",
+      "sha256": "6d7247aa8e6a5cbc1b97d049417435ede05c0946e4cc9de41ccd0fc9b118e54f"
+    },
+    {
+      "path": "components/member/service/PopularServices.tsx",
+      "sha256": "67ee03183a07be50159e4c7d42a88b32a668807622552f2dcfb5544b45841d5f"
+    },
+    {
+      "path": "components/member/service/ServiceList.module.css",
+      "sha256": "e02412cc9f4501f2871f9634f63ca37c137dd9f5ea656233f1454a134731455a"
+    },
+    {
+      "path": "components/member/service/ServiceList.tsx",
+      "sha256": "caa1c11a3e3a96faa0b29bdc260778b394ce2a147f30123d1a6c9d76c5363b94"
+    },
+    {
+      "path": "components/member/store/CategoryHighlights.module.css",
+      "sha256": "1d9c1f1ca468aa808dd2abc7af92b7385e2161379e586d539d6d12d40c9ebe99"
+    },
+    {
+      "path": "components/member/store/CategoryHighlights.tsx",
+      "sha256": "657b247c99170fd9d7e02f8a3d49a01aaf901c2bb196b7b0fc3bc229649476c8"
+    },
+    {
+      "path": "components/member/store/ProductCard.module.css",
+      "sha256": "c9b693bd9cb2bd51972944c4e079734f10883d4413cbbc8e44f5be61b46b5cb0"
+    },
+    {
+      "path": "components/member/store/ProductCard.tsx",
+      "sha256": "5fd4641c586a6707e501e1cd62f752e6f8b216811f4bb642c58444a035e7134b"
+    },
+    {
+      "path": "components/member/store/ProductGrid.module.css",
+      "sha256": "b119326abcd686b26fcf123b4bcd29335ab669c1c519dd1852d9459a10b191be"
+    },
+    {
+      "path": "components/member/store/ProductGrid.tsx",
+      "sha256": "4bd855789818a65e75700513c850d51f1e407dfa9c2fec5a85e574235b45b5e6"
+    },
+    {
+      "path": "components/member/store/StoreBanner.module.css",
+      "sha256": "a20b7186b08bfb035302a8647db155e4b7cd6ede72858e9cf9a79b11e6794d20"
+    },
+    {
+      "path": "components/member/store/StoreBanner.tsx",
+      "sha256": "8f6d6e5e27249cffe0a02633ef0b0af4537542b1d518ca60cb3bffcc1650eef9"
+    },
+    {
+      "path": "components/member/store/StoreClient.tsx",
+      "sha256": "e2e9b286e5450503ca1823dc282384dea0af585061f92db21e6f02fdf03d322c"
+    },
+    {
+      "path": "components/member/store/StoreFeatures.module.css",
+      "sha256": "682dafe73c7114c5ac0327f0417303e93a284670f1cbb211ddda43b29a8dc23e"
+    },
+    {
+      "path": "components/member/store/StoreFeatures.tsx",
+      "sha256": "3f665c6b9a2af7fee4f9172e3f38904add827e1a4fe14405b8eed9dbf97cda67"
+    },
+    {
+      "path": "components/member/store/StoreSearch.module.css",
+      "sha256": "d590db24bd33c764ccfca66cb84eb9fdc842427e36f67086de51fbd7d12d1e9b"
+    },
+    {
+      "path": "components/member/store/StoreSearch.tsx",
+      "sha256": "dca9e359c7c5ca78e9943ec8de2d1471dce5bff7d3dc5436f50976c0b88a0eb6"
+    },
+    {
+      "path": "components/public/01_home/BannerCarousel.module.css",
+      "sha256": "5571c782223d70f0fe7fef50b07785b886f8f5bdee8359c58c4f42a4fec6972e"
+    },
+    {
+      "path": "components/public/01_home/BannerCarousel.tsx",
+      "sha256": "5a85f6aff59d8f34b8b53eb86865a7e55add25e5b82dff8a1c14290f5154fac0"
+    },
+    {
+      "path": "components/public/01_home/HomeMeetings.module.css",
+      "sha256": "09af9b427a7f7bf08b78dd1eaf1e334fd47dc9dda3cfc59c34c98534a01003c2"
+    },
+    {
+      "path": "components/public/01_home/HomeMeetings.tsx",
+      "sha256": "fca8224b44ce1f6ca9760ba4cc349059799b4f548783b09482dd4eda18518d99"
+    },
+    {
+      "path": "components/public/01_home/HomeNewsSection.module.css",
+      "sha256": "8a17a154b7bae1a36ed0d4605eee3748916a8ef0fe86cada2d644d15f0e592e9"
+    },
+    {
+      "path": "components/public/01_home/HomeNewsSection.tsx",
+      "sha256": "39311a821ee43bece78b48e873133e3ba9381fcbd038fc4182073aa0440bdd50"
+    },
+    {
+      "path": "components/public/01_home/HomeSections.module.css",
+      "sha256": "d5c8d77d25214091f24fdc36a5ffe0c13ad1aa51dccc93a436a4e7cccddd5386"
+    },
+    {
+      "path": "components/public/01_home/HomeStats.module.css",
+      "sha256": "9daf628c7c2d5394534c85985640968197722c803003eb4dd17103fc841d9d83"
+    },
+    {
+      "path": "components/public/01_home/HomeStats.tsx",
+      "sha256": "a341ebaeb8852e19869302445d4b6bb86dfcfd66806e84025585ad4abeacbeb9"
+    },
+    {
+      "path": "components/public/01_home/LicenseSearch.module.css",
+      "sha256": "cdeb64f411e9759f7e3797eb31cdc39d36cfea9f4f5d67380f88bb16a4c89c08"
+    },
+    {
+      "path": "components/public/01_home/LicenseSearch.tsx",
+      "sha256": "815b9746a309658367200e20e8c734929ccfec3ffecf73c4f3a2864d6c904fff"
+    },
+    {
+      "path": "components/public/01_home/LicenseSearchResults.module.css",
+      "sha256": "8d7cb1e0b4f5eb4063fafa7ecf5e7eecdad2e7644ebcf22b8261eb4dae29c46b"
+    },
+    {
+      "path": "components/public/01_home/LicenseSearchResults.tsx",
+      "sha256": "ab6d941073254e2e14343857c2e35d9036c35bb2a523f2806496715e4a71f75c"
+    },
+    {
+      "path": "components/public/01_home/PharmacistDetailCard.tsx",
+      "sha256": "7d8e011de1eee6294612d92de7147fe61dd8e049f23f853dfb9b6bec13526751"
+    },
+    {
+      "path": "components/public/01_home/PharmacistRolesSection.tsx",
+      "sha256": "e900d731e77f7dddae7b5603a4e78f9912ed30307ea69bc7e51118607309830d"
+    },
+    {
+      "path": "components/public/01_home/PharmacistServiceSection.tsx",
+      "sha256": "7d0eb8b6937f406770e91c78ac6417c787e21e26fb6398eac6bfc1a090bfd796"
+    },
+    {
+      "path": "components/public/01_home/PharmacyCarousel.module.css",
+      "sha256": "22966060b5156149cfd40a2e784bb58aceb290ce824090b29bc6d43c51148ea6"
+    },
+    {
+      "path": "components/public/01_home/PharmacyCarousel.tsx",
+      "sha256": "dc058e1e3c5bfa9101959deb585244c871c6542eb281928b717b13275581d324"
+    },
+    {
+      "path": "components/public/01_home/PublicOnlySection.tsx",
+      "sha256": "f51a26500c508d730c11bbf43066280e9b8ed5e011f0be18c45e9ee093fbea4c"
+    },
+    {
+      "path": "components/public/01_home/PublicServiceSection.tsx",
+      "sha256": "6ed020d42fc296c97155deca1d4dea17cf19e131889f17308bd7cf60bef0f207"
+    },
+    {
+      "path": "components/public/01_home/SplashScreen.module.css",
+      "sha256": "62e196f7acf654e0d93fc7bd71f66d43bbf6dffd55b84672561dc21e03332170"
+    },
+    {
+      "path": "components/public/01_home/SplashScreen.tsx",
+      "sha256": "8a3a42c98f159225aee3f09caef3731bad752a62d9686b04501e41639c6a5fef"
+    },
+    {
+      "path": "components/public/01_home/licenseSearchShared.ts",
+      "sha256": "1d0b3eeaf831cab8af9f086ffcf5daf3c408aef10ef3def915b7a988969c9941"
+    },
+    {
+      "path": "components/public/02_about/AboutSidebar.module.css",
+      "sha256": "6f4e86c705b833dd472d5b6f28e1d695ac8861d12e58ee7337f9f2bbdb7da195"
+    },
+    {
+      "path": "components/public/02_about/AboutSidebar.tsx",
+      "sha256": "532cb39dc700dc406b0c5eab24b2e5c07d55ea0288f54bed287fabcf76695649"
+    },
+    {
+      "path": "components/public/02_about/committee/CommitteeContent.module.css",
+      "sha256": "87dca4ce404bc978faa95510b9b5ab037bece61b5b3841fb66047d999d2eecf4"
+    },
+    {
+      "path": "components/public/02_about/committee/CommitteeContent.tsx",
+      "sha256": "03cf1134f539816cdc086310355314f421b753acd626a4c583bd7551088a77b2"
+    },
+    {
+      "path": "components/public/02_about/council-directory/CouncildirectoryContent.module.css",
+      "sha256": "dda9befdcd126f6f0737f321ebfbc9657f45a9f882aaa2b0de0f68f6a11e0833"
+    },
+    {
+      "path": "components/public/02_about/council-directory/CouncildirectoryContent.tsx",
+      "sha256": "0f68836f84a8349bcddd77b1b09d28acec6acb8c10b2141c00c967c49e69a6f6"
+    },
+    {
+      "path": "components/public/02_about/hall-of-fame/HalloffameContent.module.css",
+      "sha256": "eca217428ecfe75912ba69cebce08711303c75212a3c4d09c5792ae21a65064b"
+    },
+    {
+      "path": "components/public/02_about/hall-of-fame/HalloffameContent.tsx",
+      "sha256": "f11d1de65fd0fdd9ce1bc5fee02bb470554e10e41d9c26ff7fce112448f161a5"
+    },
+    {
+      "path": "components/public/02_about/members/MembersContent.module.css",
+      "sha256": "8657766a6e4f54f6c26f81b531302c7c1094d4abf83967c417df926155f8ad57"
+    },
+    {
+      "path": "components/public/02_about/members/MembersContent.tsx",
+      "sha256": "8a5cdca1373d404e1c8ab96c94fd291ac92b2183cd617d1f147da3065afd27f5"
+    },
+    {
+      "path": "components/public/02_about/policy/PolicyContent.module.css",
+      "sha256": "cb6847778b422bfd0122ca5f7a7c298f927cbd51aad7148980d067d7a3332fd9"
+    },
+    {
+      "path": "components/public/02_about/policy/PolicyContent.tsx",
+      "sha256": "6cbb95eb81568683f3986a99e2b882cfcab20bd50fc8a2bf009b87717a083553"
+    },
+    {
+      "path": "components/public/02_about/registrants/RegistrantsContent.module.css",
+      "sha256": "2ab43ed047a45029389909fee2c9c656449b1c6756a3d0017d98f39d3e839a2b"
+    },
+    {
+      "path": "components/public/02_about/registrants/RegistrantsContent.tsx",
+      "sha256": "57ba4b759eb5c6754e5374713be93edd581ac7fc0960d7b1410def6a57a7623e"
+    },
+    {
+      "path": "components/public/02_about/registrants/registrantData.ts",
+      "sha256": "6b55acbbfb1079d55bdec243a5c113beaaaf7b96eb67c004bc62a46190715618"
+    },
+    {
+      "path": "components/public/03_department/DepartmentAgencies.module.css",
+      "sha256": "6243e7d0c83ddb01d8ee2c7cde1a4655cad0cbd47eeb59b29ec2df831c128605"
+    },
+    {
+      "path": "components/public/03_department/DepartmentAgencies.tsx",
+      "sha256": "923b319fcea50caa9629c2407ae020824ea270d3f136e0903be09ffec5b1ca88"
+    },
+    {
+      "path": "components/public/03_department/DepartmentColleges.module.css",
+      "sha256": "a466028d90eb329c3baf27d913a4ec693aa19ed780cc9176bd32bfcc16e9a236"
+    },
+    {
+      "path": "components/public/03_department/DepartmentColleges.tsx",
+      "sha256": "44508620eba3af4b2c23bdfd992ddcb88658eb528c02060b546f02611ba9d785"
+    },
+    {
+      "path": "components/public/03_department/DepartmentInstitutions.module.css",
+      "sha256": "547ced47bb580cc40922e5b62deefc5d3bdb0721ba086cfccadb3a5b5b6bfcc3"
+    },
+    {
+      "path": "components/public/03_department/DepartmentInstitutions.tsx",
+      "sha256": "edad47fe6be25884136baf211a8319c59d4fa308f96c6971d1c5835b40de65d5"
+    },
+    {
+      "path": "components/public/03_department/DepartmentNetwork.module.css",
+      "sha256": "d0eb02d7c5031b096fc5b6c71cbbdcbfb843a3d3e851af964575d5145b4e4f77"
+    },
+    {
+      "path": "components/public/03_department/DepartmentNetwork.tsx",
+      "sha256": "1c8b77c1f9987d3bb8d210d23f085c7a3004d6a20de3d723e4aefa9d4b39113b"
+    },
+    {
+      "path": "components/public/03_department/DepartmentOther.module.css",
+      "sha256": "7ef65110091bd9fececaa9ef027cfd99ba4426f249d23fdd74ed9156ce1df7f7"
+    },
+    {
+      "path": "components/public/03_department/DepartmentOther.tsx",
+      "sha256": "2aa7fb208687a4bf41374c497cad4435fb0bcb856e6640d105093aedbef81970"
+    },
+    {
+      "path": "components/public/03_department/DepartmentStats.module.css",
+      "sha256": "7575c8ddcc9889c3f3c7a6c97e8a6e08263486aeaa16cf84ce07abaed333aed3"
+    },
+    {
+      "path": "components/public/03_department/DepartmentStats.tsx",
+      "sha256": "a34d505439f717a21f4f4ea54bec7e0afd06261490e94a49bf80d4c910fc7348"
+    },
+    {
+      "path": "components/public/04_service/PublicServices.module.css",
+      "sha256": "8ff81947bf4e6328878fa7886430a49b98cddc8eefe580cd7d5f188090a68b3c"
+    },
+    {
+      "path": "components/public/04_service/PublicServices.tsx",
+      "sha256": "3f8552e826d65c64bc83c9fc97916384a7f7dc84d485981baba47ed9dbe69446"
+    },
+    {
+      "path": "components/public/04_service/ServiceBanner.module.css",
+      "sha256": "5bc18f073b9dd96dedd6b31ab22ddb041afdfae2589a9c5ff2d64fda90dbf294"
+    },
+    {
+      "path": "components/public/04_service/ServiceBanner.tsx",
+      "sha256": "ecab00380507332fbfa8c979fc27a0f0f08a9dc6ef2bfddb0f0b3b790f33c04e"
+    },
+    {
+      "path": "components/public/04_service/e-service/EServiceShell.module.css",
+      "sha256": "1a8ac7a267f65c66b459546acee313f5e01f19f8049642dfdda8db4d7f821286"
+    },
+    {
+      "path": "components/public/04_service/e-service/EServiceShell.tsx",
+      "sha256": "cdf2504ff2a2c36ae2b7bb909943d227097cfaf0df462bb78ca97b2eaecef687"
+    },
+    {
+      "path": "components/public/04_service/e-service/EsCheckbox.tsx",
+      "sha256": "d8816de9f9cb3b25fe1c27fc9bda2032f3e791cc08b761b8abde82ff0a84a4e8"
+    },
+    {
+      "path": "components/public/04_service/e-service/eServiceConfig.ts",
+      "sha256": "4dd9fbbc7217f0f77a1bee3921bc9608c85cb3b07e1198fa52fc8f4794ceaa08"
+    },
+    {
+      "path": "components/public/04_service/e-service/mockData.ts",
+      "sha256": "b088c139e6e1ef50545439603a77bb612be209af272f4ffb30cb42192c084335"
+    },
+    {
+      "path": "components/public/04_service/e-service/modals.tsx",
+      "sha256": "a37f139f02d5e7111aa97816846a19394b6529596b84cde913f8a993579418eb"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/DeliveryPage.tsx",
+      "sha256": "9e9cbe246022c602aa9050280930352431c1267072515d4c9e1f262d0d02dae6"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/DetailPage.tsx",
+      "sha256": "0a57fee6524b60285f2c4437bc3245f9bdf3fa4a92e7c928f64e84cf5f9ea4fb"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/HistoryPage.tsx",
+      "sha256": "203aaaceec75563a480cfd3f5490e38c791105241ebead4dda239e74bab7d7e2"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/PaymentPage.tsx",
+      "sha256": "d335cc9f02ff0561304fe5760a665b14bcc6f4f1949195e287d391e44a504e81"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/PaymentStatusPage.tsx",
+      "sha256": "886cec72ddb0a200ec7f83134ee55ba265be01edda1d15b8492d04b27d025382"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/Sap22ApplyPage.tsx",
+      "sha256": "042296fb34df4bb071a9ecb2414d142e5aba07cff3a31cc1a66525a5996ebd6c"
+    },
+    {
+      "path": "components/public/04_service/e-service/pages/Sap33ApplyPage.tsx",
+      "sha256": "90138212aafe96a104ea8cf657559af3df183cd5042e7e8290ad4dce259692dd"
+    },
+    {
+      "path": "components/public/04_service/e-service/selectionStorage.ts",
+      "sha256": "e78ed64b0f2dbeca64a30c311699bec292a5fb7159edcd06e5d97226640da91f"
+    },
+    {
+      "path": "components/public/04_service/people-project/PeopleProjectCard.module.css",
+      "sha256": "1ea4c4770c991155851f002cf585bb1ccff8426a22c0fa95d3a6f1671da900f6"
+    },
+    {
+      "path": "components/public/04_service/people-project/PeopleProjectCard.tsx",
+      "sha256": "6cc93c8b161b186c4d85c135fb5b3df024f847ae90247e6e1b14044bb7b752f2"
+    },
+    {
+      "path": "components/public/04_service/people-project/PeopleProjectContainer.module.css",
+      "sha256": "fb112e7823c870bb7f5b2bb2a82f8f3c13427841a35b82e1980f5f6f8331d73d"
+    },
+    {
+      "path": "components/public/04_service/people-project/PeopleProjectContainer.tsx",
+      "sha256": "31862a3801700cea3827585115000cd0e4aac88137e21084fc3b37ebd524c15e"
+    },
+    {
+      "path": "components/public/05_meeting/MeetingBanner.module.css",
+      "sha256": "87cb185375a5f75e44d9d8df66ec8fccd108d371c0a7fd6698c8206ec79fcfbd"
+    },
+    {
+      "path": "components/public/05_meeting/MeetingBanner.tsx",
+      "sha256": "697d516e13a807e0d734f962ba50a099a3ea70d2b71eadf6e59bc6997f5a7995"
+    },
+    {
+      "path": "components/public/05_meeting/MeetingList.module.css",
+      "sha256": "4819edf3b15f8032ba07506cafa83bad381aced7b7ec275229f413a813b03234"
+    },
+    {
+      "path": "components/public/05_meeting/MeetingList.tsx",
+      "sha256": "7716c996d8bf0777869f59fcb010cdc188ed7f7886b3ced03ca571ebee9253fc"
+    },
+    {
+      "path": "components/public/05_meeting/MeetingPagination.module.css",
+      "sha256": "a0136eb30b6a71d8cbd74c80413690e38f9156035bad6cc6176cd858b9bc3dcc"
+    },
+    {
+      "path": "components/public/05_meeting/MeetingPagination.tsx",
+      "sha256": "bfe25afc8aad718a4600a45222dd6ef92fdd927604a3e5dfdd80aa6d831886e2"
+    },
+    {
+      "path": "components/public/05_meeting/RecommendedMeeting.module.css",
+      "sha256": "e0434eed7f9a79a90d3073ebad5c8d72bc7a3ab6c39bf716e71f2e6f35c57292"
+    },
+    {
+      "path": "components/public/05_meeting/RecommendedMeeting.tsx",
+      "sha256": "f79e3343848f95a6c6ad927792a1110ab530322e7c4cf7c33725fa27ce13c6c1"
+    },
+    {
+      "path": "components/public/05_meeting/checkout/CheckoutPageClient.tsx",
+      "sha256": "6ab3e07aa1887345327f28970c18c375143ebb95161914788627504045ea660f"
+    },
+    {
+      "path": "components/public/05_meeting/checkout/CheckoutProgress.tsx",
+      "sha256": "0a883af06f594303d77e5c6486b587cbbc5e956c0bb9a5cf889a59b2849e0ab6"
+    },
+    {
+      "path": "components/public/05_meeting/checkout/PaymentPageClient.tsx",
+      "sha256": "3be0ff42ef2337539b2aa702b9e5c4c8a528edcc46c66055608f9c5383af7f1f"
+    },
+    {
+      "path": "components/public/05_meeting/checkout/SuccessPageClient.tsx",
+      "sha256": "1170c48f447ab84fe7ba31834a0a04ee36fffb6809f518b04b98c17cb93fd10a"
+    },
+    {
+      "path": "components/public/05_meeting/checkout/checkout-flow.module.css",
+      "sha256": "ade3d46e16bb22e2407191672aad02465105e1fa89a74d46491eaa0eafd1b378"
+    },
+    {
+      "path": "components/public/06_news/FeaturedNews.module.css",
+      "sha256": "5fb945670e9e95f95c960eb492e68608f19fb3d5a3e88b3bab8d140579dcc57b"
+    },
+    {
+      "path": "components/public/06_news/FeaturedNews.tsx",
+      "sha256": "41f881513fea844981791815bf20d40e7fe8ec434187bdc78a7560fe4104ece9"
+    },
+    {
+      "path": "components/public/06_news/NewsCard.module.css",
+      "sha256": "b15c9805830a98a2d8819df8c4639415f1a1c6ea0128a47f8f31c4e757389b1e"
+    },
+    {
+      "path": "components/public/06_news/NewsCard.tsx",
+      "sha256": "a37e6bad492ad9c2abb70880d110f36eece4b43666c883ee63ba21650effdbd5"
+    },
+    {
+      "path": "components/public/06_news/NewsContainer.module.css",
+      "sha256": "d41877bfd0d1f14e93df62cf44cd3e71c1875ba4ecf029acf6332be0ab09bb83"
+    },
+    {
+      "path": "components/public/06_news/NewsContainer.tsx",
+      "sha256": "e7afb6e646a7a1348b4bd44aabbd92ae38d1a48f14cc9a20ff458aee4a4d2dbe"
+    },
+    {
+      "path": "components/public/07_laws/LawsContent.tsx",
+      "sha256": "ef54b187715fc88fd34c5396558c7eded411160a378640c2b8ef07051420f767"
+    },
+    {
+      "path": "components/public/07_laws/LawsList.module.css",
+      "sha256": "09f60ff5fe94d6d89f14c0d3fed87871ada218aec43f83ce40b99f5f5e3c9791"
+    },
+    {
+      "path": "components/public/07_laws/LawsList.tsx",
+      "sha256": "c84c24d0d49ca7d86753d08ac72228ff0a2fc78eab44592b9cac9f8b3a8310c8"
+    },
+    {
+      "path": "components/public/07_laws/LawsSearch.module.css",
+      "sha256": "d80cead9d51ad67378da14753ad1b5976ddc14d392b0fbd5d327ddbe3dff5c06"
+    },
+    {
+      "path": "components/public/07_laws/LawsSearch.tsx",
+      "sha256": "035d043787ae9c9500a991e411900758e6618c74f7f1a3f83196ed0c697561f7"
+    },
+    {
+      "path": "components/public/07_laws/LawsSidebar.module.css",
+      "sha256": "6228477e20137549a81243474bafda33a72c1acf39180f8c7d4cebeae1bd8c91"
+    },
+    {
+      "path": "components/public/07_laws/LawsSidebar.tsx",
+      "sha256": "0b06e265c0b71a85acbd51710e2ea4a6788acbfa2a506d94e83e6b97e32bda19"
+    },
+    {
+      "path": "components/public/08_other-service/DocumentSearch.module.css",
+      "sha256": "38b8d816e6a766c158ebc31d7e4bebfba307dbdf265f1b61e10a87e35550ba77"
+    },
+    {
+      "path": "components/public/08_other-service/DocumentSearch.tsx",
+      "sha256": "608c05f07be25ed01d10b122eb175ca32cc44f82a84313ba49390982a663cded"
+    },
+    {
+      "path": "components/public/08_other-service/OtherServiceContent.tsx",
+      "sha256": "03820f66a6af09fe79eae31faf515d9e0e722ac106e0cbd234ad1fcd82555792"
+    },
+    {
+      "path": "components/public/09_contact/ContactContent.module.css",
+      "sha256": "a64b3829744182e976a2784fcc07230ce9696757ed5ac1e226ab299e7d80e8d4"
+    },
+    {
+      "path": "components/public/09_contact/ContactContent.tsx",
+      "sha256": "f02bda307dd59395494238acc7e0a41295038665d915931b9d8c0ef528dba759"
+    },
+    {
+      "path": "components/ui/AppHeader.tsx",
+      "sha256": "72f1840d458f94570d6ce50b5ae190bf7efdf1caf68019a546801b206c24512d"
+    },
+    {
+      "path": "components/ui/Badge.tsx",
+      "sha256": "9c6b138edaf975f90e959aa80a8c2e56e75e9d2d11b7f8e1d2a79a2fd095922e"
+    },
+    {
+      "path": "components/ui/CarouselButtons.tsx",
+      "sha256": "aefd813ffaf61c2407ada1d8644ec994d63e84cc31fa4ca8202d76843f100d56"
+    },
+    {
+      "path": "components/ui/Container.tsx",
+      "sha256": "bc8f5531b72c175ab8a849e4ea9cf3b100211ee0485073a79824bec988e09561"
+    },
+    {
+      "path": "components/ui/DotPagination.tsx",
+      "sha256": "7740e210f32593e51dc708626dae21a0f7b08d0329c525f8024e895c247bb71a"
+    },
+    {
+      "path": "components/ui/Footer.module.css",
+      "sha256": "653f671e9d0665d428479aae9ab6edd3b3d0f24674392a1733e71a3a38f5f3ba"
+    },
+    {
+      "path": "components/ui/Footer.tsx",
+      "sha256": "90a590f684f3ee0a234d895db496bbf5b469aa210230a0b98cf43983fc1b7833"
+    },
+    {
+      "path": "components/ui/MemberNavbar.module.css",
+      "sha256": "5f047789c087cd7df99b4cd1c83a3fbc6805b80ac2979e4e5da83509bb105672"
+    },
+    {
+      "path": "components/ui/MemberNavbar.tsx",
+      "sha256": "2a207a69d59d3b209777adcd2428b865b13b34fc944144f6b76e498331638623"
+    },
+    {
+      "path": "components/ui/Navbar.module.css",
+      "sha256": "1d2ab11ece9a2526324e465d1b80fb416971853c0541bbbb6038d8671fffb42a"
+    },
+    {
+      "path": "components/ui/Navbar.tsx",
+      "sha256": "0d2288a79b1c43b76476d73cd404ed66cd0c0844b9c9e9bd0a0354bea097cde4"
+    },
+    {
+      "path": "components/ui/Providers.tsx",
+      "sha256": "3541ce89209a561def8674d26659d1b781265b13b33bddc2fe0b2974ad1dc1da"
+    },
+    {
+      "path": "components/ui/ScrollToTopOnNavigate.tsx",
+      "sha256": "308ab1c7f4c9a707c72e27f1032400c9f9b7b003ab8fc30a8dc541d41dc1dc5f"
+    },
+    {
+      "path": "components/ui/SectionHeader.tsx",
+      "sha256": "97486f495d049ad985f059b2ff7bd016a8e1d9b355f4c292579836201e69b772"
+    },
+    {
+      "path": "components/ui/UIContent.module.css",
+      "sha256": "30168a0d536941d686d32c9f419b07b942a0ca4ec1532526b2b63dfb9b0c5fcd"
+    },
+    {
+      "path": "context/AuthContext.tsx",
+      "sha256": "c69c15a68bffd6f373923217b01df9659fb539d5a8593674b689c560982b9a67"
+    },
+    {
+      "path": "lib/academy.ts",
+      "sha256": "51a8ba82115d3022bc7f9a3ad060e3f2ee6e15d4fc32f5afe3713f5af389d312"
+    },
+    {
+      "path": "lib/api.ts",
+      "sha256": "ce485b2063480d268894de014c0f3711e89741bc08efbfa0d8960df274c1b20b"
+    },
+    {
+      "path": "lib/conference/api.ts",
+      "sha256": "23eb0c1be1061a377413dec94f67aadf5323b53e4b1d59bd428fdc840593e547"
+    },
+    {
+      "path": "lib/conference/checkout.ts",
+      "sha256": "0f4cde809e09be2646a5b626eea1361da2b4638dffa5e06c8f484ceb36ef20a7"
+    },
+    {
+      "path": "lib/conference/session-recovery.ts",
+      "sha256": "a663f373a1b0430302bd991d5235dea91a4c393863395a056ef05b2f316a41f2"
+    },
+    {
+      "path": "lib/conference/session.ts",
+      "sha256": "f3d8000cc7f2be290152d512c10cc73954a71b7c975af06dbdd5be4f2c8a137e"
+    },
+    {
+      "path": "lib/conference/types.ts",
+      "sha256": "073632e5490fb851e954fa10c94345faaf8e54d83d9d5ad4c64eb16e8100dd63"
+    },
+    {
+      "path": "lib/member/passport/domain.ts",
+      "sha256": "8203fa4973206e7c6c0f0c34497b539310aa899d5296aac29bd74ec31a20a7cf"
+    },
+    {
+      "path": "lib/member/passport/studentData.ts",
+      "sha256": "90ce67d209405d01ee69d15f1e7a08ecc3d24d6cdee86ebfe3124f926d916a62"
+    },
+    {
+      "path": "lib/navigation/safe-return-to.ts",
+      "sha256": "c501288462a6d74bd173124b04e4f177a8cf308135affceeeb072def2cc4cb72"
+    },
+    {
+      "path": "lib/server/academy-bridge.ts",
+      "sha256": "04133d523e5deeec0dc50a6e5e05b2f7e6ad6f709f7e1b4b089970239490e91b"
+    },
+    {
+      "path": "lib/server/conference-assertion.ts",
+      "sha256": "7f896cdc477019e8553e896af804cbc831e741f9165448ea1b1f8efa788a7e5a"
+    },
+    {
+      "path": "lib/server/pharmacy-auth/adapter.ts",
+      "sha256": "5ee7ebc3e0c75ebec64846201280508d51610efefcb8c277679b16c0e67d43fc"
+    },
+    {
+      "path": "lib/server/pharmacy-auth/mock-adapter.ts",
+      "sha256": "49eba4d3277996370faaa46878ca5730a0eb8d9ecb1c19b769922ca76d65e6bf"
+    },
+    {
+      "path": "lib/server/pharmacy-auth/session-store.ts",
+      "sha256": "2c947c5bbea4378b2525b9f652cf5952539dec2394a1e21d2acecf1ddd4c7512"
+    },
+    {
+      "path": "lib/server/pharmacy-auth/session.ts",
+      "sha256": "9d8f7a6ddae8f5c72dc5371d5a1683116d609e0420253ad15d240d8df3f8f2c3"
+    },
+    {
+      "path": "middleware.ts",
+      "sha256": "099eba886332d54ea462fa707506351248eb2cea351eb7c671611b6ae5b96f8a"
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "3e5b3a757bca7c43e7d04ca263fd1ec6ec56b0a830b5480bb676f233e6eb8835"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "e8078acad2c9dfa6462e21d60912b37b5d5128380a91fcec9ef69c8a606f7ec5"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "public/file.svg",
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4"
+    },
+    {
+      "path": "public/globe.svg",
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf"
+    },
+    {
+      "path": "public/images/careers/hospital_logo.png",
+      "sha256": "b23eab0e907b5ef53f75eb1c65e006d8bc0e70f8466062a7a163c76eb440fec9"
+    },
+    {
+      "path": "public/images/careers/pharmacy_logo.png",
+      "sha256": "fe7de76661dab04f0ec130f685112e2709b017d4a657f4da6fa9529989ecef17"
+    },
+    {
+      "path": "public/images/public/about/imgbg2.png",
+      "sha256": "ab047127bb1a6ca30a8daf783199a49a52c02ee96ab50970f30eca744b795ce2"
+    },
+    {
+      "path": "public/images/public/about/list/imgabout1.png",
+      "sha256": "13b7affbbdee05fa9e1863cca166ebc5225efe27769ba208ce456f057353c951"
+    },
+    {
+      "path": "public/images/public/about/list/imgabout2.png",
+      "sha256": "ff22cf543ea7c71d601977f2b735b27d7dfddb92a3ce112bdd497b87d7f4f9f7"
+    },
+    {
+      "path": "public/images/public/about/list/imgabout3.png",
+      "sha256": "76d7abd9601467d980b269dd192fcaa4925e9abb4db8ece44608aebed447ad03"
+    },
+    {
+      "path": "public/images/public/contact/Image.png",
+      "sha256": "fb43cdcfa6aa8b97528ead21074f19b5800f2fba6e66a953ecee830e50701006"
+    },
+    {
+      "path": "public/images/public/contact/Image2.png",
+      "sha256": "8447571ccd43497017d48c7a5b953cbdffe6c6eb344d0d9f075ec8b1112c52df"
+    },
+    {
+      "path": "public/images/public/contact/header page.png",
+      "sha256": "558c5e701486cfe64cfa7c95b6b29b2154f93d114e3ce16a7564ca5f129fe4d9"
+    },
+    {
+      "path": "public/images/public/department/imgbg1.png",
+      "sha256": "25e626c1e0d846ac81e41eea767d47acbb5989c0b40c9f7d98253554eacf397f"
+    },
+    {
+      "path": "public/images/public/department/thumnail.png",
+      "sha256": "fcb18c635bf4848c2e67ad86c409483fc899f753858bd0c5b69045eb2b118687"
+    },
+    {
+      "path": "public/images/public/home/image1.png",
+      "sha256": "af8bad45c3b0e9e6fa0c2563283c37dfbc810d586835ba2708fcf7bba6428415"
+    },
+    {
+      "path": "public/images/public/home/image2.png",
+      "sha256": "fe661167eb24985c97a262310fcc3a66a01f8ae0dcaddab080e854cb34be5aa1"
+    },
+    {
+      "path": "public/images/public/home/image3.png",
+      "sha256": "75a398d860af1e36daf75bd3bbf189abfad20a87a2c2be0d82081a2437d06f8c"
+    },
+    {
+      "path": "public/images/public/home/image4.png",
+      "sha256": "d5b19c23e3f67fd0d965e38f0e03d8f78c2f7f672e2510c4b6bbcfaa13ac4d3e"
+    },
+    {
+      "path": "public/images/public/home/image5.png",
+      "sha256": "64173cdd62acc3cd25ffa07f4145ce8fe8e3e011d7c1a9651ac2583cdcf59d95"
+    },
+    {
+      "path": "public/images/public/home/image6.png",
+      "sha256": "b435a6e884b44f65e002f7852172ec397ebbd8e3fc518ca7a2e1b5400c48da38"
+    },
+    {
+      "path": "public/images/public/home/member/Section.png",
+      "sha256": "0aa6ab3244961f3dedcde221ba026b273e7a267d1f43831085d3be01bf9923de"
+    },
+    {
+      "path": "public/images/public/home/olive.png",
+      "sha256": "54afeb08023052bc1765cf1c402114f474c7b849978a2cbd0ffb2f694e8ea12e"
+    },
+    {
+      "path": "public/images/public/home/role/role1.png",
+      "sha256": "d487306d0cdf2587cb4458f80f2d6f6bfa59f4cd0c98d5b742ae13547cbac39a"
+    },
+    {
+      "path": "public/images/public/home/role/role2.png",
+      "sha256": "e2de35627e0ad8706cc8e5146c09c77727f2cd3750d9fb5fac07d10c890475be"
+    },
+    {
+      "path": "public/images/public/home/role/role3.png",
+      "sha256": "9f92466ec4dde50a36fab3050f8297b95801d05745594bd09693fab405a984f5"
+    },
+    {
+      "path": "public/images/public/home/role/role4.png",
+      "sha256": "f920f9e41c12a026142ca6f8843b5d0221fce4dbce7bb99060f6daed3a2aeb1f"
+    },
+    {
+      "path": "public/images/public/home/role/role5.png",
+      "sha256": "3448079094824b3223582187b66af47922d52d7504a60ac9d649ba9ef311a522"
+    },
+    {
+      "path": "public/images/public/icon.jpg",
+      "sha256": "3aeb432d01bbe8a069ddb8d54764e2c2add68f9a50c76109ce01d08220962dbe"
+    },
+    {
+      "path": "public/images/public/laws/imgbglaw.png",
+      "sha256": "2885fa2c5cc5ce2091d7bfbae961b16a737fe83543f40ce5fb1c992326613e6f"
+    },
+    {
+      "path": "public/images/public/learning/instructors/female_1.png",
+      "sha256": "57a8d9952cfdc164f2277f71eb1c9b62da56cb217d80b7670181824732ce9aab"
+    },
+    {
+      "path": "public/images/public/learning/instructors/female_2.png",
+      "sha256": "d589c079dee39a2f08cc5ab7c2008580414a26611a20789a2e93851b3050e967"
+    },
+    {
+      "path": "public/images/public/learning/instructors/male_1.png",
+      "sha256": "9aa6f7084eedaa7f4dad0b73f161a5665da8f394dca7c91288071f7149bdc68e"
+    },
+    {
+      "path": "public/images/public/learning/instructors/male_2.png",
+      "sha256": "68ee1933f03b7bde291d07754503f4b5705f6bbb1bb5927521fc8346e62726b4"
+    },
+    {
+      "path": "public/images/public/learning/reviews/review1.png",
+      "sha256": "910dc66c18071ab3c11013216b827d5ca3a074c7d69342e1274857cc11b86d25"
+    },
+    {
+      "path": "public/images/public/learning/reviews/review2.png",
+      "sha256": "b90303e08335ffd59dc800bf95bf669d976775d3f213ced41e2923f0b72eaa3a"
+    },
+    {
+      "path": "public/images/public/learning/reviews/review3.png",
+      "sha256": "7533c317de8f4b214776d000fd7aa16308fdb9e351aba6f87d3b9878a0c8d141"
+    },
+    {
+      "path": "public/images/public/login/Column.png",
+      "sha256": "a842ba9f3057bedb2d181ca3ee747261b0edfb440d7c3eed58f06d9df74e9c79"
+    },
+    {
+      "path": "public/images/public/login/Column2.png",
+      "sha256": "0acb0e3f8ac49d0be0e7ae721ae509af664e39de65dbf4dda5a13b2553d6081c"
+    },
+    {
+      "path": "public/images/public/login/dopa.png",
+      "sha256": "7012733d936db3c1c38e4c922ebc3da41996f1c9fcba0ecccc6fecab6084343b"
+    },
+    {
+      "path": "public/images/public/login/etda.png",
+      "sha256": "a0dc02f379e5c951c0b03181299bb4a02c9cf220e7a29ef33a92692173837107"
+    },
+    {
+      "path": "public/images/public/login/paotang.png",
+      "sha256": "c0350ff9d99d8f625ea8061985a9d30b68724c8ead64ac64573933ea96c4c7bc"
+    },
+    {
+      "path": "public/images/public/login/tangrat.png",
+      "sha256": "16316410f384639432c651762faf5de951a4029f7024e5a21010f77257c8432d"
+    },
+    {
+      "path": "public/images/public/login/thaid.png",
+      "sha256": "f9f21d20bb6f7ab5f7ea272e39fafeaf9442e8c79afd86a6934f6ebe3e72f52b"
+    },
+    {
+      "path": "public/images/public/meeting/meeting-banner.png",
+      "sha256": "25e626c1e0d846ac81e41eea767d47acbb5989c0b40c9f7d98253554eacf397f"
+    },
+    {
+      "path": "public/images/public/meeting/meeting1.jpg",
+      "sha256": "c7d97620cca91b7777d417e785350cad69efb3df214d69168f44c60593e01519"
+    },
+    {
+      "path": "public/images/public/meeting/meeting2.jpg",
+      "sha256": "98fbc26203473490f828c1dd863e41979da229236480716d75e021426d8a2b7f"
+    },
+    {
+      "path": "public/images/public/meeting/meeting3.jpg",
+      "sha256": "e71ed5fc3fabae9408b6a2368fecdc08802236157369e0ce7a46d1ca10499e22"
+    },
+    {
+      "path": "public/images/public/meeting/meeting4.jpg",
+      "sha256": "5fc6aea68516e82a3174a17c694188f8ca01cf6893d956fceeddddbf65bc7c1e"
+    },
+    {
+      "path": "public/images/public/meeting/meeting5.jpg",
+      "sha256": "abd00db7c907c27dd657e24508887d843abbc64df3aaedf469e60becf7432de7"
+    },
+    {
+      "path": "public/images/public/member/banner.png",
+      "sha256": "50f0ada1052915c48c6ba98592f1d3e3ff3362669f1e52e3f798eb510be4d64f"
+    },
+    {
+      "path": "public/images/public/member/image.png",
+      "sha256": "0599fdda51e13c9269d711ca84370e91468a3e7cd8a4e9b3a4649476705d7df6"
+    },
+    {
+      "path": "public/images/public/news/header page.png",
+      "sha256": "ab047127bb1a6ca30a8daf783199a49a52c02ee96ab50970f30eca744b795ce2"
+    },
+    {
+      "path": "public/images/public/other-service/header page.png",
+      "sha256": "ab047127bb1a6ca30a8daf783199a49a52c02ee96ab50970f30eca744b795ce2"
+    },
+    {
+      "path": "public/images/public/service/icon1.png",
+      "sha256": "68ee7fa58d0ae329005375ca5128f7c282482a04528453e659c4e563b3d66341"
+    },
+    {
+      "path": "public/images/public/service/icon2.png",
+      "sha256": "bf7844974f5a16d0404b2dc897acdfc68027500f1792f6dbc1ecdca0faaa561f"
+    },
+    {
+      "path": "public/images/public/service/icon3.png",
+      "sha256": "dbf86ca8ba382ad23e4fc30b4fcc75a10386d6e19335870d50725be9bc0af55d"
+    },
+    {
+      "path": "public/images/public/service/icon4.png",
+      "sha256": "fb982c438b6f9011c7a0037f115a43c0aeb79d7ef9be66e3c76e540be24b038d"
+    },
+    {
+      "path": "public/images/public/service/service-banner.png",
+      "sha256": "2885fa2c5cc5ce2091d7bfbae961b16a737fe83543f40ce5fb1c992326613e6f"
+    },
+    {
+      "path": "public/images/public/service/service1.jpg",
+      "sha256": "14d207cd98fb763c6a80018d7c66bd44fcb666b4a636b729846cecd22645da64"
+    },
+    {
+      "path": "public/images/public/service/service2.jpg",
+      "sha256": "abe1a73a425b6215b417557a26f10c2c3d2df8af9cf1ae024043d0a83424bc72"
+    },
+    {
+      "path": "public/images/public/service/service3.jpg",
+      "sha256": "f344068406a620c569f667208e8bffa24ac47ffdcb7cd247da1d100a7dbf5b53"
+    },
+    {
+      "path": "public/images/public/service/service4.jpg",
+      "sha256": "aa91c3abb173c6689673cb08e89a21ccd96dced01681786d68efe56c85e7abbe"
+    },
+    {
+      "path": "public/images/public/service/service5.jpg",
+      "sha256": "8e609da22106654031d2566ec5bbd6bb6291f74c4dc86c64adbf2fbc66360ded"
+    },
+    {
+      "path": "public/images/public/service/service6.jpg",
+      "sha256": "a1bf14f912767b71618decb2844c52d74d7a0088f5eac5734f30ea329dcad7a1"
+    },
+    {
+      "path": "public/next.svg",
+      "sha256": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc"
+    },
+    {
+      "path": "public/vercel.svg",
+      "sha256": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4"
+    },
+    {
+      "path": "public/window.svg",
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1"
+    },
+    {
+      "path": "public/data/thailand.json",
+      "sha256": "ee3355b8f93f6f6f3055f52a595a24b00544bcc396dc3f913b8453dac269143e"
+    }
+  ],
+  "safeAssetException": "Only public/data/thailand.json: verified GeoJSON FeatureCollection,77 province geometries with name-only properties; no other public/data or CSV copied."
+}

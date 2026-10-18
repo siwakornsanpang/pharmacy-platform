@@ -1,0 +1,52 @@
+{
+  "name": "back-office",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@mgreminger/quill-image-resize-module": "^1.0.5",
+    "isomorphic-dompurify": "^3.0.0-rc.2",
+    "js-cookie": "3.0.7",
+    "lucide-react": "^0.563.0",
+    "next": "16.3.8",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-easy-crop": "^5.5.6",
+    "react-quill-new": "^3.8.3",
+    "sweetalert2": "11.26.18",
+    "sweetalert2-react-content": "^5.1.1",
+    "@pharmacy/contracts": "0.1.0",
+    "server-only": "0.0.1",
+    "@pharmacy/http": "0.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.18",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "19.2.10",
+    "@types/react-dom": "^19",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "4.1.18",
+    "typescript": "^5",
+    "vitest": "^4.1.10",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/jest-dom": "^7.0.0",
+    "jsdom": "^30.0.0",
+    "@testing-library/dom": "10.4.1"
+  }
+}

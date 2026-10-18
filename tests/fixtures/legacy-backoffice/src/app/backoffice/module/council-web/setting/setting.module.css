@@ -1,0 +1,258 @@
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.breadcrumb {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: 0.5rem;
+}
+
+.settingsCard {
+    background: var(--color-bg-card);
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/* Sidebar Tabs */
+.tabsSidebar {
+    width: 280px;
+    background: var(--color-bg-subtle);
+    border-right: 1px solid var(--color-border);
+    padding: 1.5rem 1rem;
+}
+
+.tabButton {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    background: transparent;
+    color: #4b5563;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.tabButton:hover {
+    background: var(--color-bg-hover);
+    color: var(--color-text-primary);
+}
+
+.tabButtonActive {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+/* Content Area */
+.tabContent {
+    flex: 1;
+    padding: 2rem;
+}
+
+.tabTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-bg-hover);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.input,
+.textarea,
+.select {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Logo Upload Preview */
+.logoUploadArea {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.logoPreview {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    background: var(--color-bg-hover);
+    border: 1px dashed #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logoPreview.clickable {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.logoPreview.clickable:hover {
+    border-color: var(--color-primary);
+    background: var(--color-bg-subtle);
+    transform: scale(1.02);
+}
+
+.logoPreview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.uploadHint {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: 0.5rem;
+}
+
+/* Actions Footer */
+.actions {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-bg-hover);
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnPrimary {
+    background: var(--color-primary);
+    color: var(--color-bg-card);
+    border: 1px solid var(--color-primary);
+}
+
+.btnPrimary:hover {
+    background: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
+.btnCancel {
+    background: white;
+    color: #4b5563;
+    border: 1px solid #9ca3af;
+}
+
+.btnCancel:hover {
+    background: #f9fafb;
+    color: #111827;
+    border-color: #6b7280;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mapPreviewArea {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.mapContainer {
+    width: 100%;
+    background: var(--color-bg-hover);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    line-height: 0;
+}
+
+.uploadHint {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .settingsCard {
+        flex-direction: column;
+    }
+
+    .tabsSidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        overflow-x: auto;
+        padding: 1rem;
+    }
+
+    .tabButton {
+        white-space: nowrap;
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+    }
+}

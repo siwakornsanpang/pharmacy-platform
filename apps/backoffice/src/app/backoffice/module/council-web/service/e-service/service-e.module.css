@@ -1,0 +1,498 @@
+/* src/app/backoffice/module/council-web/service/service-e/service-e.module.css */
+
+/* --- Layout & Text --- */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0 0;
+}
+
+/* --- Buttons --- */
+.btnAdd {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+}
+.btnAdd:hover { background-color: var(--color-primary-hover); }
+
+.btnIconEdit {
+  padding: 0.5rem;
+  color: var(--color-primary);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  border: 1px solid #90cdf4;
+  background: none;
+  cursor: pointer;
+}
+.btnIconEdit:hover { background-color: var(--color-primary-light); }
+
+.btnIconDelete {
+  padding: 0.5rem;
+  color: var(--color-danger);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  border: 1px solid #fa5252;
+  background: none;
+  cursor: pointer;
+}
+.btnIconDelete:hover { background-color: #fef2f2; }
+
+/* --- Table --- */
+.tableContainer {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tableWrapper { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tableHead {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid var(--color-bg-hover);
+}
+.tableTh {
+  padding: 1rem;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.thSortable {
+  cursor: pointer;
+  transition: background 0.2s;
+  padding-right: 1.5rem !important;
+  position: relative;
+}
+.thSortable:hover { background-color: #e9ecef; }
+
+.sortIconActive {
+  font-size: 0.7rem;
+  margin-left: 4px;
+  color: #495057;
+  font-weight: bold;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tableTd {
+  padding: 1rem;
+  vertical-align: middle;
+}
+.tableRow {
+  border-bottom: 1px solid var(--color-bg-hover);
+  transition: background-color 0.2s;
+}
+.tableRow:hover { background-color: var(--color-bg-subtle); }
+
+.draggableRow:hover { background-color: #f3f4f6; }
+
+.orderBadge {
+  background-color: var(--color-bg-hover);
+  color: #4b5563;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* --- Icon Cell --- */
+.iconCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.iconContainer {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.iconImg { width: 100%; height: 100%; object-fit: contain; padding: 0.25rem; }
+.iconPlaceholder { color: var(--color-text-light); }
+
+.clickableIcon {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.clickableIcon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.zoomOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 0.5rem;
+}
+.clickableIcon:hover .zoomOverlay { opacity: 1; }
+
+.viewImageLabel {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.viewImageLabel:hover,
+.iconCell:hover .viewImageLabel {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* --- Popular Badge --- */
+.popularBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.popularYes {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+.popularNo {
+  background-color: var(--color-bg-hover);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-border);
+}
+
+/* --- Link Text --- */
+.linkText {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  word-break: break-all;
+  max-width: 200px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.linkText:hover { text-decoration: underline; }
+
+/* --- Toolbar --- */
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  pointer-events: none;
+}
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* --- Form Inputs --- */
+.formGroup { margin-bottom: 1rem; }
+.formLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+.formInput, .formSelect, .formTextarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: white;
+  color: #1f2937;
+}
+.formTextarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+.formInput::placeholder, .formTextarea::placeholder { color: var(--color-text-light); }
+.formInput:focus, .formSelect:focus, .formTextarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.gridThree {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* --- Icon Upload Area --- */
+.iconUploadArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.75rem;
+  background: #f9fafb;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin: 0 auto;
+}
+.iconUploadArea:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+.iconUploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+.iconPreviewImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.changeIconRow {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.changeIconBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 1rem;
+  border-radius: 0.4rem;
+  background: none;
+  border: 1px solid #d1d5db;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.15s;
+}
+.changeIconBtn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* --- Checkbox toggle --- */
+.toggleGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.toggleLabel {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+.toggleSwitch {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  border-radius: 9999px;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  padding: 0;
+}
+.toggleSwitchActive {
+  background-color: var(--color-primary);
+}
+.toggleKnob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.toggleKnobActive {
+  transform: translateX(22px);
+}
+
+/* --- Icon Preview Modal (small, for icons) --- */
+.iconPreviewOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.iconPreviewContent {
+  position: relative;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconPreviewContent img {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+.iconPreviewClose {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+.iconPreviewClose:hover {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+/* --- Detail Button --- */
+.btnReadDetail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--color-primary-light);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid #bfdbfe;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.btnReadDetail:hover {
+  background-color: #dbeafe;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.btnReadDetailDisabled {
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+}
+
+.detailContent {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  background-color: var(--color-bg-subtle);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  max-height: 60vh;
+  overflow-y: auto;
+}
+

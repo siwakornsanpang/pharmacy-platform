@@ -1,0 +1,855 @@
+.pageWrapper {
+
+    background: #ffffff;
+}
+
+.contentSection {
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+    width: 100%;
+}
+
+/* === Banner === */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url('/images/public/meeting/meeting-banner.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.bannerOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(30, 40, 20, 0.4) 35%, transparent 70%);
+    padding: 2rem 0 4.5rem;
+}
+
+.backBtn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.25rem 0.5rem 1rem;
+    background: rgba(46, 58, 31, 0.65); /* Dark Olive */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    z-index: 10;
+}
+
+.backBtn:hover {
+    background: rgba(115, 115, 0, 0.9); /* Theme Olive #737300 */
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.backBtn svg {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0.9;
+}
+
+.backBtn:hover svg {
+    transform: translateX(-4px);
+    opacity: 1;
+}
+
+.bannerContent {
+    position: absolute;
+    bottom: 4.5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    max-width: 90%;
+    width: 90%;
+    padding: 0 1.5rem;
+    z-index: 5;
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.cpeBadge {
+    background: #fbfdf0;
+    border: 1px solid #dce2c1;
+    color: #4b5320;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 750;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.2rem;
+}
+
+.cpeIcon {
+    font-size: 1.2rem;
+    color: #7b7b1e;
+}
+
+.bannerTitle {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 850;
+    margin: 0 0 1.2rem;
+    line-height: 1.35;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bannerMeta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.95;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Content Grid === */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 0;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.leftCol, .rightCol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sectionCard {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 2.2rem;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sectionCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 35px -5px rgba(0, 0, 0, 0.05), 0 12px 15px -8px rgba(0, 0, 0, 0.04);
+}
+
+.sectionCard h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 1rem;
+}
+
+.sectionCard h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 1.2rem;
+}
+
+.divider {
+    height: 3px;
+    width: 60px;
+    background: #8a8a00;
+    margin-bottom: 1.5rem;
+    border-radius: 9999px;
+}
+
+.description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #334155;
+    margin: 0;
+}
+
+/* === Timeline / Agenda === */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.timelineItem {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.timelineTime {
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #64748b;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding-top: 0.2rem;
+    align-self: flex-start;
+}
+
+.timeIcon {
+    color: #94a3b8;
+}
+
+.timelineMarker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.markerDot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #8a8a00;
+    border: 3px solid #f2f2c8;
+    z-index: 2;
+}
+
+.markerLine {
+    width: 2px;
+    flex-grow: 1;
+    background: #e2e8f0;
+    margin: 4px 0;
+    min-height: 60px;
+}
+
+.timelineContent {
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.timelineContent p {
+    font-size: 1.1rem;
+    color: #334155;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* === Countdown Sidebar Card === */
+.countdownCard {
+    /* Inherit white background and border from .sectionCard */
+}
+
+.countdownCard h3 {
+    text-align: center;
+}
+
+.countdownContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.countdownItem {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0.8rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eef2f6;
+}
+
+.countdownNumber {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #737300;
+    line-height: 1.1;
+}
+
+.countdownLabel {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+    font-weight: 700;
+}
+
+/* === Registration Stats Sidebar Card === */
+.registrationStats {
+    margin-bottom: 1.5rem;
+}
+
+.statsLabelRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 0.8rem;
+}
+
+.statsCount {
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.countAvailable {
+    color: #059669;
+}
+
+.countFull {
+    color: #ef4444;
+}
+
+.progressBarContainer {
+    width: 100%;
+}
+
+.progressBar {
+    height: 10px;
+    background: #f1f5f9;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.5s ease-out;
+}
+
+.fillAvailable {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+.fillFull {
+    background: linear-gradient(90deg, #f43f5e 0%, #e11d48 100%);
+}
+
+.registerBtn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnActive {
+    background: linear-gradient(135deg, #8a8a00 0%, #5d5d00 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(138, 138, 0, 0.25);
+}
+
+.btnActive:hover {
+    background: linear-gradient(135deg, #a3a300 0%, #737300 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(138, 138, 0, 0.35);
+}
+
+.btnDisabled {
+    background: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+/* === Map Sidebar Card === */
+.venueText {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0 0 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.inlineIcon {
+    color: #94a3b8;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.mapContainer {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.mapIframe {
+    display: block;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 250px;
+        min-height: unset;
+    }
+    .bannerOverlay {
+        padding: 0 0 3rem;
+    }
+    .bannerContent {
+        bottom: 3rem;
+        padding: 0 1rem;
+    }
+    .backBtn {
+        top: 1rem;
+        left: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    .bannerMeta {
+        gap: 1rem;
+    }
+    .container {
+        padding: 2rem 1rem 0;
+    }
+    .sectionCard {
+        padding: 1.5rem;
+    }
+}
+
+.countdownDateRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: #8a8a00;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: -0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.countdownCard, .registrationCard, .cpeCard {
+    background: linear-gradient(135deg, #ffffff 0%, #fafbf2 100%) !important;
+    border: 1px solid #e2e8f0;
+}
+
+.cpeCardContent {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.cpeCardIconWrapper {
+    background: #fbfdf0;
+    border: 1px solid #dce2c1;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cpeCardIcon {
+    font-size: 1.8rem;
+    color: #8a8a00;
+}
+
+.cpeCardTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.cpeCardLabel {
+    font-size: 0.9rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.cpeCardValue {
+    font-size: 1.3rem;
+    color: #64748b;
+    font-weight: 500;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.cpeCardValue strong {
+    font-size: 2.8rem;
+    color: #8a8a00;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.cpeCardUnitLabel {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.statsCountWrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.statsCountNumber {
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.statsCountSeparator {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin: 0 0.2rem;
+}
+
+.statsCountTotal {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.statsCountUnit {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.statsPercent {
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.collapsibleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggleIcon {
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.collapsibleHeader:hover .toggleIcon {
+    color: #8a8a00;
+}
+
+.loginPrompt {
+    margin-top: 0.9rem;
+    font-size: 0.95rem;
+    color: #ef4444;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.loginLink {
+    color: #8a8a00;
+    font-weight: 850;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.loginLink:hover {
+    color: #a3a300;
+}
+
+/* === Banner Navigation === */
+.bannerNavRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    z-index: 10;
+}
+
+/* === Share Link Button in Registration Card === */
+.shareLinkBtn {
+    width: 100%;
+    padding: 0.85rem;
+    margin-top: 0.75rem;
+    border: 1.5px solid #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+    border-radius: 16px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.shareLinkBtn:hover {
+    border-color: #8a8a00;
+    color: #8a8a00;
+    background: #fafbf5;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(138, 138, 0, 0.05);
+}
+
+.shareLinkBtn:active {
+    transform: translateY(0);
+}
+
+/* === Documents Section === */
+.documentList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.documentItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    background: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 16px;
+    transition: all 0.25s ease;
+}
+
+.documentItem:hover {
+    border-color: #dce2c1;
+    background: #fafbf5;
+    box-shadow: 0 6px 15px rgba(138, 138, 0, 0.04);
+    transform: translateY(-1px);
+}
+
+.documentInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.documentIcon {
+    color: #8a8a00;
+    flex-shrink: 0;
+}
+
+.documentMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.documentName {
+    font-size: 1.05rem;
+    font-weight: 650;
+    color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.documentSize {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.downloadBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: #fbfdf0;
+    border: 1px solid #dce2c1;
+    border-radius: 12px;
+    color: #8a8a00;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.downloadBtn:hover {
+    background: #8a8a00;
+    color: #ffffff;
+    border-color: #8a8a00;
+    box-shadow: 0 4px 10px rgba(138, 138, 0, 0.2);
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1rem 0;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 250px;
+        min-height: unset;
+    }
+    .bannerOverlay {
+        padding: 0 0 1.25rem;
+    }
+    .bannerContent {
+        bottom: 1.25rem;
+        width: 90%;
+        padding: 0;
+    }
+    .bannerTitle {
+        font-size: 1.85rem;
+        line-height: 1.15;
+        margin-bottom: 0.28rem;
+    }
+    .bannerMeta {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    .metaItem {
+        font-size: 0.95rem;
+    }
+    .backBtn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        top: 1rem;
+        left: 1rem;
+    }
+    .documentItem {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .downloadBtn {
+        justify-content: center;
+    }
+    
+    /* Timeline Responsive */
+    .timelineItem {
+        flex-direction: column;
+        gap: 0.4rem;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    .timelineTime {
+        min-width: auto;
+        padding-top: 0;
+    }
+    .timelineMarker {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        bottom: 0;
+    }
+    .markerLine {
+        min-height: auto;
+    }
+    .timelineContent {
+        padding-bottom: 1.25rem;
+    }
+    
+    /* Countdown Responsive */
+    .countdownNumber {
+        font-size: 1.4rem;
+    }
+    .countdownLabel {
+        font-size: 0.75rem;
+    }
+    .countdownItem {
+        padding: 0.6rem 0.2rem;
+        border-radius: 12px;
+    }
+    .countdownDateRow {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.5rem 0;
+    }
+    .sectionCard {
+        padding: 1.25rem 1rem;
+        border-radius: 14px;
+    }
+    .statsCountNumber {
+        font-size: 2.4rem;
+    }
+    .statsCountTotal {
+        font-size: 1.5rem;
+    }
+    .statsCountSeparator {
+        font-size: 1.5rem;
+    }
+    .cpeCardIconWrapper {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+    }
+    .cpeCardIcon {
+        font-size: 1.5rem;
+    }
+    .cpeCardValue strong {
+        font-size: 2.2rem;
+    }
+    .cpeCardValue {
+        font-size: 1.1rem;
+    }
+    .cpeCardLabel {
+        font-size: 0.8rem;
+    }
+    .mapIframe {
+        height: 180px !important;
+    }
+}

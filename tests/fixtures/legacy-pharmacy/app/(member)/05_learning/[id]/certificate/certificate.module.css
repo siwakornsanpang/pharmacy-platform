@@ -1,0 +1,42 @@
+.page {
+  min-height: 70vh;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem 4rem;
+}
+
+.sheet {
+  width: min(720px, 100%);
+  border: 8px solid #737300;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.sheet h1 {
+  margin: 0.5rem 0 1.5rem;
+  color: #737300;
+}
+
+.message {
+  padding: 3rem;
+  text-align: center;
+}
+
+.print {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.8rem 1.4rem;
+  background: #737300;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media print {
+  .print {
+    display: none;
+  }
+}

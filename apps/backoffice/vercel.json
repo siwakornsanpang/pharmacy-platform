@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "installCommand": "cd ../.. && npm ci --legacy-peer-deps --include=dev",
+  "buildCommand": "cd ../.. && npm run build:shared && npm run build --workspace apps/backoffice"
+}

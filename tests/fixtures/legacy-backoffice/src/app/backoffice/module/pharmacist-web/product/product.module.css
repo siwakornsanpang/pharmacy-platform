@@ -1,0 +1,686 @@
+/* Back-office/src/app/backoffice/module/pharmacist-web/product/product.module.css */
+
+.container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Sarabun', sans-serif;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.headerActions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #f3f4f6;
+    margin-bottom: 1.5rem;
+}
+
+.searchBox {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.inputSearch {
+    width: 100%;
+    padding: 0.625rem 0.75rem 0.625rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.inputSearch:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.filterSelect {
+    padding: 0.625rem 2rem 0.625rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    background: white;
+    outline: none;
+    cursor: pointer;
+    min-width: 180px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+}
+
+.filterSelect:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.btnPrimary {
+    background: #0284c7;
+    color: white;
+}
+
+.btnPrimary:hover {
+    background: #0369a1;
+}
+
+.btnSecondary {
+    background: white;
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+.btnSecondary:hover {
+    background: #f9fafb;
+    border-color: #c5c9d1;
+}
+
+.btnDanger {
+    background: #ef4444;
+    color: white;
+}
+
+.btnDanger:hover {
+    background: #dc2626;
+}
+
+.btnDangerIcon {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    padding: 0.375rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.btnDangerIcon:hover {
+    background: #fee2e2;
+}
+
+.btnEditIcon {
+    background: none;
+    border: none;
+    color: #0284c7;
+    cursor: pointer;
+    padding: 0.375rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnEditIcon:hover {
+    background: #e0f2fe;
+}
+
+/* Table Design */
+.tableContainer {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.th {
+    background: #f8fafc;
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.thContent {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.td {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.tr:hover {
+    background: #f8fafc;
+}
+
+.thumbnailCell {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholderIcon {
+    color: #94a3b8;
+}
+
+.priceText {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.categoryTag {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.paginationInfo {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.paginationPages {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.pageButton {
+    min-width: 2.25rem;
+    height: 2.25rem;
+    padding: 0 0.375rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background: white;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.2s;
+}
+
+.pageButton:hover:not(:disabled) {
+    background: #f9fafb;
+    border-color: #c5c9d1;
+}
+
+.pageButtonActive {
+    background: #0284c7;
+    border-color: #0284c7;
+    color: white;
+}
+
+.pageButtonActive:hover {
+    background: #0284c7;
+}
+
+.pageButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Two Column Layout for Form */
+.layoutGrid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .layoutGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mainColumn, .sidebarColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.75rem;
+}
+
+/* Form Elements */
+.formGroup {
+    margin-bottom: 1.25rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+
+.required {
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
+
+.input, .textarea, .select {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    outline: none;
+    font-family: 'Sarabun', sans-serif;
+    transition: all 0.2s;
+    color: #1e293b;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+}
+
+/* Image Upload Widget */
+.imageUploadArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    background: #f8fafc;
+    transition: all 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.imageUploadArea:hover {
+    border-color: #0284c7;
+    background: #f0f9ff;
+}
+
+/* Modal Overlay and Container for Product Form */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 1.5rem;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modalContent {
+    background: white;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    animation: scaleUp 0.2s ease-out;
+    border: 1px solid #e2e8f0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.previewContainer {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.removeImageBtn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(239, 68, 68, 0.9);
+    border: none;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.removeImageBtn:hover {
+    background: #dc2626;
+}
+
+/* Crop Modal */
+.cropModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.cropContainer {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.cropHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.cropArea {
+    position: relative;
+    height: 300px;
+    background: #333;
+}
+
+.cropControls {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.zoomSlider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.slider {
+    flex: 1;
+    height: 6px;
+    background: #cbd5e1;
+    border-radius: 3px;
+    appearance: none;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #0284c7;
+    cursor: pointer;
+}
+
+.cropActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.loadingSpinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* -----------------------------------------------
+   Custom Category Combobox
+------------------------------------------------ */
+.comboboxContainer {
+    position: relative;
+    width: 100%;
+}
+
+.comboboxInput {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.comboboxInput:focus-within,
+.comboboxInputOpen {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+}
+
+.comboboxTextField {
+    flex: 1;
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    font-family: 'Sarabun', sans-serif;
+    color: #1e293b;
+    border: none;
+    outline: none;
+    background: transparent;
+    min-width: 0;
+}
+
+.comboboxTextField::placeholder {
+    color: #94a3b8;
+}
+
+.comboboxChevron {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 100%;
+    padding: 0 0.5rem;
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    border-left: 1px solid #f1f5f9;
+    transition: background 0.2s, color 0.2s;
+}
+
+.comboboxChevron:hover {
+    background: #f8fafc;
+    color: #0284c7;
+}
+
+.comboboxDropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12), 0 2px 8px rgba(15, 23, 42, 0.06);
+    z-index: 1100;
+    overflow: hidden;
+    animation: dropdownOpen 0.15s ease-out;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+@keyframes dropdownOpen {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.comboboxOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    font-family: 'Sarabun', sans-serif;
+    color: #334155;
+    cursor: pointer;
+    transition: background 0.12s;
+}
+
+.comboboxOption:hover {
+    background: #f0f9ff;
+    color: #0284c7;
+}
+
+.comboboxOptionActive {
+    background: #e0f2fe;
+    color: #0284c7;
+    font-weight: 500;
+}
+
+.comboboxNewItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    font-family: 'Sarabun', sans-serif;
+    color: #7c3aed;
+    cursor: pointer;
+    border-top: 1px dashed #e9d5ff;
+    transition: background 0.12s;
+}
+
+.comboboxNewItem:hover {
+    background: #f5f3ff;
+}

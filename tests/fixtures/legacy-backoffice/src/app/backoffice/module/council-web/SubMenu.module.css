@@ -1,0 +1,147 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.headerIconWrapper {
+  width: 112px;
+  height: 112px;
+  background-color: #f2efdc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555b38;
+  flex-shrink: 0;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2b2e1a;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #787d62;
+  margin: 0;
+}
+
+.breadcrumbLink {
+  color: #787d62;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbLink:hover {
+  color: #4b5134;
+  text-decoration: underline;
+}
+
+.breadcrumbSeparator {
+  color: #a3a792;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .menuGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.menuCard {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 3rem 1.5rem 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  height: 100%;
+}
+
+.menuCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-color: #e5e7eb;
+}
+
+.iconCircle {
+  width: 96px;
+  height: 96px;
+  background-color: #f2efdc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+  color: #555b38;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.menuCard:hover .iconCircle {
+  background-color: #e8e4cb;
+}
+
+.menuLabel {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.menuUnderline {
+  width: 36px;
+  height: 4px;
+  background-color: #5c623c;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+
+.menuDescription {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #6b7280;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}

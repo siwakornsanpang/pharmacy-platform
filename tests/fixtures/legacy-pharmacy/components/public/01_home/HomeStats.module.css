@@ -1,0 +1,178 @@
+/* === HomeStats Section === */
+.statsSection {
+  background: white;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  position: relative;
+}
+
+.statsContainer {
+  max-width: var(--max-width-2xl);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-align: center;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.statItem:nth-child(1) { animation-delay: 0.1s; }
+.statItem:nth-child(2) { animation-delay: 0.2s; }
+.statItem:nth-child(3) { animation-delay: 0.3s; }
+
+.statNumber {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+  color: #111827;
+}
+
+.statLabel {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .statNumber {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .statItem {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 4rem;
+  }
+}
+
+.labelBreak {
+  display: none;
+}
+
+.updateTimeContainer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-family: var(--font-kanit), var(--font-sans), sans-serif;
+  opacity: 0.8;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .statsSection {
+    margin-top: 1.5rem;
+    padding: 0 1.5rem;
+    border: none;
+  }
+
+  .statsContainer {
+    width: 100%;
+    padding: 1.85rem 0 1.4rem;
+    border-top: 1px solid #d3d1b3;
+    border-bottom: 1px solid #d3d1b3;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .statItem {
+    padding: 0;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212936;
+    letter-spacing: -0.03em;
+  }
+
+  .statLabel {
+    margin-top: 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #636a75;
+    line-height: 1.45;
+  }
+
+  .labelBreak {
+    display: inline;
+  }
+
+  .updateTimeContainer {
+    margin-top: 1.65rem;
+    margin-bottom: 0;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #828792;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .statsSection {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .statsContainer {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .statItem {
+    padding: 1rem 0.5rem;
+  }
+
+  .statNumber {
+    font-size: 2.6rem;
+  }
+}

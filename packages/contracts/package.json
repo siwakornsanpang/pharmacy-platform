@@ -1,0 +1,72 @@
+{
+  "name": "@pharmacy/contracts",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "UNLICENSED",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./access": {
+      "import": {
+        "types": "./dist/esm/access.d.ts",
+        "default": "./dist/esm/access.js"
+      },
+      "require": {
+        "types": "./dist/cjs/access.d.ts",
+        "default": "./dist/cjs/access.js"
+      }
+    },
+    "./content": {
+      "import": {
+        "types": "./dist/esm/content.d.ts",
+        "default": "./dist/esm/content.js"
+      },
+      "require": {
+        "types": "./dist/cjs/content.d.ts",
+        "default": "./dist/cjs/content.js"
+      }
+    },
+    "./registry": {
+      "import": {
+        "types": "./dist/esm/registry.d.ts",
+        "default": "./dist/esm/registry.js"
+      },
+      "require": {
+        "types": "./dist/cjs/registry.d.ts",
+        "default": "./dist/cjs/registry.js"
+      }
+    },
+    "./academy": {
+      "import": {
+        "types": "./dist/esm/academy.d.ts",
+        "default": "./dist/esm/academy.js"
+      },
+      "require": {
+        "types": "./dist/cjs/academy.d.ts",
+        "default": "./dist/cjs/academy.js"
+      }
+    },
+    "./media": {
+      "import": {
+        "types": "./dist/esm/media.d.ts",
+        "default": "./dist/esm/media.js"
+      },
+      "require": {
+        "types": "./dist/cjs/media.d.ts",
+        "default": "./dist/cjs/media.js"
+      }
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc -p tsconfig.esm.json --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "tsx": "4.21.0",
+    "@types/node": "25.2.0"
+  }
+}

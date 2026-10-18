@@ -1,0 +1,409 @@
+.footer {
+    background-color: #F9F9F9;
+    color: #334155;
+    font-family: var(--font-kanit), sans-serif;
+    padding-top: 3rem;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.extensionSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerInner {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+}
+
+/* Statistics - Top Right aligned */
+.statsContainer {
+    align-self: flex-end;
+    font-size: 0.8125rem;
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: -1rem;
+    /* Adjust gap slightly if needed */
+}
+
+@media (max-width: 1024px) {
+    .statsContainer {
+        margin-bottom: 0;
+    }
+}
+
+.statValue {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.statDivider {
+    color: #cbd5e1;
+    margin: 0 0.5rem;
+}
+
+/* Main Section Titles */
+.mainTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1.25rem;
+}
+
+/* Left Column - Contact Details */
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.address {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+
+.contactRow {
+    font-size: 0.9375rem;
+}
+
+.contactLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.contactLink:hover {
+    color: #737300;
+    text-decoration: underline;
+}
+
+.contactLabel {
+    font-weight: 600;
+}
+
+.contactLabel::after {
+    content: " : ";
+}
+
+.extHead {
+    display: contents;
+}
+
+.extPlus {
+    display: none;
+}
+
+.socialChannels {
+    margin-top: 2rem;
+}
+
+.socialIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.socialIconCircle {
+    width: 38px;
+    height: 38px;
+    background-color: #737300;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s, background-color 0.2s;
+    font-size: 1.125rem;
+}
+
+.socialIconCircle:hover {
+    transform: translateY(-2px);
+    background-color: #737300;
+}
+
+/* Extensions Grid */
+.extensionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.5rem;
+}
+
+.extensionCol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.extensionItem {
+    font-size: 0.875rem;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.extKey {
+    font-weight: 700;
+    color: #1e293b;
+    min-width: 32px;
+}
+
+/* Services Links */
+.serviceLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.serviceLinkItem {
+    font-size: 0.9375rem;
+    color: #475569;
+    transition: color 0.15s;
+    text-decoration: none;
+}
+
+.serviceLinkItem:hover {
+    color: #737300;
+}
+
+/* Bottom Bar */
+.bottomBar {
+    background-color: #737300;
+    padding: 1.25rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .mainTitle {
+        font-size: 1.6rem;
+    }
+    .bottomBar {
+        padding: 1rem 0.75rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .footer .footerWrap {
+        width: 100%;
+        max-width: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .extensionGrid {
+        grid-template-columns: 1fr;
+    }
+    .footerInner {
+        gap: 1.5rem;
+    }
+    .mainTitle {
+        font-size: 1.4rem;
+    }
+    .bottomBar {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding-top: 1.35rem;
+        background: #f6f7f4;
+    }
+
+    .footerInner {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        padding-bottom: 1.35rem;
+    }
+
+    .contactSection,
+    .contactInfo,
+    .rightContent,
+    .extHead {
+        display: contents;
+    }
+
+    .extensionSection {
+        order: 1;
+        margin-top: 0.35rem;
+    }
+
+    .socialChannels {
+        order: 2;
+        margin-top: 0.85rem;
+    }
+
+    .mainTitle {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 0;
+    }
+
+    .address {
+        font-size: 0.92rem;
+        line-height: 1.55;
+        color: #6b7280;
+        margin: 0;
+    }
+
+    .address br {
+        display: none;
+    }
+
+    .contactRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.2rem 0.45rem;
+        font-size: 0.95rem;
+    }
+
+    .contactLabel {
+        order: 1;
+        font-weight: 400;
+        color: #6b7280;
+    }
+
+    .contactLabel::after {
+        content: none;
+    }
+
+    .contactNote {
+        order: 2;
+        color: #6b7280;
+    }
+
+    .contactLink {
+        order: 3;
+        font-weight: 700;
+        color: #1f2937;
+        text-decoration: none;
+    }
+
+    .contactLink[href^="mailto"] {
+        text-decoration: underline;
+    }
+
+    .extHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border-bottom: 1px solid #c5c4a4;
+        padding-bottom: 0.45rem;
+    }
+
+    .extensionSection .sectionTitle,
+    .socialChannels .sectionTitle {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1f2937;
+    }
+
+    .socialChannels .sectionTitle {
+        margin-bottom: 0.85rem;
+    }
+
+    .extPlus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 0;
+        background: transparent;
+        color: #1f2937;
+        font-size: 1.6rem;
+        line-height: 1;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .extensionGrid {
+        display: none;
+        margin-top: 0.75rem;
+    }
+
+    .extensionOpen .extensionGrid {
+        display: grid;
+    }
+
+    .socialIcons {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .socialIconCircle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    .bottomBar {
+        padding: 0.85rem 0.75rem;
+    }
+
+    .copyright {
+        font-size: 0.95rem;
+        opacity: 1;
+    }
+}

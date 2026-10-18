@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+/* ============================================
+   Design Tokens — Color Palette & Spacing
+   ============================================
+   ใช้ CSS variables เหล่านี้แทน hardcode ค่าสีตรงๆ
+   เปลี่ยนสีทั้งระบบแก้แค่ที่นี่ที่เดียว
+*/
+:root {
+  /* --- Brand Colors --- */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: #eff6ff;
+  --color-primary-border: #bfdbfe;
+
+  /* --- Backoffice olive brand --- */
+  --bo-brand: #737300;
+  --bo-brand-dark: #555900;
+  --bo-brand-ink: #3d4200;
+  --bo-brand-soft: #f3f1e2;
+  --bo-brand-wash: #f7f4ea;
+  --bo-brand-muted: #ebe8d4;
+  --bo-brand-line: rgba(115, 115, 0, 0.18);
+  --bo-brand-glow: rgba(115, 115, 0, 0.14);
+
+  /* --- Neutral / Gray Scale --- */
+  --color-text-primary: #111827;
+  --color-text-secondary: #374151;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+
+  --color-bg-page: #f5f6fa;
+  --color-bg-card: #ffffff;
+  --color-bg-subtle: #f9fafb;
+  --color-bg-hover: #f3f4f6;
+
+  --color-border: #e5e7eb;
+  --color-border-light: #f3f4f6;
+
+  /* --- Status Colors --- */
+  --color-success: #22c55e;
+  --color-success-bg: #f0fdf4;
+  --color-warning: #f59e0b;
+  --color-warning-bg: #fffbeb;
+  --color-danger: #ef4444;
+  --color-danger-bg: #fef2f2;
+  --color-info: #3b82f6;
+  --color-info-bg: #eff6ff;
+
+  /* --- Border Radius --- */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* --- Font Sizes --- */
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.875rem;
+  --text-md: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  /* --- Spacing --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* --- Shadows --- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* --- Background --- */
+  --background: #f5f6fa;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-kanit), 'Kanit', sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+body, button, input, select, textarea {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-kanit), 'Kanit', sans-serif !important;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/* ============================================================
+   News Preview — Quill rich text content global overrides
+   ============================================================ */
+
+/* Reset ql-editor เฉพาะใน news preview เพื่อให้ line breaks ทำงาน */
+.news-preview-content .ql-editor {
+  padding: 0 !important;
+  white-space: normal !important;
+  word-break: break-word;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c2c2c;
+}
+
+/* ทำให้ <p> ว่าง และ <br> เว้นบรรทัดได้ */
+.news-preview-content .ql-editor p {
+  min-height: 1.5em;
+  margin-bottom: 0.65em;
+}
+
+.news-preview-content .ql-editor p:has(br:only-child),
+.news-preview-content .ql-editor p:empty {
+  min-height: 1.5em;
+}
+
+/* Headings */
+.news-preview-content .ql-editor h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.news-preview-content .ql-editor h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.news-preview-content .ql-editor h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #111;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-preview-content .ql-editor h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #111;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Images */
+.news-preview-content .ql-editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+
+.news-preview-content .ql-editor .ql-align-center img {
+  display: inline-block;
+  margin: 1rem auto;
+}
+
+/* Lists */
+.news-preview-content .ql-editor ul,
+.news-preview-content .ql-editor ol {
+  padding-left: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.news-preview-content .ql-editor li {
+  margin-bottom: 0.4rem;
+  line-height: 1.8;
+}
+
+/* Quill renders lists differently — fix bullet display */
+.news-preview-content .ql-editor ul>.ql-ui::before {
+  content: '•';
+}
+
+/* Alignment */
+.news-preview-content .ql-editor .ql-align-center {
+  text-align: center;
+}
+
+.news-preview-content .ql-editor .ql-align-right {
+  text-align: right;
+}
+
+.news-preview-content .ql-editor .ql-align-justify {
+  text-align: justify;
+}
+
+/* Blockquote */
+.news-preview-content .ql-editor blockquote {
+  border-left: 4px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Links */
+.news-preview-content .ql-editor a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Code */
+.news-preview-content .ql-editor pre.ql-syntax {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+}
+
+/* Indentation */
+.news-preview-content .ql-editor .ql-indent-1 {
+  padding-left: 2em;
+}
+
+.news-preview-content .ql-editor .ql-indent-2 {
+  padding-left: 4em;
+}
+
+.news-preview-content .ql-editor .ql-indent-3 {
+  padding-left: 6em;
+}
+
+.news-preview-content .ql-editor .ql-indent-4 {
+  padding-left: 8em;
+}
+
+.news-preview-content .ql-editor .ql-indent-5 {
+  padding-left: 10em;
+}
+
+/* Video embed */
+.news-preview-content .ql-editor .ql-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}

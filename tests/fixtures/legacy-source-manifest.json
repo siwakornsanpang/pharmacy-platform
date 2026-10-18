@@ -1,0 +1,480 @@
+{
+  "source": "legacy-backoffice-fixture",
+  "phase": "1a+1b readiness confirmed",
+  "files": [
+    {
+      "path": "src/app/backoffice/Dashboard.module.css",
+      "sha256": "cc8520abf79db37754a008f602f1841219dd9cb0e4be08de875c3fdd733aabac"
+    },
+    {
+      "path": "src/app/backoffice/Hub.module.css",
+      "sha256": "12b8f19d07d72314ad0bd391448286286774bee939d79c1bda876a8029f34baa"
+    },
+    {
+      "path": "src/app/backoffice/layout/Header.module.css",
+      "sha256": "0c142060832823458f4df8a93b636e4dfd43acbb62cfc6c75800cdd062defeec"
+    },
+    {
+      "path": "src/app/backoffice/layout/Header.tsx",
+      "sha256": "fffc47ed9848c5bd2cca008b66b30b56ed5e8629c67eaf84eeec38179357cd7a"
+    },
+    {
+      "path": "src/app/backoffice/layout/Sidebar.module.css",
+      "sha256": "3dbc87a5e10cdda405df55196e252e563bbbaf98566d25b8ceae5493ab7eae2c"
+    },
+    {
+      "path": "src/app/backoffice/layout/Sidebar.tsx",
+      "sha256": "67595a092af7a5814fe5b3ba5e25cc4665b571977a61c45d49166d54f366fd02"
+    },
+    {
+      "path": "src/app/backoffice/layout.tsx",
+      "sha256": "a51ea64df27cc87aaf14b65ce774541d9ced85349b811719fe59cf473a3aff3a"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/academy.module.css",
+      "sha256": "fc6339fdb6ff370b853d1c7913f55b10b623fe84bdd577f83f1868fe47dbafc2"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/categories/page.tsx",
+      "sha256": "9032b6bf888fa4e1234fa456f2b8a392a6f0d73a6748e634fa51a818cb42d45d"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/courses/[id]/page.tsx",
+      "sha256": "78cfa6cdac26f56988e6a95da0d22cd757c3ec2275c90f877b94cbfaca5e768a"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/courses/page.tsx",
+      "sha256": "a8ca06c7741e6c632732ca7f08bb215d7511de9c848d8eb949fb76e1ba4fa790"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/cpe/page.tsx",
+      "sha256": "d006dccefc367124ba185114b725d751bc79f8effec0a6f07faf415be5c7a932"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/instructors/page.tsx",
+      "sha256": "c0b8867de5cc7a3217ce0085241c1ef356adb6954f8e944801ba6740b60e1af4"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/learners/page.tsx",
+      "sha256": "a18f28fa6c5fcd707033c35b13a8e4e669578c733381279aacca2e067e42eb1d"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/orders/page.tsx",
+      "sha256": "498973c35259fe3db93f893566ceb28e35bab9332ab6bdf6886d096119120746"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/page.tsx",
+      "sha256": "5c92875d089fcc4c07a75af094db8b32123b0c6d5c0b6cb351125c95d27ceaf9"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/refunds/page.tsx",
+      "sha256": "5f57db56f6316164ce1c53779a8103436d4f5026452b0520b3eeceadb146c76b"
+    },
+    {
+      "path": "src/app/backoffice/module/academy/reviews/page.tsx",
+      "sha256": "761e909dabad50d4d47c8e802dbd8e52e678ec3a0f40c5ae3c35e922209d363d"
+    },
+    {
+      "path": "src/app/backoffice/module/bill/page.tsx",
+      "sha256": "dfd0c4366e9012ec6e9acd0bb8d4b2dfdb5eb3675300b7f7acdcefb205cf3b04"
+    },
+    {
+      "path": "src/app/backoffice/module/bill/transactions/list.module.css",
+      "sha256": "6d095302dc3aa81eb82092754aebc104630fe44b73108aff088bcc03f2af7d3f"
+    },
+    {
+      "path": "src/app/backoffice/module/bill/transactions/page.tsx",
+      "sha256": "be543b5c6321dd21513bb7244a885fbec1b293508238203dc4e6db172365e5a9"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/CouncilMenu.module.css",
+      "sha256": "924fef65aefd8c0d6502fadfb72faf1ff21b4d7732b6c808f9a7bd691a577c84"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/SubMenu.module.css",
+      "sha256": "71a35acf2c44e7bf3edf71fcb88d4a9e41edf705985b9c361960020b8f92bce4"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/council/council.module.css",
+      "sha256": "73a6dee4cc17a6ff08401ede3a1e75ef81f8a60d4a3a14275399016c75fac07b"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/council/page.tsx",
+      "sha256": "3ba189b2ec5efc953167b10ef998a2f6e6a86f64a8347c70fb18315e46565425"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/history/page.tsx",
+      "sha256": "bcb7425ee9ae0072fefe966aab1d0632b5e923e04d6a13078fb229680dc858a6"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/honor/[awardId]/page.tsx",
+      "sha256": "b940a43f4dfe56fef8d73b90e09930abe28a9258292ad7e5818ecf6e6c33d705"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/honor/honor.module.css",
+      "sha256": "b39ad0004e9457bebe2ce96ec56cee3a7009d9bde3024acbeff03ed50534be82"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/honor/page.tsx",
+      "sha256": "1efe311aa1834e9e8a16c144e25885d958d83f63442934b592d4b4e3239819fd"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/page.tsx",
+      "sha256": "e4296608a74eb155577f59e9b968818b51ecdeaebe03965704a58540a901c7e2"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/policy/[categoryId]/page.tsx",
+      "sha256": "80b92857315b0632b4a2bec92994248dac0597c9e601b21f11c83554dba8da04"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/policy/page.tsx",
+      "sha256": "eecb5db5f61e95fd3b052c3df549bdf5920eeba93c428525949b71057324c791"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/about/policy/policy.module.css",
+      "sha256": "e88f645a2c081b950d3c141674c6ff07472e264eeea2b2dbf717877bfef3792b"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/agency/agency.module.css",
+      "sha256": "f61ba8c72aa42e049f4f46d68382c7fd1179f1fa7913d072d60c7371851277a2"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/agency/page.tsx",
+      "sha256": "8be29fb2fd47aded9b9e01ac7a31c0bd16d4615b5949fff43201d04e98299f8d"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/home/home.module.css",
+      "sha256": "560af3db558605a73bb56b82da797c860bd0511181fe162c35ff923a0450a4d2"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/home/page.tsx",
+      "sha256": "6e4e29683925ec762bf21a3d5011f457d4bdbb9bfa77b5402f80b94f4d8cbb4f"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/law/[category]/law.module.css",
+      "sha256": "cdd9880c8a6ffe11ddd5a6f987b23df5d4980f7877421223ebdf16751f9029f8"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/law/[category]/page.tsx",
+      "sha256": "c025bd81e3f41e86930dd59321d0a8cdc28b1d2cd592c7dc1e7aa29afa82906e"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/law/law.module.css",
+      "sha256": "d2171e14c2a0469b3faf3914e2895944a0f3cb4eae74fb8f02ee7f425e9b6a44"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/law/page.tsx",
+      "sha256": "ac45043f21027a1160740c1e2f299ffd4bd2bc285267baed82ccbdbe0b3051b3"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/NewsForm.tsx",
+      "sha256": "befda3869d3992129031b9819cb19f15b8b612a5300837532da17a54523c89b0"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/create/page.tsx",
+      "sha256": "9eab3ae29dfe8a2f18108f40e1f44fcac4aa419c599a4f5efaa0dd3e3f765f77"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/edit/[id]/page.tsx",
+      "sha256": "ba73cc9bfee73540ef72a7882b471f9d965f33c07c6a7086cd2bb5dc847e4f3d"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/news.module.css",
+      "sha256": "09f7c9b2bae7a60bf100885192ce80ef6df14546219eb53e1b1e942564370599"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/page.tsx",
+      "sha256": "227b2556a87d4be6d1bd7c908ad0ddf51cf86096084b57e0a6736efc82cc2bc9"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/preview/[id]/page.tsx",
+      "sha256": "13462a4e412e4f17a9bb0fd14ce4609955331b8f141e1e99558a53bfe5c59c87"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/preview/page.tsx",
+      "sha256": "5378cb7d9b8cfd26ecdcc8983b4f5efc546f4a3dd625ca270d30f05406e1f9fc"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/news/preview/preview.module.css",
+      "sha256": "aaad945c2d54400d4383497b5bd6d0b9af7c60e00a8f561744b050882d769a21"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/other-service/other-service.module.css",
+      "sha256": "1b35872f3b31c16f105b1ae5d5405e6ed8b1de378bf748fd4b44efd375fb419f"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/other-service/page.tsx",
+      "sha256": "e48cab11891cbae0282d655f58e194869b6a813fef73921c4cec6509180715ea"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/page.tsx",
+      "sha256": "2c3689751b1ddee4c860ccea42e9cf93fe6df9703eaf706846aafbaf8f38b142"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/e-service/page.tsx",
+      "sha256": "ce10cac42d9b3296489cd3667e798be51b2282223a16b618b9790658dbc36fac"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/e-service/service-e.module.css",
+      "sha256": "99acfac3fd1f0b987464667d3b3f80a16b4eaef87ba3b88650ceb8a274e3d1ca"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/medicine/MedicineForm.tsx",
+      "sha256": "291bc317a89a22c87a9be280ffd0c0096826eba5f6b63382af16d2df28105404"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/medicine/create/page.tsx",
+      "sha256": "417dcc6afd9f243800a50bd1244fa7c3f83e27cfcc4afb1623d2bc8cc519a884"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/medicine/edit/[id]/page.tsx",
+      "sha256": "3970009bf18cb3a8a6126b5d96e7e81ed29eacedaff7b6deeed13eae2b6a7093"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/medicine/page.tsx",
+      "sha256": "368e504ced4c750dcad065ea8991881b32cb5eaf93edf7b927a184c1e64c1c71"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/page.tsx",
+      "sha256": "df80eab35c4049fa8a7e00551e507311a1f28076a8991405b42a4b52ce60185f"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/public-project/PublicProjectForm.tsx",
+      "sha256": "a0acda5c1f3ae1ab7ffd4346818dcb4dd68fc86f80365d6b92f6fabef9b1d91d"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/public-project/create/page.tsx",
+      "sha256": "f85fb4b6e85c7180f16751b249c7441d7daebabedc2bbdd02734f3827e105844"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/public-project/edit/[id]/page.tsx",
+      "sha256": "be142d9e52d893b3a54f9151c5e4e9bd6acb2454c4987f4290c89a0fd702f288"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/service/public-project/page.tsx",
+      "sha256": "8677a3b12334cd4b0eb405a17ae959054ae0b9906a7e03ff931dc1b7be4568d2"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/setting/page.tsx",
+      "sha256": "028c62a326440e91bae8d3a8f1d16422f70c7d4e022bbe6b49c42a5c56984b30"
+    },
+    {
+      "path": "src/app/backoffice/module/council-web/setting/setting.module.css",
+      "sha256": "8e9bc8878d1e25509ab22719bf3e6d70b3918674a267fdbc781026e30444965a"
+    },
+    {
+      "path": "src/app/backoffice/module/e-service/page.tsx",
+      "sha256": "03bd1a9a0c6c4d1a2bcf45c2c08b1945db45a0ae1f462e82f0190d8813b54f70"
+    },
+    {
+      "path": "src/app/backoffice/module/e-service/services/list.module.css",
+      "sha256": "6d095302dc3aa81eb82092754aebc104630fe44b73108aff088bcc03f2af7d3f"
+    },
+    {
+      "path": "src/app/backoffice/module/e-service/services/page.tsx",
+      "sha256": "0d52ee0cc3e3f187220a40279d2c2c5a7630dc219668a40087817a643cddd6b6"
+    },
+    {
+      "path": "src/app/backoffice/module/pharmacist-web/home/home.module.css",
+      "sha256": "74e80d5218e3c7f411a3383e3b4159a10ec06f1d22b6104336c4e60015b0e73d"
+    },
+    {
+      "path": "src/app/backoffice/module/pharmacist-web/home/page.tsx",
+      "sha256": "1242f645462380e0398dc331ba31a8b09da050aee49dd2a2468f62914959eb11"
+    },
+    {
+      "path": "src/app/backoffice/module/pharmacist-web/page.tsx",
+      "sha256": "154f6a61c05d6d867e0165cf1e695efe7b75f09732053376a5eeb5862c9ee767"
+    },
+    {
+      "path": "src/app/backoffice/module/pharmacist-web/product/ProductForm.tsx",
+      "sha256": "8d9ae59e4acb99634017d45dc11a4d88851e4391dc4b8717f33532dc2aef3e01"
+    },
+    {
+      "path": "src/app/backoffice/module/pharmacist-web/product/page.tsx",
+      "sha256": "606a11d706d30df7c2ab6ea4231994d1f831d8b5eca3040b5be27b0a9a775515"
+    },
+    {
+      "path": "src/app/backoffice/module/pharmacist-web/product/product.module.css",
+      "sha256": "37357f12a2f7bec6fa719a93d427bac10e3e388e63c52b91955a262a148bff4e"
+    },
+    {
+      "path": "src/app/backoffice/module/register/[id]/page.tsx",
+      "sha256": "5e7d04fec41e6c3c861be2bf329bfd2b3fb5e1d68adc767635d821965777b421"
+    },
+    {
+      "path": "src/app/backoffice/module/register/list/page.tsx",
+      "sha256": "e4e5d87834f5d24df3af9c345ffe767b32999fe7c3b42f5ca87189ad0b93af13"
+    },
+    {
+      "path": "src/app/backoffice/module/register/page.tsx",
+      "sha256": "597cf5d2c0a981f2c2b06f0b99e5f801499db858ad253b4ae3ae03bfac7cd162"
+    },
+    {
+      "path": "src/app/backoffice/module/register/register.module.css",
+      "sha256": "6bd66a34b814608eeddd151763038ffb230d2b38a030afc5c01dea02b88b359a"
+    },
+    {
+      "path": "src/app/backoffice/module/royalcollege/management/list.module.css",
+      "sha256": "6d095302dc3aa81eb82092754aebc104630fe44b73108aff088bcc03f2af7d3f"
+    },
+    {
+      "path": "src/app/backoffice/module/royalcollege/management/page.tsx",
+      "sha256": "fb08e92951b33893d92698a0a29012adb834869282623ff409765e84ebaf4c61"
+    },
+    {
+      "path": "src/app/backoffice/module/royalcollege/page.tsx",
+      "sha256": "5b4c2a318d6ef98621a417fed82e373dca30ba5c668b202a7cd27fc1139e469a"
+    },
+    {
+      "path": "src/app/backoffice/module/setting/page.tsx",
+      "sha256": "7873134b58d05337156b34896f503be216788541d7a80ec1792cd778bdf3028d"
+    },
+    {
+      "path": "src/app/backoffice/module/setting/permissions/page.tsx",
+      "sha256": "78f17aaf0a2332e9ac54c815eb5489f8d481b24b81ef0bbc53592a8db324fb46"
+    },
+    {
+      "path": "src/app/backoffice/module/setting/permissions/permissions.module.css",
+      "sha256": "309229a12681be5f7c9e2f1024828935d7d87e5a4028f5919df3a99305a10388"
+    },
+    {
+      "path": "src/app/backoffice/module/setting/users/page.tsx",
+      "sha256": "ded70f2c758e0946219432a3db50cce1317d9ec41715b87cff98a1f84e9cc39b"
+    },
+    {
+      "path": "src/app/backoffice/module/setting/users.module.css",
+      "sha256": "9e3a353ee7ee42ce66a0f94c7434690e8e40ba193d58ed9eef4d628a99d07490"
+    },
+    {
+      "path": "src/app/backoffice/page.tsx",
+      "sha256": "6b743c92dfc824eb7b4b947906597ad481aa0afd2301cf78e39604d4c941473f"
+    },
+    {
+      "path": "src/app/components/editor/cropImage.ts",
+      "sha256": "8be397bf62792916088205545fcddcdf02aa74dbc4da0fbda17a5580f7a582da"
+    },
+    {
+      "path": "src/app/components/editor/editor.module.css",
+      "sha256": "33996d4d7b5a908dbe315a3d67078c3f3970655656c53292e1a71ac06fa3e16f"
+    },
+    {
+      "path": "src/app/components/editor/editor.tsx",
+      "sha256": "5ee838f44c2152e3d2da569b2f4d53d2b3deaa2665778397490c6b00f4e68ee7"
+    },
+    {
+      "path": "src/app/components/editor/quill-size.css",
+      "sha256": "ee92db3b2379f09752421f38a86858c789cc0cbe5dc94014bed987981ef158b4"
+    },
+    {
+      "path": "src/app/components/ui/CrudModal.tsx",
+      "sha256": "b25564d387d3dd343e1e2ff76e1d6501ff3acf25aed4582839ddb11a801ed047"
+    },
+    {
+      "path": "src/app/components/ui/ImagePreviewModal.tsx",
+      "sha256": "d5db12fa6f7cff9047fc4a3955dfd92acec42871322a178c2cd058112699c0c3"
+    },
+    {
+      "path": "src/app/components/ui/ImageUploader.tsx",
+      "sha256": "a0a3b125a57a557c773f6f273bb3768b03ebdf361fef8b919bb0bda03a991053"
+    },
+    {
+      "path": "src/app/components/ui/PageHeader.tsx",
+      "sha256": "7d67fb3fa002801faf21069c742ef7a0e22dd414650f9059553a1e931fdf3703"
+    },
+    {
+      "path": "src/app/components/ui/RoleBadge.tsx",
+      "sha256": "3fb3fe8ba4b638d09b9bb0cf0bbf1866eb98a1ed53231b29b87a2f29f3d7f7f3"
+    },
+    {
+      "path": "src/app/components/ui/Skeleton.module.css",
+      "sha256": "600568a20086a015035b88cf065809bb18a2fd7f9cca87c032c5ee598ae72ede"
+    },
+    {
+      "path": "src/app/components/ui/Skeleton.tsx",
+      "sha256": "bc4230c0ed7a169504926a83f1b825e066e50e41251018f9f37c1dfd9da52536"
+    },
+    {
+      "path": "src/app/config/menu.tsx",
+      "sha256": "a79e05e5aa52c87e405060ba26ff44c2b68a1ef7d46f40375b507c07c942f130"
+    },
+    {
+      "path": "src/app/config/roles.ts",
+      "sha256": "0d5f38abd4f28844107d8f9151d65c12ffd6a6cb04b20842a8df2fe8690c0aa4"
+    },
+    {
+      "path": "src/app/favicon.ico",
+      "sha256": "3aeb432d01bbe8a069ddb8d54764e2c2add68f9a50c76109ce01d08220962dbe"
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "1f04c74dfddb273fb097b2397b472edc5f6e7728c83a4b176525df8a675a4866"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "6b27819712c27a2ce19d5695abe780e23c0a4fbbfac5b114840b7a1f8160317e"
+    },
+    {
+      "path": "src/app/login/LoginPage.module.css",
+      "sha256": "771a48d26560b85b63dafc86ee42d6775b4e2550d9a97ef2a4aad05f6fc8af22"
+    },
+    {
+      "path": "src/app/login/page.tsx",
+      "sha256": "9ba4b7c25f75c7dd86a2e26c936791faa13ab4f04d64eebf5192ae64b065cc45"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "a8b3a9a8bff4848b314d1c98a26829f063f8d074453aa0501a753ce81f00d43e"
+    },
+    {
+      "path": "src/app/shared.module.css",
+      "sha256": "d108131670354f39e45134691650c8037785ed8742ceb4e9885d66325be3936e"
+    },
+    {
+      "path": "src/app/utils/authFetch.ts",
+      "sha256": "05d41d17f544a804adf7d359e4ea5c928afd8c8f2728dae2e1d73f43ff0b894c"
+    },
+    {
+      "path": "src/app/utils/localUi.ts",
+      "sha256": "307e3ea1a599e36d19e65a4fae83c7329a9147e3317bc3ab6715346535b6450b"
+    },
+    {
+      "path": "src/middleware.ts",
+      "sha256": "ef9e3e676e163bdd51847d92a185f3fd18587ff97fa74a433956abde71b601fb"
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "6847c8ac23cbfcd64da783864946636e8ed5597e5791a0734dc87adeccf01b02"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "public/file.svg",
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4"
+    },
+    {
+      "path": "public/globe.svg",
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf"
+    },
+    {
+      "path": "public/next.svg",
+      "sha256": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc"
+    },
+    {
+      "path": "public/vercel.svg",
+      "sha256": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4"
+    },
+    {
+      "path": "public/window.svg",
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1"
+    }
+  ],
+  "sourceHead": "99ab56563f905fe21ee7c01baeecf3f14aebd6d9",
+  "workingTreeStatus": ""
+}

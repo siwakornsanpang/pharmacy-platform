@@ -1,0 +1,221 @@
+/* src/app/login/LoginPage.module.css */
+
+/* พื้นหลังและการจัดกึ่งกลาง */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #5c681e;
+  background: linear-gradient(to bottom, #5c681e 20%, #ffffff 73%);
+  padding: 16px;
+}
+
+/* การ์ด Login */
+.card {
+  background-color: white;
+  width: 100%;
+  max-width: 448px; /* max-w-md */
+  border-radius: 16px; /* rounded-2xl */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+  overflow: hidden;
+}
+
+/* --- Header ส่วนหัว --- */
+.header {
+  background-color: #f9fafb; /* gray-50 */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #f3f4f6; /* gray-100 */
+}
+
+.logoBox {
+  width: 64px;
+  height: 64px;
+ 
+  border-radius: 12px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+ 
+  
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937; /* gray-800 */
+  margin: 0;
+}
+
+.subtitle {
+  color: #6b7280; /* gray-500 */
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* --- Form --- */
+.formContainer {
+  padding: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space-y-5 */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+  margin-bottom: 4px;
+}
+
+/* Input Wrapper & Icon */
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: #9ca3af; /* gray-400 */
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px 16px 10px 40px; /* เว้นซ้ายให้ไอคอน */
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.inputField:focus {
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* ring-2 */
+}
+
+/* ปุ่มดูรหัสผ่าน */
+.togglePassword {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.togglePassword:hover {
+  color: #4b5563;
+}
+
+/* แถวตัวเลือก (จำรหัสผ่าน / ลืมรหัส) */
+.optionsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #4b5563; /* gray-600 */
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  margin-right: 8px;
+  accent-color: #2563eb;
+}
+
+.link {
+  color:  #565151;
+  font-weight: 500;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* Error Message */
+.errorMessage {
+  background-color: #fef2f2; /* red-50 */
+  color: #dc2626; /* red-600 */
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Submit Button */
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* สถานะปกติ */
+.activeBtn {
+  background-color: #1d1616; /* blue-600 */
+}
+.activeBtn:hover {
+  background-color: #1d1616; /* blue-700 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* สถานะ Loading */
+.loadingBtn {
+  background-color: #5c681e; /* blue-400 */
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  background-color: #f9fafb;
+  padding: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  border-top: 1px solid #f3f4f6;
+}

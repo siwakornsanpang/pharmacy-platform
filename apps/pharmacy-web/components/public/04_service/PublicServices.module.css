@@ -1,0 +1,244 @@
+.sectionCon {
+    max-width: var(--max-width-2xl);
+    width: 90%;
+    margin: auto;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+.section {
+    margin: auto;
+    padding: 40px 0;
+    background: #ffffff;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.card {
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    aspect-ratio: 2 / 1;
+    background: #f4f4ea;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.serviceImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardOverlay {
+    position: absolute;
+    inset: 0;
+    padding: 0.9rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(
+        125deg,
+        rgba(58, 75, 15, 0.78) 0%,
+        rgba(115, 115, 0, 0.42) 36%,
+        rgba(255, 255, 255, 0) 66%
+    );
+    pointer-events: none;
+}
+
+.cardTitle {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+}
+
+.cardDescription {
+    margin: 0.28rem 0 0;
+    color: #ffffff;
+    font-size: clamp(0.8rem, 1.05vw, 0.95rem);
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: pre-line;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    max-width: 92%;
+}
+
+@media (max-width: 768px) {
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .cardOverlay {
+        padding: 1.1rem 1.15rem;
+    }
+
+    .cardTitle {
+        font-size: clamp(1.15rem, 3.5vw, 1.45rem);
+    }
+
+    .cardDescription {
+        font-size: clamp(0.88rem, 2.4vw, 1rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cardGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .card {
+        aspect-ratio: 16 / 10;
+        border-radius: var(--radius-lg);
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .cardOverlay {
+        padding: 0.55rem 0.65rem;
+    }
+
+    .cardTitle {
+        font-size: 0.82rem;
+    }
+
+    .cardDescription {
+        font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .section {
+        max-width: 100%;
+        padding: 24px 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 1.15rem 0 0.35rem;
+    }
+
+    .sectionCon {
+        width: 100%;
+        padding: 0 0.7rem;
+    }
+
+    .title {
+        margin-bottom: 0.85rem;
+        font-size: 1.45rem;
+    }
+
+    .cardGrid {
+        gap: 10px;
+    }
+
+    .card {
+        aspect-ratio: 1.92 / 1;
+        border-radius: 16px;
+    }
+
+    .cardOverlay {
+        padding: 0.55rem 0.5rem;
+        background: linear-gradient(
+            100deg,
+            rgba(146, 148, 72, 0.72) 0%,
+            rgba(176, 176, 110, 0.4) 36%,
+            rgba(206, 204, 150, 0.14) 64%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+
+    .cardTitle {
+        font-size: 0.86rem;
+        font-weight: 800;
+        line-height: 1.2;
+        text-shadow: none;
+    }
+
+    .cardDescription {
+        margin-top: 0.12rem;
+        font-size: 0.58rem;
+        font-weight: 500;
+        line-height: 1.3;
+        max-width: none;
+        white-space: normal;
+        text-shadow: none;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .homeCardGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .homeCardGrid .card {
+        aspect-ratio: 333 / 178;
+    }
+
+    .section {
+        padding: 16px 0 0;
+    }
+
+    .sectionCon {
+        width: 90%;
+        max-width: var(--max-width-2xl);
+        padding: 40px 0;
+    }
+
+    .title {
+        margin-bottom: 24px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 44px;
+    }
+
+    .cardGrid:not(.homeCardGrid) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .cardGrid:not(.homeCardGrid) .card {
+        aspect-ratio: 2 / 1;
+    }
+}

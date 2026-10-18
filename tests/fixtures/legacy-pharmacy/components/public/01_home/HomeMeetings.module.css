@@ -1,0 +1,529 @@
+/* === Home Meetings Section === */
+.section {
+  padding: 4rem 1.5rem;
+  background: white;
+}
+
+.container {
+  max-width: var(--max-width-2xl);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #A7A365;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.viewAll {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #737300;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.viewAll:hover {
+  opacity: 0.7;
+}
+
+/* === Meeting List === */
+.meetingList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meetingCard {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #A7A365;
+}
+
+.meetingCard:last-child {
+  margin-bottom: 0;
+}
+
+/* === Date Box === */
+.dateBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 100px;
+  padding-top: 1rem;
+}
+
+.dateDay {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  line-height: 1;
+}
+
+.dateMonth {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+/* === Meeting Content === */
+.meetingContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meetingTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cpeBadge {
+  background: #fbfdf0;
+  border: 1px solid #dce2c1;
+  color: #4b5320;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.cpeIcon {
+  font-size: 1rem;
+  color: #7b7b1e;
+}
+
+.meetingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.detailRowFlex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.audiencesWrapper {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.participantLabel {
+    margin-right: 0.5rem;
+}
+
+.detailIcon {
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+/* === Badges === */
+.badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.badgeActive {
+  background: #fef08a; /* Yellow/Gold for pharmacists */
+  color: #854d0e;
+}
+
+/* === Meeting Image === */
+.meetingImageWrapper {
+  max-width: 280px;
+  width: 100%;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.meetingImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capacity {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.capacityIcon {
+  display: none;
+}
+
+.dots {
+  display: none;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .meetingCard {
+    flex-wrap: wrap;
+  }
+  
+  .meetingImageWrapper {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .meetingCard {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .dateBox {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding-top: 0;
+  }
+
+  .dateDay {
+    font-size: 2rem;
+  }
+
+  .dateMonth {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .meetingImageWrapper {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .detailRowFlex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .meetingTitle {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .mobileBleed {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .meetingCard {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .meetingImageWrapper {
+    width: 220px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 1.25rem 0 0.5rem;
+  }
+
+  .section .mobileBleed {
+    overflow-x: visible;
+    padding-right: 0;
+    padding-left: 0.75rem;
+  }
+
+  .headerWrap {
+    padding-right: 0.75rem;
+  }
+
+  .meetingList {
+    position: relative;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 0.75rem 0.35rem 0;
+    scrollbar-width: none;
+  }
+
+  .meetingList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .meetingCard {
+    position: relative;
+    display: grid;
+    grid-template-columns: 118px minmax(0, 1fr);
+    grid-template-areas:
+      "image title"
+      "image loc"
+      "image when"
+      "image foot";
+    flex: 0 0 88%;
+    column-gap: 0.7rem;
+    row-gap: 0.35rem;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 8px 10px 8px 8px;
+    border-bottom: 0;
+    background: #f9fafb;
+    border-radius: 20px;
+  }
+
+  .meetingImageWrapper {
+    grid-area: image;
+    width: 118px;
+    height: 100%;
+    min-height: 136px;
+    align-self: stretch;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .dateBox {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    min-width: 44px;
+    padding: 6px 8px 5px;
+    gap: 0;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(17, 24, 39, 0.08);
+  }
+
+  .dateDay {
+    font-size: 1.45rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .dateMonth {
+    font-size: 0.72rem;
+    margin-top: 0;
+    color: #6b7280;
+  }
+
+  .meetingContent,
+  .titleWrapper,
+  .meetingDetails {
+    display: contents;
+  }
+
+  .meetingTitle {
+    grid-area: title;
+    min-width: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .meetingDetails .detailRow:nth-child(1) {
+    grid-area: loc;
+  }
+
+  .meetingDetails .detailRow:nth-child(2) {
+    grid-area: when;
+  }
+
+  .detailRowFlex {
+    grid-area: foot;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+    min-width: 0;
+    font-size: 0.75rem;
+  }
+
+  .meetingDetails .detailRow:nth-child(4) {
+    display: none;
+  }
+
+  .detailRow {
+    min-width: 0;
+    font-size: 0.78rem;
+    gap: 0.35rem;
+    color: #6b7280;
+  }
+
+  .detailRow > span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .fieldLabel,
+  .participantLabel,
+  .cpeUnit,
+  .audiencesWrapper .detailIcon {
+    display: none;
+  }
+
+  .cpeBadge {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 2;
+    background: #737300;
+    color: #fff;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.22rem 0.55rem;
+    font-size: 0.68rem;
+    box-shadow: none;
+    gap: 0.25rem;
+  }
+
+  .cpeIcon {
+    color: #fff;
+    font-size: 0.72rem;
+  }
+
+  .badges {
+    flex-wrap: nowrap;
+  }
+
+  .badges span {
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+
+  .capacity {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .capacityIcon {
+    display: inline-flex;
+    color: #6b7280;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 0.65rem;
+    padding-right: 0.75rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border: 0;
+    padding: 0;
+    border-radius: 999px;
+    background: #e5e7eb;
+  }
+
+  .dotActive {
+    width: 22px;
+    background: #737300;
+  }
+}
+

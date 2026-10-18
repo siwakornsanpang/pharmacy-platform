@@ -1,0 +1,423 @@
+/* === About History Page === */
+.contentTitle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+}
+
+.contentTitle::after {
+    content: "";
+    width: 72px;
+    height: 4px;
+    border-radius: 999px;
+    background: #737300;
+    display: block;
+}
+
+.content {
+  flex: 1.2;
+  padding: 1rem 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+
+
+.contentBody {
+    font-size: 1.05rem;
+    color: #374151;
+    line-height: 1.9;
+}
+
+.contentBody p {
+    margin: 0 0 1.5rem 0;
+}
+
+.contentBody h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 2.5rem 0 1rem 0;
+}
+
+.contentBody ol,
+.contentBody ul {
+    margin: 0;
+}
+
+.contentBody ol:not(:last-child),
+.contentBody ul:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.contentBody li {
+    margin-bottom: 0.5rem;
+}
+
+.card {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 4rem; 
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  min-height:400; /* ปรับความสูงรูปให้สมดุลกับจำนวนบรรทัดข้อความ */
+  max-width: 400;
+  border-radius: 24px; 
+  overflow: hidden;
+}
+
+
+
+.contentImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 1.5rem 0;
+}
+
+.contentImageRow {
+    display: grid;
+    
+
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contentImageRow img {
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.infoCard {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 3rem;
+    row-gap: 0.35rem;
+    margin: 3rem 0;
+    align-items: start;
+    position: relative;
+}
+
+.foldSection {
+    position: relative;
+}
+
+.fold {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.infoSummary {
+    grid-column: 2;
+    grid-row: 1;
+    cursor: pointer;
+}
+
+.infoImageWrapper {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: stretch;
+    min-height: 280px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.infoImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.infoContent {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoTitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.5rem 0;
+}
+
+.infoSubtitle {
+    font-size: 1.05rem;
+    color: #4b5563;
+    margin: 0 0 1.25rem 0;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoListItem {
+    font-size: 1.05rem;
+    color: #374151;
+    line-height: 1.6;
+    margin: 0 0 0.35rem;
+}
+
+.infoNum::before {
+    content: "(";
+}
+
+.infoNum::after,
+.stepNum::after {
+    content: ") ";
+}
+
+
+
+
+/* === Responsive === */
+@media (min-width: 641px) {
+    .foldHead {
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .imageWrapper {
+        width: 100%;
+        max-width: 100%;
+        min-height: 250px;
+    }
+
+    .infoCard {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .infoImageWrapper {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        height: 300px;
+        min-height: 0;
+    }
+
+    .infoSummary {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .infoContent {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .infoCard {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .infoImageWrapper {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        height: 300px;
+        min-height: 0;
+    }
+
+    .infoSummary {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .infoContent {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .contentImage,
+    .contentImageRow img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contentTitle {
+        font-size: 1.35rem;
+        gap: 0.45rem;
+        margin-bottom: 1rem;
+    }
+
+    .contentTitle::after {
+        width: 48px;
+        height: 3px;
+    }
+
+    .contentBody {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .contentBody p {
+        margin-bottom: 1rem;
+    }
+
+    .contentBody h3 {
+        font-size: 1.15rem;
+        margin: 1.5rem 0 0.65rem;
+    }
+
+    .contentImage,
+    .contentImageRow img {
+        height: 190px;
+        border-radius: 16px;
+        margin: 0.5rem 0 1rem;
+    }
+
+    .contentImageRow {
+        grid-template-columns: 1fr;
+        margin: 0.5rem 0 1rem;
+    }
+
+    .infoCard {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        margin: 1.25rem 0;
+    }
+
+    .fold:not(:checked) ~ .foldBody,
+    .fold:not(:checked) ~ .infoContent,
+    .fold:not(:checked) ~ .infoImageWrapper {
+        display: none;
+    }
+
+    .foldHead {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.75rem;
+        width: 100%;
+        pointer-events: auto;
+    }
+
+    .foldHead::after {
+        content: "";
+        flex: 0 0 8px;
+        width: 8px;
+        height: 8px;
+        margin: 0.45rem 0.15rem 0 0;
+        border-right: 2px solid #c5c4a6;
+        border-bottom: 2px solid #c5c4a6;
+        transform: rotate(45deg);
+    }
+
+    .fold:checked ~ .foldHead::after {
+        transform: rotate(-135deg);
+    }
+
+    .foldHead .contentTitle {
+        margin-bottom: 0.75rem;
+    }
+
+    .infoImageWrapper {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 6 / 5;
+        min-height: 0;
+        margin-top: 0.85rem;
+        border-radius: 16px;
+    }
+
+    .infoTitle {
+        font-size: 1.15rem;
+    }
+
+    .infoSubtitle {
+        font-size: 0.9rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .infoListItem {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.92rem;
+        line-height: 1.45;
+        margin: 0;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid #e4e3d0;
+    }
+
+    .infoListItem:last-child {
+        border-bottom: none;
+    }
+
+    .infoNum,
+    .stepNum {
+        flex: 0 0 28px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #cdcaa5;
+        color: #737300;
+        font-size: 0.8rem;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoNum::before,
+    .infoNum::after,
+    .stepNum::after {
+        content: none;
+    }
+}

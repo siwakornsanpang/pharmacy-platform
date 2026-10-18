@@ -1,0 +1,161 @@
+{
+  "assets": [
+    {
+      "path": "fonts/69cb356f7cbe96fec6c4782549dcecc9c6db8eb7c487cf05b4bf431aec6c17cc.woff2",
+      "sha256": "69cb356f7cbe96fec6c4782549dcecc9c6db8eb7c487cf05b4bf431aec6c17cc",
+      "bytes": 9868
+    },
+    {
+      "path": "fonts/03fb9ed80640ac2225e944957aa60fefa230bff703e6113aa08f901ec2265b15.woff2",
+      "sha256": "03fb9ed80640ac2225e944957aa60fefa230bff703e6113aa08f901ec2265b15",
+      "bytes": 10752
+    },
+    {
+      "path": "fonts/13ec464db8bcf2979accb5818fe39534c56c4b80764466440ace81ce706f0e6f.woff2",
+      "sha256": "13ec464db8bcf2979accb5818fe39534c56c4b80764466440ace81ce706f0e6f",
+      "bytes": 10688
+    },
+    {
+      "path": "fonts/5c6566f6de67471ce98d3d8a4a214ff07c3190d62a1cf5ed89d2d2e9997cf09a.woff2",
+      "sha256": "5c6566f6de67471ce98d3d8a4a214ff07c3190d62a1cf5ed89d2d2e9997cf09a",
+      "bytes": 6800
+    },
+    {
+      "path": "fonts/8e7f7b8c958fdebff0b818d22b2476529bdceb6f1494398c0f2cb8f012c20aee.woff2",
+      "sha256": "8e7f7b8c958fdebff0b818d22b2476529bdceb6f1494398c0f2cb8f012c20aee",
+      "bytes": 9656
+    },
+    {
+      "path": "fonts/75b3bedbebc35f347c0ae3b416aa871941555357e7b0f83767eb5987875589ed.woff2",
+      "sha256": "75b3bedbebc35f347c0ae3b416aa871941555357e7b0f83767eb5987875589ed",
+      "bytes": 12872
+    },
+    {
+      "path": "fonts/6efa51e881aac1bd35dc85d8e829d31a2bbf957d807afe3812eee769ec8f3e58.woff2",
+      "sha256": "6efa51e881aac1bd35dc85d8e829d31a2bbf957d807afe3812eee769ec8f3e58",
+      "bytes": 3944
+    },
+    {
+      "path": "fonts/f689f638f29fff460a2d5749edb5d5c38d7bef0389f32032d871f23fc6ebb008.woff2",
+      "sha256": "f689f638f29fff460a2d5749edb5d5c38d7bef0389f32032d871f23fc6ebb008",
+      "bytes": 7968
+    },
+    {
+      "path": "fonts/5e811a757d59aea1392d6fbc8ce6e586e57ac1b52e99b73b7193963d0a0c22d3.woff2",
+      "sha256": "5e811a757d59aea1392d6fbc8ce6e586e57ac1b52e99b73b7193963d0a0c22d3",
+      "bytes": 7064
+    },
+    {
+      "path": "fonts/e27f657e38d52887baa3b6b2f812bef93dfdd356f0810e40edd4ee284cc7e9f6.woff2",
+      "sha256": "e27f657e38d52887baa3b6b2f812bef93dfdd356f0810e40edd4ee284cc7e9f6",
+      "bytes": 6204
+    },
+    {
+      "path": "fonts/15e0780978970e950d661e9b09423242e33f9a09264e7429160cf9e3fd3e9ac2.woff2",
+      "sha256": "15e0780978970e950d661e9b09423242e33f9a09264e7429160cf9e3fd3e9ac2",
+      "bytes": 3928
+    },
+    {
+      "path": "fonts/93e7a13d02a5b29786aac577a7892462625ab3f70b0540a66d2404c435146d83.woff2",
+      "sha256": "93e7a13d02a5b29786aac577a7892462625ab3f70b0540a66d2404c435146d83",
+      "bytes": 9736
+    },
+    {
+      "path": "fonts/d67e4a94ba498635f764ddca7d1ec4271f5642f032eb24b426764480f66f8497.woff2",
+      "sha256": "d67e4a94ba498635f764ddca7d1ec4271f5642f032eb24b426764480f66f8497",
+      "bytes": 5892
+    },
+    {
+      "path": "fonts/58a6b173d5ca1dec92166ea3c6cb1a84a4144556d10928ac14e8e6b40e4787bd.woff2",
+      "sha256": "58a6b173d5ca1dec92166ea3c6cb1a84a4144556d10928ac14e8e6b40e4787bd",
+      "bytes": 16540
+    },
+    {
+      "path": "fonts/5f3d6ad60f29d6cb708414ec6887163d63bf197377ef5417d2483ff31ace6c3b.woff2",
+      "sha256": "5f3d6ad60f29d6cb708414ec6887163d63bf197377ef5417d2483ff31ace6c3b",
+      "bytes": 23108
+    },
+    {
+      "path": "fonts/16e1d48b6dd29eb240aec5db36184eb182933c082cd43de7f35af686d58087d2.woff2",
+      "sha256": "16e1d48b6dd29eb240aec5db36184eb182933c082cd43de7f35af686d58087d2",
+      "bytes": 7728
+    },
+    {
+      "path": "fonts/e5ca26ce875bf9b8ed1e0f37e1844d1e25ca8d8fd011d2ad5f32727838c08b52.woff2",
+      "sha256": "e5ca26ce875bf9b8ed1e0f37e1844d1e25ca8d8fd011d2ad5f32727838c08b52",
+      "bytes": 3920
+    },
+    {
+      "path": "fonts/b44b123b582811b298fd1744c3612c917375cbbed171969589a020d4f4ba37bf.woff2",
+      "sha256": "b44b123b582811b298fd1744c3612c917375cbbed171969589a020d4f4ba37bf",
+      "bytes": 7136
+    },
+    {
+      "path": "fonts/f3426315026aaf5ace0855572425dda3f81bf9dbb3f78703bf1a35e651cdeda4.woff2",
+      "sha256": "f3426315026aaf5ace0855572425dda3f81bf9dbb3f78703bf1a35e651cdeda4",
+      "bytes": 10500
+    },
+    {
+      "path": "fonts/6129fc8571c3e0cb0a4c41f5160c974a843b055009dc4ad8858bd808e18a2d86.woff2",
+      "sha256": "6129fc8571c3e0cb0a4c41f5160c974a843b055009dc4ad8858bd808e18a2d86",
+      "bytes": 14900
+    },
+    {
+      "path": "fonts/745994b5cd950ec201b66526375f057d540847cccfc70f4f24f5f571d26d3923.woff2",
+      "sha256": "745994b5cd950ec201b66526375f057d540847cccfc70f4f24f5f571d26d3923",
+      "bytes": 14712
+    },
+    {
+      "path": "fonts/9b92288aa6b0dba0522cc13f9603c3ad45611af7791debee714db917a7e1c06d.woff2",
+      "sha256": "9b92288aa6b0dba0522cc13f9603c3ad45611af7791debee714db917a7e1c06d",
+      "bytes": 3924
+    },
+    {
+      "path": "fonts/9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608.woff2",
+      "sha256": "9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608",
+      "bytes": 29288
+    },
+    {
+      "path": "fonts/8930113c78a12fe560c02fc804146d2d17b7df88372cbb9651cbd4cc68ad4586.woff2",
+      "sha256": "8930113c78a12fe560c02fc804146d2d17b7df88372cbb9651cbd4cc68ad4586",
+      "bytes": 9908
+    },
+    {
+      "path": "fonts/b45375d0aa5e9f2b69df53f4e05f21febc40ebace6ff7c4d76efc0ffe116fdb4.woff2",
+      "sha256": "b45375d0aa5e9f2b69df53f4e05f21febc40ebace6ff7c4d76efc0ffe116fdb4",
+      "bytes": 6796
+    },
+    {
+      "path": "fonts/d61a8b1f4e44fd37831f7479f6f38a65405e3e3c80251ded517a4b77f061fd6b.woff2",
+      "sha256": "d61a8b1f4e44fd37831f7479f6f38a65405e3e3c80251ded517a4b77f061fd6b",
+      "bytes": 10440
+    },
+    {
+      "path": "fonts/b7a545bbb08256bd809f11cfe66d88da3e22d169ea4407737b1ef0ec1ed3d791.woff2",
+      "sha256": "b7a545bbb08256bd809f11cfe66d88da3e22d169ea4407737b1ef0ec1ed3d791",
+      "bytes": 7252
+    },
+    {
+      "path": "kanit.css",
+      "sha256": "b23b607759bd7665e2ded02b5822e44ecc273c781765134d3ddc8bba2f643cbd",
+      "bytes": 5727
+    },
+    {
+      "path": "geist.css",
+      "sha256": "27174b04f25590edc3750188d2faf06a8ef5f2e34939718ad698e29cc1d28331",
+      "bytes": 1744
+    },
+    {
+      "path": "geist_mono.css",
+      "sha256": "4fa4df3920c90d724e78e9c45ac03bb6b40c6cdd44e473edbfdb1b6f0aa5e1f5",
+      "bytes": 2065
+    },
+    {
+      "path": "synthetic.svg",
+      "sha256": "b2bfb14096d61b9a7195c9900bc0348e34e566765c9b705eca772b8eb7abee94",
+      "bytes": 389,
+      "purpose": "Synthetic media; no production remote bytes asserted"
+    }
+  ],
+  "sarabun": "Legacy CSS declares Sarabun without font bytes; existing system fallback remains unchanged."
+}

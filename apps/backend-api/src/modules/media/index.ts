@@ -1,0 +1,14 @@
+export { mediaAssets, mediaAssetPins, mediaAssetReferences, mediaCleanupJobs, mediaUploadIntents } from './schema';
+export { createMediaService } from './service';
+export type { MediaService, MediaServiceDependencies } from './service';
+export { createUploadIntentService, jsonMetadataMaxBytes, ticketTtlSeconds } from './upload-intents';
+export type { UploadIntentService } from './upload-intents';
+export { registerMediaRoutes } from './routes';
+export { createMediaAuthorizers, staffDomainAuthorizer } from './public';
+export { fakeStorage, supabaseStorage } from './storage';
+export type { MediaStorage } from './storage';
+export { MediaError } from './types';
+export type { AuthorizedAssetRead, ClaimedUploadIntent, MediaOwnerAuthorizer, VerifiedUploadActor } from './types';
+export { parseOwner } from './policy';
+export { createMediaLifecycle } from './lifecycle';
+export type { AttachmentReservation, MediaLifecycle, MediaOwnerPort } from './lifecycle';

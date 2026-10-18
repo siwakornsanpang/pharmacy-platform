@@ -1,0 +1,290 @@
+.container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3f462c;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: #6b705c;
+  font-size: 0.9rem;
+}
+
+.primary,
+.ghost,
+.danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+}
+
+.primary {
+  background: #555b38;
+  color: white;
+}
+
+.ghost {
+  background: #f3f1e4;
+  color: #3f462c;
+}
+
+.ghost:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.danger {
+  background: transparent;
+  color: #9b3b3b;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ece8d8;
+  vertical-align: middle;
+}
+
+.table th {
+  background: #f7f4ea;
+  color: #555b38;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  gap: 0.85rem;
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: #3f462c;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd6bf;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  color: #3f462c;
+  background: white;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  outline: none;
+  border-color: #737300;
+  box-shadow: 0 0 0 3px rgba(115, 115, 0, 0.12);
+}
+
+.form select {
+  appearance: none;
+  height: 2.75rem;
+  padding-right: 2.4rem;
+  line-height: 1.2;
+  cursor: pointer;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23555b38' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1.15rem;
+}
+
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0.2rem;
+  background: transparent;
+  box-shadow: none;
+  accent-color: #555b38;
+  flex: 0 0 auto;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.form label.checks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  font-size: 0.95rem;
+}
+
+.thumb {
+  width: 72px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f3f1e4;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.addBar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  background: #f7f4ea;
+  color: #3f462c;
+  cursor: pointer;
+  font: inherit;
+}
+
+.empty {
+  padding: 2rem;
+  text-align: center;
+  color: #6b705c;
+}
+
+.lesson {
+  display: grid;
+  gap: 0.6rem;
+  border: 1px solid #ddd6bf;
+  border-radius: 10px;
+  padding: 0.85rem;
+}
+
+.lessonHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+}
+
+.fold {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.quizList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.optionRow {
+  display: grid;
+  grid-template-columns: 1.05rem minmax(0, 1fr) auto;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toolbar input,
+.toolbar select {
+  box-sizing: border-box;
+  border: 1px solid #ddd6bf;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  font: inherit;
+  color: #3f462c;
+  background-color: white;
+}
+
+.toolbar input {
+  flex: 1;
+  min-width: 0;
+}
+
+.toolbar select {
+  appearance: none;
+  min-width: 10.5rem;
+  height: 2.6rem;
+  padding-right: 2.2rem;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23555b38' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.65rem center;
+  background-size: 1.1rem;
+}
+
+.toolbar input:focus,
+.toolbar select:focus {
+  outline: none;
+  border-color: #737300;
+  box-shadow: 0 0 0 3px rgba(115, 115, 0, 0.12);
+}
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+  color: #6b705c;
+}
+
+@media (max-width: 800px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

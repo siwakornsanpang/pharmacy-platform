@@ -1,0 +1,382 @@
+/* permissions.module.css */
+
+.container {
+  padding: var(--space-8);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
+/* Admin info banner */
+.adminInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+/* Role cards */
+.roleCard {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-4);
+  overflow: hidden;
+}
+
+.roleCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-5);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.roleCardHeader:hover {
+  background: var(--color-bg-subtle);
+}
+
+.roleInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.roleName {
+  font-weight: 600;
+  font-size: var(--text-md);
+  color: var(--color-text-primary);
+}
+
+.roleKey {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  background: var(--color-bg-hover);
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-family: monospace;
+}
+
+.permCount {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.unsavedBadge {
+  font-size: var(--text-xs);
+  color: #f59e0b;
+  background: #fffbeb;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+
+.roleActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+}
+
+.btnDeleteRole {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btnDeleteRole:hover {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+/* Permission grid */
+.permissionGrid {
+  padding: 0 var(--space-5) var(--space-5);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.permGroup {
+  margin-top: var(--space-4);
+}
+
+.permGroupTitle {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-2) 0;
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+/* Permission item (checkbox row) */
+.permItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.permItem:hover {
+  background: var(--color-bg-subtle);
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.checkIcon.checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.permLabel {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  flex: 1;
+}
+
+.permKey {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  font-family: monospace;
+}
+
+/* Action bar (save / cancel buttons) */
+.actionBar {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.btnSave {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.btnSave:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.btnSave:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnCancel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  background: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.btnCancel:hover:not(:disabled) {
+  background: var(--color-bg-hover);
+}
+
+.btnCancel:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Add button (header) */
+.btnAdd {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-card);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnAdd:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Add permission form */
+.addForm {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+  border: 1px solid var(--color-primary);
+}
+
+.addFormTitle {
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-4) 0;
+}
+
+.addFormGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.formLabel {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.formInput {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  color: var(--color-text-muted);
+  gap: var(--space-2);
+}
+
+.permissionSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Seed card */
+.seedCard {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-8);
+  text-align: center;
+  max-width: 500px;
+  margin: var(--space-8) auto;
+}
+
+.seedCard h2 {
+  margin: 0;
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+}
+
+.btnSeed {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnSeed:hover {
+  background: var(--color-primary-hover);
+}

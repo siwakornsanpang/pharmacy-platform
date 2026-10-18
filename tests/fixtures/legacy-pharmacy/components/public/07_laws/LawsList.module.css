@@ -1,0 +1,274 @@
+/* === Laws List + Pagination === */
+.wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.yearSort {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: white;
+    font-size: 0.9rem;
+    color: #374151;
+    cursor: pointer;
+}
+
+.yearSort:hover {
+    border-color: #d1d5db;
+}
+
+.listLabel {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #6b7280;
+    margin: 0 0 1rem 0;
+}
+
+.listCount {
+    display: none;
+}
+
+/* Items */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.yearGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.yearHeading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #8A9040;
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0 0.5rem;
+    border-bottom: 1px solid #e8ead6;
+    margin-bottom: 0.15rem;
+}
+
+.item {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.pdfIcon {
+    display: none;
+}
+
+.yearGroup .item:last-child {
+    border-bottom: none;
+}
+
+.itemTitle {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.itemLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    transition: color 0.2s;
+}
+
+.itemLink:hover {
+    color: #8A9040;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-top: 2.5rem;
+}
+
+.pageBtn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    font-size: 0.9rem;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pageBtn:hover {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.pageBtnActive {
+    background: #8A9040;
+    color: white;
+    font-weight: 600;
+}
+
+.pageBtnActive:hover {
+    background: #737830;
+    color: white;
+}
+
+.pageBtnDisabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.pageBtnDisabled:hover {
+    background: transparent;
+    color: #6b7280;
+}
+
+.pageEllipsis {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 3rem;
+    color: #9ca3af;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.05rem;
+        min-width: 0;
+        line-height: 1.3;
+    }
+
+    .yearSort {
+        flex-shrink: 0;
+        gap: 0.25rem;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        color: #4b5563;
+    }
+
+    .yearSort svg {
+        display: none;
+    }
+
+    .listLabel {
+        display: block;
+        margin: -0.35rem 0 0.85rem;
+        font-size: 0.82rem;
+        font-weight: 400;
+        color: #9ca3af;
+    }
+
+    .listCount {
+        display: inline;
+    }
+
+    .yearHeading {
+        font-size: 0.95rem;
+        color: #7a7a20;
+        border-bottom: 1px solid #d9d6b4;
+        padding-bottom: 0.35rem;
+    }
+
+    .item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.55rem;
+        padding: 0.55rem 0;
+        border-bottom: none;
+    }
+
+    .pdfIcon {
+        display: block;
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+        color: #e11d48;
+    }
+
+    .itemLink,
+    .itemTitle {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .header {
+        margin-bottom: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .yearSort {
+        height: 40px;
+        padding: 0 17px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .listLabel {
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .yearHeading {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .item {
+        padding: 12px 0;
+    }
+
+    .itemLink,
+    .itemTitle {
+        font-size: 15px;
+        line-height: 21px;
+    }
+}

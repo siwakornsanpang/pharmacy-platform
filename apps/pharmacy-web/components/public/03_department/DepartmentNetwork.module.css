@@ -1,0 +1,247 @@
+/* === Department Professional Network === */
+.section {
+  background: white;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: var(--max-width-2xl);
+  width: 90%; /* 🔴 ตัวนี้แหละครับที่ช่วยบีบไม่ให้มันชิดขอบจอ */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+  padding: 0 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center; 
+  gap: 4rem; 
+}
+
+/* === Image Side === */
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  min-height: 400px; /* ปรับความสูงรูปให้สมดุลกับจำนวนบรรทัดข้อความ */
+  border-radius: 24px; 
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* === Content Side === */
+.content {
+  flex: 1.2;
+  padding: 1rem 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 2rem 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; 
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.listItem:hover {
+  color: #8A9040;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8A9040; 
+  flex-shrink: 0;
+}
+
+/* === Responsive (มือถือ/แท็บเล็ต) === */
+@media (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    gap: 2.5rem; 
+  }
+
+  .imageWrapper {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .listItem {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 1.4rem 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 1.15rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .content {
+    display: contents;
+  }
+
+  .title {
+    order: 1;
+    margin: 0 0 0.85rem;
+    font-size: 1.35rem;
+  }
+
+  .imageWrapper {
+    order: 2;
+    flex: none;
+    width: 100%;
+    height: 210px;
+    min-height: 210px;
+    border: 1px solid #eceae0;
+    border-bottom: none;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .list {
+    order: 3;
+    gap: 0;
+    margin: 0;
+    padding: 0.25rem 0.95rem 0.45rem;
+    border: 1px solid #eceae0;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+    background: #fff;
+  }
+
+  .listItem {
+    align-items: flex-start;
+    padding: 0.72rem 0;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .list li:last-child .listItem {
+    border-bottom: none;
+  }
+
+  .listName {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .bullet {
+    margin-top: 0.4rem;
+  }
+
+  .listItem::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    margin-top: 0.4rem;
+    margin-left: 0.6rem;
+    border-top: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: var(--max-width-2xl);
+    padding: 0;
+  }
+
+  .card {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .imageWrapper {
+    flex: 0 0 45%;
+    width: 45%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 5 / 6;
+  }
+
+  .content {
+    flex: 1;
+    padding: 0;
+  }
+
+  .title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .list {
+    gap: 14px;
+  }
+
+  .listItem {
+    gap: 16px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}

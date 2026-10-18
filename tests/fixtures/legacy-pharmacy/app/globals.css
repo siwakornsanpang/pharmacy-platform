@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --brand-primary: #737300;
+  --brand-primary-dark: #454500;
+  --brand-primary-light: #8a9040;
+  --brand-sand: #cdcaa5;
+  --brand-sand-light: #f0efe1;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --text-on-brand: #ffffff;
+  --surface-white: #ffffff;
+  --surface-subtle: #f9fafb;
+  --surface-muted: #f3f4f6;
+  --border-default: #e5e7eb;
+  --border-strong: #d1d5db;
+  --status-danger: #dc2626;
+  --status-danger-bg: #fef2f2;
+  --status-info: #1e40af;
+  --status-info-bg: #dbeafe;
+  --overlay-scrim: #000000;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 15px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+  --primary-olive: var(--brand-primary);
+  --max-width-xl: 1280px;
+  --max-width-2xl: 1536px;
+  --page-bottom-space: 3rem;
+}
+
+/* === Global Responsive Fix === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-kanit), var(--font-geist-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+}
+
+.ThaiFont {
+  font-family: var(--font-kanit), sans-serif;
+}
+
+/* Hide scrollbar for nav buttons row */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

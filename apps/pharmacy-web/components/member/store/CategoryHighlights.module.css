@@ -1,0 +1,87 @@
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0 0 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border-radius: 1.25rem;
+    border: 1.5px solid #f3f4f6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: #c5c178;
+    background: linear-gradient(135deg, rgba(115, 115, 0, 0.02), rgba(115, 115, 0, 0.06));
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(115, 115, 0, 0.1);
+}
+
+.iconWrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(115, 115, 0, 0.06), rgba(115, 115, 0, 0.12));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #737300;
+    transition: all 0.3s ease;
+}
+
+.card:hover .iconWrap {
+    background: linear-gradient(135deg, #737300, #8b8b00);
+    color: #fff;
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 4px 12px rgba(115, 115, 0, 0.25);
+}
+
+.catName {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.catCount {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    .card {
+        padding: 1.25rem 0.75rem;
+    }
+    .sectionTitle {
+        font-size: 1.2rem;
+    }
+}

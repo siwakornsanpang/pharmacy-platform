@@ -1,0 +1,539 @@
+/* === Department Agencies Grid === */
+.section {
+  background: white;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: var(--max-width-2xl);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 2rem 0;
+}
+
+/* === First Card (Hero) === */
+.heroCard {
+  display: flex;
+  background: white;
+  border-radius: 24px; /* เพิ่มความโค้งมนให้เหมือนต้นฉบับ */
+  margin-bottom: 2rem;
+  
+  /* 🔴 ปรับเงาให้ฟุ้งกระจายและเข้มขึ้นนิดนึง + ใส่เส้นขอบบางๆ ให้ขอบดูคมชัด */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  
+  overflow: hidden; /* สำคัญมาก: ช่วยตัดมุมรูปภาพให้โค้งตามกรอบการ์ด */
+  align-items: stretch; /* ดันให้เนื้อหาและรูปภาพสูงเท่ากันเสมอ */
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.heroCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.12);
+}
+
+.heroContent {
+  flex: 1.2; /* ให้ฝั่งเนื้อหากินพื้นที่เยอะกว่ารูปนิดหน่อย */
+  padding: 3.5rem 3rem; /* เพิ่มพื้นที่ว่างรอบๆ ข้อความ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroIcon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
+}
+
+.heroTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.heroDesc {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.heroImageWrapper {
+  flex: 1;
+  position: relative;
+  /* สัดส่วนจริงบนหน้าเว็บ (การ์ดแนวนอน) — ต้องตรงกับครอปใน backoffice */
+  aspect-ratio: 3 / 2;
+  min-height: 0;
+  align-self: stretch;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heroArrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #111827; /* สีดำเข้ม */
+  z-index: 2;
+  transition: transform 0.2s;
+}
+
+.heroCard:hover .heroArrow {
+  transform: translate(2px, -2px);
+}
+
+/* === Grid Cards === */
+.agencyGrid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.count1 {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 420px;
+}
+
+.count2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.count3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.agencyCard {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  
+  /* 🔴 ใช้เงาแบบเดียวกับการ์ดใหญ่ */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.agencyCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.1);
+}
+
+.cardArrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #111827; /* 🔴 เปลี่ยนจากสีเทาอ่อน เป็นสีเข้มตามต้นฉบับ */
+  transition: transform 0.2s;
+}
+
+.agencyCard:hover .cardArrow {
+  transform: translate(2px, -2px); /* เพิ่มลูกเล่นขยับลูกศรตอนชี้ */
+}
+
+.cardIcon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
+}
+
+.cardIconPlaceholder {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.5rem;
+  background: #f3f4f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.cardDesc {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .count3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .count1 {
+    max-width: none;
+  }
+
+  .heroCard {
+    flex-direction: column;
+  }
+
+  .heroImageWrapper {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .count1,
+  .count2,
+  .count3 {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+  
+  .heroContent {
+    padding: 2rem;
+  }
+}
+
+.phoneOnly,
+.detailCard {
+  display: none;
+}
+
+.panel {
+  display: contents;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 1.4rem 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 1.15rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 0.9rem;
+    font-size: 1.35rem;
+    line-height: 1.35;
+  }
+
+  .heroCard,
+  .agencyGrid {
+    display: none;
+  }
+
+  .phoneOnly {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 0.7rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-right: -1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .galleryCard {
+    position: relative;
+    flex: 0 0 78%;
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
+    overflow: hidden;
+    scroll-snap-align: start;
+  }
+
+  .galleryCard:only-child {
+    flex-basis: 100%;
+  }
+
+  .galleryImage {
+    object-fit: cover;
+  }
+
+  .listCard {
+    overflow: hidden;
+    border: 1px solid #eceae0;
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .listRow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.75rem 0.85rem;
+    border-bottom: 1px solid #f3f4f6;
+    color: #1f2937;
+    text-decoration: none;
+  }
+
+  .listRow:last-child {
+    border-bottom: none;
+  }
+
+  .listIcon,
+  .listIconFallback {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  .listIconFallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #737300;
+  }
+
+  .listName {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .listChevron {
+    flex-shrink: 0;
+    color: #9ca3af;
+  }
+
+  .detailCard {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #eceae0;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
+  }
+
+  .detailPhoto {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 210px;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .detailCard .listCard {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .listRowOpen {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 0.7rem;
+    padding: 0.85rem 0.9rem 0.9rem;
+    border-bottom: 1px solid #f3f4f6;
+    color: #1f2937;
+    text-decoration: none;
+  }
+
+  .listBody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  .listDesc {
+    color: #6b7280;
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .listArrow {
+    flex-shrink: 0;
+    margin-top: 1px;
+    color: #4b5563;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: var(--max-width-2xl);
+    padding: 0;
+  }
+
+  .sectionTitle {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .panel {
+    display: block;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .heroCard {
+    flex-direction: row;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .heroCard:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .heroContent {
+    flex: 1;
+    min-width: 0;
+    padding: 28px;
+  }
+
+  .heroIcon {
+    margin-bottom: 16px;
+  }
+
+  .heroTitle {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .heroImageWrapper {
+    flex: 0 0 43.4%;
+    width: 43.4%;
+    aspect-ratio: auto;
+    align-self: stretch;
+  }
+
+  .heroArrow {
+    top: 24px;
+    right: 24px;
+  }
+
+  .agencyGrid {
+    gap: 0;
+  }
+
+  .count1 {
+    max-width: none;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .count2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .count3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .agencyCard {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 24px 20px 20px;
+  }
+
+  .count2 .agencyCard:nth-child(2n),
+  .count3 .agencyCard:nth-child(3n),
+  .count3 .agencyCard:nth-child(3n + 2) {
+    border-left: 1px solid #e5e7eb;
+  }
+
+  .agencyCard:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .cardArrow {
+    top: 24px;
+    right: 24px;
+  }
+
+  .cardIcon,
+  .cardIconPlaceholder {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .cardTitle {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .cardDesc {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

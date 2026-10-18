@@ -1,0 +1,482 @@
+.pageWrapper {
+
+   
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background: url('/images/public/member/header page.png') left/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.bannerOverlay {
+    position: absolute;
+    inset: 0;
+}
+
+.bannerContent {
+    position: relative;
+    z-index: 1;
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 2rem;
+    color: white;
+}
+
+.bannerContent h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bannerContent p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contentBody {
+    max-width: var(--max-width-xl);
+    width: 90%;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.manageLink {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #666;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.manageLink:hover {
+    color: #737300;
+}
+
+.profileCard {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    padding: 2.5rem;
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    border: 1px solid #f0f0f0;
+}
+
+.imageSection {
+    flex-shrink: 0;
+}
+
+.profileImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+}
+
+.infoSection {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.infoRow {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+.infoLabel {
+    width: 220px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.infoValue {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.statusWrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.statusBadge {
+    background: linear-gradient(135deg, #a3a34d 0%, #737300 100%);
+    color: white;
+    padding: 1.75rem 2.25rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    box-shadow: 0 8px 24px rgba(115, 115, 0, 0.25);
+    position: relative;
+}
+
+.statusValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.statusLabel {
+    font-size: 0.9rem;
+    opacity: 0.95;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* New Sections */
+.sectionSpacer {
+    margin-top: 4rem;
+}
+
+.secondaryLink {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #888;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.secondaryLink:hover {
+    color: #737300;
+}
+
+/* Credits Section */
+.creditsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.creditCard {
+    background: linear-gradient(135deg, #f0f0d8 0%, #e8e8c8 100%);
+    border-radius: 24px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+
+.creditCard::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.creditValue {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.creditLabel {
+    position: relative;
+    z-index: 1;
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.progressContainer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.progressOuter {
+    width: 100%;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressInner {
+    height: 100%;
+    background: #737300;
+    border-radius: 10px;
+}
+
+/* Carousel General */
+.carouselHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.navButtons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.navBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.navBtn:hover {
+    background: #fdfdfd;
+    border-color: #ddd;
+    color: #333;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Meeting Card */
+.meetingCard {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.meetingTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.meetingSubtitle {
+    font-size: 0.95rem;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.meetingDate {
+    font-size: 0.95rem;
+    color: #666;
+    display: flex;
+    gap: 0.5rem;
+    border-top: 1px solid #f9f9f9;
+    padding-top: 1.25rem;
+}
+
+/* Course Cards */
+.coursesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.courseCard {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+.courseCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.courseThumbWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.courseThumb {
+    object-fit: cover;
+}
+
+.expiryBadge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #ef4444;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.courseInfo {
+    padding: 1.75rem;
+}
+
+.courseTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    min-height: 3.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.courseMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metaItem {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.metaSub {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.metaSubRed {
+    font-size: 0.9rem;
+    color: #ef4444;
+}
+
+.paginationDots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    transition: all 0.2s;
+}
+
+.activeDot {
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background: #737300;
+    transition: all 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .profileCard {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .statusWrapper {
+        justify-content: flex-start;
+        order: -1;
+    }
+
+    .statusBadge {
+        min-width: 140px;
+        padding: 1rem 1.5rem;
+    }
+
+    .statusValue {
+        font-size: 1.75rem;
+    }
+
+    .creditsGrid,
+    .cardsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .coursesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .infoRow {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .infoLabel {
+        width: auto;
+    }
+
+    .coursesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .creditValue {
+        font-size: 2.25rem;
+    }
+}

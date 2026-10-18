@@ -1,0 +1,79 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px !important;
+    background: #2e3a1f url('/images/public/service/service-banner.png') center/cover no-repeat;
+    overflow: hidden;
+    display: block !important;
+}
+
+.bannerOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(30, 40, 20, 0.4) 30%, transparent 70%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0 4.5rem;
+}
+
+.bannerContent {
+    color: white !important;
+    width: 90%;
+    max-width: var(--max-width-2xl);
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 5;
+    position: relative;
+    animation: slideUpFade 1s ease-out forwards;
+}
+
+.bannerTitle {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+    line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: white !important;
+}
+
+.bannerSubtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.95;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    color: white !important;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 200px !important;
+    }
+
+    .bannerOverlay {
+        padding: 0 0 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bannerOverlay {
+        padding: 0 0 2rem;
+    }
+
+    .bannerContent {
+        padding: 0 1rem;
+    }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

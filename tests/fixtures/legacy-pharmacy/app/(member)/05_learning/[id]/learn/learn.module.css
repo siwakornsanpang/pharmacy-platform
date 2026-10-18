@@ -1,0 +1,81 @@
+.wrap {
+  max-width: 1100px;
+  width: 90%;
+  margin: 2rem auto 4rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+}
+
+.side,
+.player {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.side {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+}
+
+.progress {
+  font-weight: 700;
+  color: #737300;
+}
+
+.item,
+.itemActive {
+  text-align: left;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #f7f6ef;
+  cursor: pointer;
+}
+
+.itemActive {
+  background: #737300;
+  color: white;
+}
+
+.player {
+  display: grid;
+  gap: 1rem;
+}
+
+.frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 12px;
+  background: #111;
+}
+
+.quiz {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.done {
+  color: #2d6a4f;
+  font-weight: 700;
+}
+
+.complete {
+  width: fit-content;
+  border: 0;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  background: #737300;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+}

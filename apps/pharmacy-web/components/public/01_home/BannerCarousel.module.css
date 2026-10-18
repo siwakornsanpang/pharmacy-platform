@@ -1,0 +1,259 @@
+.banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 1 ;
+  overflow: hidden;
+  background: #2d4a3e;
+}
+
+.placeholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2d4a3e 0%, #3a5a4a 100%);
+}
+
+/* === Slides === */
+.slides {
+  position: absolute;
+  inset: 0;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  cursor: default;
+}
+
+.slideActive {
+  opacity: 1;
+  z-index: 1;
+}
+
+a.slide {
+  cursor: pointer;
+}
+
+.slideImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* === Overlay === */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end; /* Align to bottom */
+  padding: 0 8% 12%; /* Adjusted bottom padding to match mockup height */
+  /* Smoother, more professional olive gradient */
+  background: linear-gradient(
+    90deg, 
+    rgba(164, 172, 88, 0.4) 0%, 
+    rgba(164, 172, 88, 0.25) 15%, 
+    rgba(164, 172, 88, 0) 50%
+  );
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Better spacing like in the mockup */
+  max-width: 900px;
+  animation: slideUpFade 1.2s ease-out forwards;
+}
+
+.title {
+  font-size: clamp(3rem, 6.5vw, 6rem); /* Larger title */
+  font-weight: 850;
+  color: #3e4414; /* Deeper olive-brown from the mockup */
+  margin: 0;
+  line-height: 0.9;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+  font-size: clamp(1.4rem, 2.8vw, 2.5rem); /* Significantly larger subtitle */
+  font-weight: 800;
+  color: #3e4414;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.slogan {
+  font-size: clamp(1.1rem, 2vw, 1.6rem); /* Larger, more readable slogan */
+  font-weight: 700; /* Bolder as seen in the mockup */
+  color: #3e4414;
+  margin: 0;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/* === Arrows === */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.arrowLeft {
+  left: 1rem;
+}
+
+.arrowRight {
+  right: 1rem;
+}
+
+/* === Dots === */
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #737300;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+.dotActive {
+  background: #737300;
+  border-color: #737300;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .overlay {
+    padding: 0 6% 8%; /* Adjusting but keeping bottom padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    background: linear-gradient(
+      90deg, 
+      rgba(212, 219, 150, 0.7) 0%, 
+      rgba(212, 219, 150, 0.3) 40%, 
+      rgba(212, 219, 150, 0) 100%
+    );
+  }
+
+  .content {
+    gap: 0.1rem;
+  }
+
+  .banner {
+    aspect-ratio: 16 / 10;
+    max-height: 50vh;
+  }
+
+  .arrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .arrowLeft {
+    left: 0.5rem;
+  }
+
+  .arrowRight {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    aspect-ratio: 4 / 3; /* Taller on mobile to show more image */
+  }
+  
+  .arrow {
+    display: none; /* Hide arrows on small screens, rely on swipe or dots */
+  }
+  
+  .dots {
+    bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 0 4% 6%;
+  }
+  
+  .title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem); /* Smaller on tiny mobile */
+  }
+
+  .banner {
+    aspect-ratio: 1 / 1; /* Square on very small screens if needed, or keep 4/3 */
+    max-height: 40vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner {
+    aspect-ratio: 16 / 9;
+    max-height: none;
+  }
+
+  .overlay {
+    background: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .dots {
+    bottom: 0.65rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .banner {
+    aspect-ratio: 744 / 476;
+    max-height: none;
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

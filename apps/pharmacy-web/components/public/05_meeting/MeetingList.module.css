@@ -1,0 +1,240 @@
+.meetingList {
+    margin-top: 5rem;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.meetingItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 24px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.meetingItem:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    border-color: #dde2c0;
+    transform: translateY(-2px);
+}
+
+.pastItem {
+    opacity: 0.4;
+    filter: grayscale(0.8) brightness(1.1);
+    pointer-events: none;
+}
+
+.dateBox {
+    min-width: 90px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.day {
+    font-size: 2.75rem;
+    font-weight: 850;
+    line-height: 1;
+}
+
+.month {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+.meetingInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.meetingInfo h3 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.cpeBadge {
+    background: #fbfdf0;
+    border: 1px solid #dce2c1;
+    color: #4b5320;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.cpeIcon {
+    font-size: 1.1rem;
+    color: #7b7b1e;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #4b5563;
+}
+
+.infoItem p,
+.infoItem span {
+    margin: 0;
+    color: inherit;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.grayIcon {
+    color: #9ca3af;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.participantsRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.meetingImage {
+    max-width: 320px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease;
+}
+
+.meetingItem:hover .meetingImage {
+    transform: scale(1.03);
+}
+
+/* === No Results === */
+.noResults {
+    text-align: center;
+    padding: 5rem 0;
+    color: #9ca3af;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.noResultsIcon {
+    color: #d1d5db;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+    .meetingItem {
+        gap: 1.5rem;
+    }
+    .meetingImage {
+        max-width: 260px;
+        height: 180px;
+    }
+    .meetingInfo h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .meetingItem {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+    .meetingImage {
+        order: -1;
+        max-width: 100%;
+        height: 250px;
+    }
+    .dateBox {
+        order: 1;
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+        gap: 0.75rem;
+    }
+    .meetingInfo {
+        order: 2;
+    }
+    .month {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .meetingInfo h3 {
+        font-size: 1.25rem;
+    }
+    .meetingImage {
+        height: 200px;
+    }
+    .day {
+        font-size: 2rem;
+    }
+    .month {
+        font-size: 1.2rem;
+    }
+    .cpeBadge {
+        width: fit-content;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+.countAvailable {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid #a7f3d0;
+    display: inline-block;
+}
+
+.countFull {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid #fecaca;
+    display: inline-block;
+}

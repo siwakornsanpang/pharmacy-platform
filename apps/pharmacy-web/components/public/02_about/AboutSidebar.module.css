@@ -1,0 +1,175 @@
+/* === About Sidebar === */
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 165px; /* Clear the height of the sticky AppHeader and add a clean gap */
+    z-index: 10;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+.sidebarTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 2rem 0; /* ระยะห่างระหว่างหัวข้อกับเมนูแรก */
+}
+
+.sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; /* ลดระยะห่างเพราะตอนนี้มี padding ในปุ่มแล้ว */
+}
+
+.sidebarLink {
+    display: block;
+    font-size: 1.05rem;
+    color: #6b7280;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: 100%; /* เปลี่ยนเป็นเต็มความกว้าง */
+    padding: 0.8rem 1.25rem; /* เพิ่มกรอบรอบๆ ตัวหนังสือ */
+    border-radius: 10px; /* มุมมนสำหรับกรอบ */
+}
+
+.sidebarLink:hover {
+    color: #111827; 
+    background-color: #f3f4f6; /* สีเทาอ่อนตอนชี้เมาส์ */
+}
+
+/* === Active State (เมนูที่กำลังเลือก) === */
+.sidebarLinkActive {
+    color: #111827;
+    font-weight: 700;
+    background-color: #e8e6d2; /* สีพื้นหลังโทนครีม/เขียวมะกอกออ่อนแบบในรูป */
+}
+
+
+/* === Responsive (มือถือ/แท็บเล็ต) === */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 2rem;
+    }
+
+    .sidebarNav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        background: transparent;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .sidebarTitle {
+        display: none;
+    }
+
+    .sidebarNav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .sidebarNav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sidebarLink {
+        flex: 0 0 auto;
+        width: auto;
+        height: 36px;
+        padding: 0 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        border-radius: 999px;
+        border: 1px solid #cdcaa5;
+        background: #fff;
+        color: #cdcaa5;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .sidebarLink:hover {
+        background: #fff;
+        color: #cdcaa5;
+    }
+
+    .sidebarLinkActive,
+    .sidebarLinkActive:hover {
+        background: #cdcaa5;
+        border-color: #cdcaa5;
+        color: #1f2937;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        background: transparent;
+        border-radius: 0;
+        padding: 0 0 0 1rem;
+    }
+
+    .sidebarTitle {
+        display: none;
+    }
+
+    .sidebarNav {
+        flex-wrap: nowrap;
+        gap: 0.6rem;
+        overflow-x: auto;
+        padding: 0 1rem 0.25rem 0;
+        scrollbar-width: none;
+    }
+
+    .sidebarNav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sidebarLink {
+        flex: 0 0 auto;
+        width: auto;
+        white-space: nowrap;
+        padding: 0.55rem 1.05rem;
+        border-radius: 999px;
+        border: 1.5px solid #c5c4a6;
+        background: #fff;
+        color: #1f2937;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    .sidebarLink:hover {
+        background: #fff;
+        color: #1f2937;
+    }
+
+    .sidebarLinkActive,
+    .sidebarLinkActive:hover {
+        background: #cdcaa5;
+        border-color: #cdcaa5;
+        color: #1f2937;
+        font-weight: 600;
+    }
+}

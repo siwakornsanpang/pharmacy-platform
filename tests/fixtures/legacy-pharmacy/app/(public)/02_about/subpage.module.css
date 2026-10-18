@@ -1,0 +1,41 @@
+/* === About Subpage (Empty placeholder) === */
+.contentTitle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+}
+
+.contentTitle::after {
+    content: "";
+    width: 72px;
+    height: 4px;
+    border-radius: 999px;
+    background: #737300;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .contentTitle {
+        gap: 0.55rem;
+        margin-bottom: 1.15rem;
+        font-size: 1.55rem;
+    }
+
+    .contentTitle::after {
+        width: 48px;
+        height: 3px;
+    }
+}
+
+.emptyPage {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #9ca3af;
+    font-size: 1.1rem;
+}

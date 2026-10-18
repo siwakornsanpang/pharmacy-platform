@@ -1,0 +1,256 @@
+.card {
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #f3f4f6;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-color: #e5e7eb;
+}
+
+
+
+.header {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.logoSection {
+    flex-shrink: 0;
+}
+
+.companyLogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.companyLogo.hospital {
+    background: #e0f2fe;
+    color: #0284c7;
+    border: 1.5px solid #bae6fd;
+}
+
+.companyLogo.factory {
+    background: #fffbeb;
+    color: #d97706;
+    border: 1.5px solid #fef3c7;
+}
+
+.companyLogo.pharmacy {
+    background: rgba(115, 115, 0, 0.06);
+    color: #737300;
+    border: 1.5px solid rgba(115, 115, 0, 0.15);
+}
+
+.companyLogo.default {
+    background: #f8fafc;
+    color: #64748b;
+    border: 1.5px solid #e2e8f0;
+}
+
+.titleInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-right: 10.5rem; /* Give room for absolute positioned salaryBadge on desktop */
+}
+
+.title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    transition: color 0.2s;
+    line-height: 1.4;
+}
+
+.titleLink {
+    text-decoration: none;
+    display: block;
+}
+
+.titleLink:hover .title {
+    color: #737300;
+}
+
+.companyName {
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.companyLink {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.companyLink:hover .companyName {
+    color: #1e293b;
+    text-decoration: underline;
+}
+
+.salaryBadge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 1rem;
+    background: #f0fdf4;
+    color: #16a34a;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(22, 163, 74, 0.05);
+}
+
+.middleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #64748b;
+    font-size: 0.82rem;
+}
+
+.description {
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.7rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #f1f5f9;
+    margin-top: auto;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    padding: 0.25rem 0.6rem;
+    background: #f8fafc;
+    color: #64748b;
+    border-radius: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border: 1px solid #f1f5f9;
+}
+
+.dates {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
+
+.dateItem {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.viewBtn, .applyBtn {
+    padding: 0.65rem;
+    border-radius: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.viewBtn {
+    background: #f1f5f9;
+    border: 1.5px solid #cbd5e1;
+    color: #475569;
+}
+
+.viewBtn:hover {
+    background: #e2e8f0;
+    border-color: #94a3b8;
+}
+
+.applyBtn {
+    background: #fdfdfd;
+    border: 1.5px solid #737300;
+    color: #737300;
+    transition: all 0.3s ease;
+}
+
+.applyBtn:hover {
+    background: linear-gradient(90deg, #c5c178 0%, #737300 100%);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(115, 115, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .titleInfo {
+        padding-right: 0;
+    }
+
+    .salaryBadge {
+        position: static;
+        width: fit-content;
+        margin-top: 0.25rem;
+    }
+}

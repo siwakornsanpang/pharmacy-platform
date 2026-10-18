@@ -1,0 +1,820 @@
+{
+  "/news": [
+    {
+      "id": 101,
+      "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+      "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+      "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+      "category": "news",
+      "status": "published",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "createdAt": "2026-10-01T00:00:00Z",
+      "updatedAt": "2026-10-01T00:00:00Z",
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "author": "Fixture Staff",
+      "viewCount": 10,
+      "isPinned": false
+    }
+  ],
+  "/news/101": {
+    "id": 101,
+    "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+    "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+    "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+    "category": "news",
+    "status": "published",
+    "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "createdAt": "2026-10-01T00:00:00Z",
+    "updatedAt": "2026-10-01T00:00:00Z",
+    "publishedAt": "2026-10-01T00:00:00Z",
+    "author": "Fixture Staff",
+    "viewCount": 10,
+    "isPinned": false
+  },
+  "/medicine": [
+    {
+      "id": 101,
+      "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+      "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+      "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+      "category": "ประชาสัมพันธ์",
+      "status": "published",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "createdAt": "2026-10-01T00:00:00Z",
+      "updatedAt": "2026-10-01T00:00:00Z",
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "author": "Fixture Staff",
+      "viewCount": 10,
+      "isPinned": false
+    }
+  ],
+  "/medicine/101": {
+    "id": 101,
+    "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+    "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+    "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+    "category": "ประชาสัมพันธ์",
+    "status": "published",
+    "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "createdAt": "2026-10-01T00:00:00Z",
+    "updatedAt": "2026-10-01T00:00:00Z",
+    "publishedAt": "2026-10-01T00:00:00Z",
+    "author": "Fixture Staff",
+    "viewCount": 10,
+    "isPinned": false
+  },
+  "/public-project": [
+    {
+      "id": 101,
+      "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+      "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+      "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+      "category": "ประชาสัมพันธ์",
+      "status": "published",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "createdAt": "2026-10-01T00:00:00Z",
+      "updatedAt": "2026-10-01T00:00:00Z",
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "author": "Fixture Staff",
+      "viewCount": 10,
+      "isPinned": false
+    }
+  ],
+  "/public-project/101": {
+    "id": 101,
+    "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+    "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+    "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+    "category": "ประชาสัมพันธ์",
+    "status": "published",
+    "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "createdAt": "2026-10-01T00:00:00Z",
+    "updatedAt": "2026-10-01T00:00:00Z",
+    "publishedAt": "2026-10-01T00:00:00Z",
+    "author": "Fixture Staff",
+    "viewCount": 10,
+    "isPinned": false
+  },
+  "/products": [
+    {
+      "id": 101,
+      "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+      "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+      "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+      "category": "ประชาสัมพันธ์",
+      "status": "published",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "createdAt": "2026-10-01T00:00:00Z",
+      "updatedAt": "2026-10-01T00:00:00Z",
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "author": "Fixture Staff",
+      "viewCount": 10,
+      "isPinned": false,
+      "name": "ผลิตภัณฑ์ทดสอบ",
+      "price": 100,
+      "images": [
+        "http://127.0.0.1:4319/assets/synthetic.svg"
+      ]
+    }
+  ],
+  "/home-content": {
+    "banners": [
+      {
+        "id": "101",
+        "url": "http://127.0.0.1:4319/assets/synthetic.svg",
+        "originalUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+        "title": "แบนเนอร์ทดสอบ",
+        "clickable": false,
+        "linkUrl": "",
+        "active": true
+      }
+    ],
+    "popups": []
+  },
+  "/pharmacist-home-content": {
+    "banners": [],
+    "popups": []
+  },
+  "/web-settings": {
+    "siteName": "สภาเภสัชกรรม Fixture",
+    "logoUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "address": "สถานที่ทดสอบสังเคราะห์",
+    "phone": "000-000-0000",
+    "email": "fixture@example.test",
+    "mapEmbedUrl": "",
+    "siteNameTh": "สภาเภสัชกรรม Fixture",
+    "siteNameEn": "Pharmacy Council Fixture",
+    "logoPath": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "googleMapsEmbed": ""
+  },
+  "/permissions": [
+    {
+      "id": 1,
+      "key": "council_web",
+      "label": "เว็บไซต์สภา",
+      "group": "Council"
+    }
+  ],
+  "/permissions/my": {
+    "permissions": [
+      "council_web"
+    ],
+    "role": "editor"
+  },
+  "/permissions/roles": [
+    {
+      "role": "admin",
+      "permissionCount": 1
+    },
+    {
+      "role": "editor",
+      "permissionCount": 1
+    }
+  ],
+  "/permissions/roles/editor": [
+    "council_web"
+  ],
+  "/auth/users": [
+    {
+      "id": 101,
+      "username": "fixture.staff",
+      "displayName": "Fixture Staff",
+      "role": "editor",
+      "createdAt": "2026-10-01T00:00:00Z"
+    }
+  ],
+  "/honor-awards": [
+    {
+      "id": 101,
+      "name": "หมวดทดสอบ",
+      "title": "หมวดทดสอบ",
+      "description": "ข้อมูลสังเคราะห์",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "order": 1,
+      "itemCount": 1,
+      "count": 1,
+      "isActive": true
+    }
+  ],
+  "/honor-awards/101": {
+    "id": 101,
+    "name": "หมวดทดสอบ",
+    "title": "หมวดทดสอบ",
+    "description": "ข้อมูลสังเคราะห์",
+    "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "order": 1,
+    "itemCount": 1,
+    "count": 1,
+    "isActive": true
+  },
+  "/honor": [],
+  "/policy-categories": [
+    {
+      "id": 101,
+      "name": "หมวดทดสอบ",
+      "title": "หมวดทดสอบ",
+      "description": "ข้อมูลสังเคราะห์",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "order": 1,
+      "itemCount": 1,
+      "count": 1,
+      "isActive": true
+    }
+  ],
+  "/policy-categories/101": {
+    "id": 101,
+    "name": "หมวดทดสอบ",
+    "title": "หมวดทดสอบ",
+    "description": "ข้อมูลสังเคราะห์",
+    "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "order": 1,
+    "itemCount": 1,
+    "count": 1,
+    "isActive": true
+  },
+  "/policy-projects": [
+    {
+      "id": 101,
+      "title": "ข่าวทดสอบสังเคราะห์ Fixture Article",
+      "description": "เนื้อหาสำหรับตรวจสอบหน้าจอแบบออฟไลน์",
+      "content": "<h2>หัวข้อทดสอบ</h2><p>ข้อมูลสังเคราะห์สำหรับ baseline <strong>ไม่ใช่ข้อมูลจริง</strong></p>",
+      "category": "ประชาสัมพันธ์",
+      "status": "ongoing",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnail": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "thumbnailUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "createdAt": "2026-10-01T00:00:00Z",
+      "updatedAt": "2026-10-01T00:00:00Z",
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "author": "Fixture Staff",
+      "viewCount": 10,
+      "isPinned": false,
+      "categoryId": 101,
+      "name": "โครงการสังเคราะห์",
+      "summaryPdfUrl": null,
+      "order": 1
+    }
+  ],
+  "/other-service-categories/with-count": [
+    {
+      "id": 101,
+      "name": "หมวดทดสอบ",
+      "title": "หมวดทดสอบ",
+      "description": "ข้อมูลสังเคราะห์",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "order": 1,
+      "itemCount": 1,
+      "count": 1,
+      "isActive": true
+    }
+  ],
+  "/other-service-items/101": [],
+  "/agencies": [],
+  "/history": [],
+  "/council-members": [],
+  "/services": [],
+  "/services/popular": [],
+  "/academy/admin/categories": [],
+  "/academy/admin/instructors": [],
+  "/academy/admin/courses": [],
+  "/academy/admin/courses/101": {
+    "id": 101,
+    "title": "หลักสูตรสังเคราะห์",
+    "lessons": [],
+    "outcomes": [],
+    "quiz": []
+  },
+  "/academy/admin/reviews": [],
+  "/academy/admin/refunds": [],
+  "/academy/admin/orders": {
+    "items": [],
+    "total": 0
+  },
+  "/academy/admin/enrollments": {
+    "items": [],
+    "total": 0
+  },
+  "/academy/admin/cpe": [],
+  "/laws/law1": [],
+  "/laws/law2": [],
+  "/laws/law3": [],
+  "/laws/law4": [],
+  "/laws/law5": [],
+  "/laws/law6": [],
+  "/laws/law7": [],
+  "/council": [],
+  "/other-service-items": [],
+  "/other-service-categories": [
+    {
+      "id": 101,
+      "name": "หมวดทดสอบ",
+      "title": "หมวดทดสอบ",
+      "description": "ข้อมูลสังเคราะห์",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "order": 1,
+      "itemCount": 1,
+      "count": 1,
+      "isActive": true
+    }
+  ],
+  "/academy/instructors": [],
+  "/academy/reviews": [],
+  "/academy/categories": [
+    {
+      "id": 101,
+      "name": "หมวดทดสอบ",
+      "description": "สังเคราะห์",
+      "imageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "color": "#85851e",
+      "courseCount": 1
+    }
+  ],
+  "/academy/courses": [
+    {
+      "id": 101,
+      "title": "หลักสูตรทดสอบสังเคราะห์",
+      "summary": "เนื้อหาสำหรับทดสอบออฟไลน์",
+      "coverUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "durationLabel": "30 นาที",
+      "cpeLabel": "1 CPE",
+      "categoryName": "หมวดทดสอบ",
+      "categoryColor": "#85851e",
+      "instructorName": "ผู้สอนทดสอบ",
+      "instructorTitle": "Fixture",
+      "studentCount": 1,
+      "rating": 5,
+      "reviewCount": 1,
+      "outcomes": [
+        "ทดสอบแบบออฟไลน์"
+      ],
+      "isFeatured": true,
+      "format": "online",
+      "venue": null,
+      "trainingStartsAt": null,
+      "trainingEndsAt": null,
+      "cpeCredits": "1",
+      "conferenceCode": null,
+      "price": "0",
+      "audience": "all",
+      "instructorExpertise": null,
+      "instructorImageUrl": null,
+      "lessons": [
+        {
+          "id": 101,
+          "title": "บทเรียนสังเคราะห์",
+          "description": "บทเรียนออฟไลน์"
+        }
+      ]
+    }
+  ],
+  "/academy/courses/101": {
+    "id": 101,
+    "title": "หลักสูตรทดสอบสังเคราะห์",
+    "summary": "เนื้อหาสำหรับทดสอบออฟไลน์",
+    "coverUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "durationLabel": "30 นาที",
+    "cpeLabel": "1 CPE",
+    "categoryName": "หมวดทดสอบ",
+    "categoryColor": "#85851e",
+    "instructorName": "ผู้สอนทดสอบ",
+    "instructorTitle": "Fixture",
+    "studentCount": 1,
+    "rating": 5,
+    "reviewCount": 1,
+    "outcomes": [
+      "ทดสอบแบบออฟไลน์"
+    ],
+    "isFeatured": true,
+    "format": "online",
+    "venue": null,
+    "trainingStartsAt": null,
+    "trainingEndsAt": null,
+    "cpeCredits": "1",
+    "conferenceCode": null,
+    "price": "0",
+    "audience": "all",
+    "instructorExpertise": null,
+    "instructorImageUrl": null,
+    "lessons": [
+      {
+        "id": 101,
+        "title": "บทเรียนสังเคราะห์",
+        "description": "บทเรียนออฟไลน์"
+      }
+    ]
+  },
+  "/academy/stats": {
+    "courseCount": 1,
+    "learnerCount": 1,
+    "instructorCount": 1
+  },
+  "/api/conference/public/events": {
+    "data": [
+      {
+        "id": "event-fixture",
+        "code": "FIXTURE",
+        "nameTh": "งานประชุมทดสอบสังเคราะห์",
+        "nameEn": "Fixture Conference",
+        "shortName": "Fixture",
+        "locationName": "สถานที่ทดสอบ",
+        "startAt": "2026-11-01T00:00:00Z",
+        "endAt": "2026-11-02T00:00:00Z",
+        "cpeCredits": "1",
+        "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+        "lifecycleStatus": "upcoming",
+        "eligibleCategories": [],
+        "availability": {
+          "registered": 1,
+          "held": 0,
+          "capacity": 100,
+          "remaining": 99,
+          "status": "available"
+        },
+        "eligibility": {
+          "status": "available",
+          "canRegister": true,
+          "reasonCode": null,
+          "availableOfferingCount": 1
+        }
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 9,
+      "totalItems": 1,
+      "totalPages": 1
+    }
+  },
+  "/api/conference/me/events": {
+    "data": [
+      {
+        "id": "event-fixture",
+        "code": "FIXTURE",
+        "nameTh": "งานประชุมทดสอบสังเคราะห์",
+        "nameEn": "Fixture Conference",
+        "shortName": "Fixture",
+        "locationName": "สถานที่ทดสอบ",
+        "startAt": "2026-11-01T00:00:00Z",
+        "endAt": "2026-11-02T00:00:00Z",
+        "cpeCredits": "1",
+        "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+        "lifecycleStatus": "upcoming",
+        "eligibleCategories": [],
+        "availability": {
+          "registered": 1,
+          "held": 0,
+          "capacity": 100,
+          "remaining": 99,
+          "status": "available"
+        },
+        "eligibility": {
+          "status": "available",
+          "canRegister": true,
+          "reasonCode": null,
+          "availableOfferingCount": 1
+        }
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 9,
+      "totalItems": 1,
+      "totalPages": 1
+    }
+  },
+  "/api/conference/public/events/event-fixture": {
+    "id": "event-fixture",
+    "code": "FIXTURE",
+    "nameTh": "งานประชุมทดสอบสังเคราะห์",
+    "nameEn": "Fixture Conference",
+    "shortName": "Fixture",
+    "locationName": "สถานที่ทดสอบ",
+    "startAt": "2026-11-01T00:00:00Z",
+    "endAt": "2026-11-02T00:00:00Z",
+    "cpeCredits": "1",
+    "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "lifecycleStatus": "upcoming",
+    "eligibleCategories": [],
+    "availability": {
+      "registered": 1,
+      "held": 0,
+      "capacity": 100,
+      "remaining": 99,
+      "status": "available"
+    },
+    "eligibility": {
+      "status": "available",
+      "canRegister": true,
+      "reasonCode": null,
+      "availableOfferingCount": 1
+    },
+    "description": "<p>ข้อมูลทดสอบออฟไลน์</p>",
+    "coverImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "mapEmbedUrl": null,
+    "agendas": [],
+    "documents": []
+  },
+  "/api/conference/me": {
+    "id": "attendee-fixture",
+    "firstName": "Fixture",
+    "lastName": "Member",
+    "displayName": "Fixture Member",
+    "email": "fixture@example.test",
+    "phone": "0000000000",
+    "pharmacistLicense": "FIX-0001",
+    "attendeeCategoryId": "fixture",
+    "categoryCode": "pharmacist",
+    "approvalStatus": "approved"
+  },
+  "/api/conference/me/events/event-fixture/ticket-offerings": {
+    "data": [
+      {
+        "ticketId": "ticket-fixture",
+        "ticketCode": "FIX",
+        "ticketName": "บัตรทดสอบ",
+        "kind": "primary",
+        "quota": 100,
+        "saleStartAt": null,
+        "saleEndAt": null,
+        "priceId": "price-fixture",
+        "amount": "100",
+        "currency": "THB",
+        "priceLabel": "ทั่วไป",
+        "canPurchase": true,
+        "reasonCode": null,
+        "requiresPrimary": false,
+        "availability": {
+          "capacity": 100,
+          "registered": 1,
+          "held": 0,
+          "remaining": 99
+        },
+        "sessions": []
+      }
+    ]
+  },
+  "/api/conference/orders/order-fixture": {
+    "id": "order-fixture",
+    "number": "FIX-2026",
+    "eventId": "event-fixture",
+    "status": "awaitingPayment",
+    "subtotalAmount": "100",
+    "discountAmount": "0",
+    "totalAmount": "100",
+    "currency": "THB",
+    "expiresAt": "2026-10-14T00:15:00Z",
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "event": {
+      "id": "event-fixture",
+      "code": "FIXTURE",
+      "nameTh": "งานประชุมทดสอบสังเคราะห์",
+      "nameEn": "Fixture Conference",
+      "shortName": "Fixture",
+      "locationName": "สถานที่ทดสอบ",
+      "startAt": "2026-11-01T00:00:00Z",
+      "endAt": "2026-11-02T00:00:00Z",
+      "cpeCredits": "1",
+      "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "lifecycleStatus": "upcoming",
+      "eligibleCategories": [],
+      "availability": {
+        "registered": 1,
+        "held": 0,
+        "capacity": 100,
+        "remaining": 99,
+        "status": "available"
+      },
+      "eligibility": {
+        "status": "available",
+        "canRegister": true,
+        "reasonCode": null,
+        "availableOfferingCount": 1
+      }
+    },
+    "attendee": {
+      "id": "attendee-fixture",
+      "firstName": "Fixture",
+      "lastName": "Member",
+      "displayName": "Fixture Member",
+      "email": "fixture@example.test",
+      "phone": "0000000000",
+      "pharmacistLicense": "FIX-0001",
+      "attendeeCategoryId": "fixture",
+      "categoryCode": "pharmacist",
+      "approvalStatus": "approved"
+    },
+    "items": [
+      {
+        "id": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketTypeName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "priceLabel": "ทั่วไป",
+        "amount": "100",
+        "currency": "THB",
+        "grantedSessionsSnapshot": []
+      }
+    ],
+    "taxInvoice": null,
+    "payment": {
+      "id": "payment-fixture",
+      "provider": "ktb",
+      "state": "pending",
+      "amount": "100",
+      "currency": "THB",
+      "latestAttempt": {
+        "id": "attempt-fixture",
+        "paymentId": "payment-fixture",
+        "state": "pending",
+        "expiresAt": "2026-10-14T00:15:00Z",
+        "createdAt": "2026-10-14T00:00:00Z",
+        "updatedAt": "2026-10-14T00:00:00Z"
+      }
+    },
+    "registrations": [
+      {
+        "id": "reg-fixture",
+        "code": "REG-FIXTURE",
+        "status": "confirmed",
+        "issuedAt": "2026-10-14T00:00:00Z",
+        "orderItemId": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "qrPayload": "SYNTHETIC-FIXTURE-ONLY",
+        "sessions": []
+      }
+    ]
+  },
+  "/api/conference/orders/order-paid": {
+    "id": "order-paid",
+    "number": "FIX-2026",
+    "eventId": "event-fixture",
+    "status": "paid",
+    "subtotalAmount": "100",
+    "discountAmount": "0",
+    "totalAmount": "100",
+    "currency": "THB",
+    "expiresAt": "2026-10-14T00:15:00Z",
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "event": {
+      "id": "event-fixture",
+      "code": "FIXTURE",
+      "nameTh": "งานประชุมทดสอบสังเคราะห์",
+      "nameEn": "Fixture Conference",
+      "shortName": "Fixture",
+      "locationName": "สถานที่ทดสอบ",
+      "startAt": "2026-11-01T00:00:00Z",
+      "endAt": "2026-11-02T00:00:00Z",
+      "cpeCredits": "1",
+      "thumbnailImageUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+      "lifecycleStatus": "upcoming",
+      "eligibleCategories": [],
+      "availability": {
+        "registered": 1,
+        "held": 0,
+        "capacity": 100,
+        "remaining": 99,
+        "status": "available"
+      },
+      "eligibility": {
+        "status": "available",
+        "canRegister": true,
+        "reasonCode": null,
+        "availableOfferingCount": 1
+      }
+    },
+    "attendee": {
+      "id": "attendee-fixture",
+      "firstName": "Fixture",
+      "lastName": "Member",
+      "displayName": "Fixture Member",
+      "email": "fixture@example.test",
+      "phone": "0000000000",
+      "pharmacistLicense": "FIX-0001",
+      "attendeeCategoryId": "fixture",
+      "categoryCode": "pharmacist",
+      "approvalStatus": "approved"
+    },
+    "items": [
+      {
+        "id": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketTypeName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "priceLabel": "ทั่วไป",
+        "amount": "100",
+        "currency": "THB",
+        "grantedSessionsSnapshot": []
+      }
+    ],
+    "taxInvoice": null,
+    "payment": {
+      "id": "payment-fixture",
+      "provider": "ktb",
+      "state": "pending",
+      "amount": "100",
+      "currency": "THB",
+      "latestAttempt": {
+        "id": "attempt-fixture",
+        "paymentId": "payment-fixture",
+        "state": "pending",
+        "expiresAt": "2026-10-14T00:15:00Z",
+        "createdAt": "2026-10-14T00:00:00Z",
+        "updatedAt": "2026-10-14T00:00:00Z"
+      }
+    },
+    "registrations": [
+      {
+        "id": "reg-fixture",
+        "code": "REG-FIXTURE",
+        "status": "confirmed",
+        "issuedAt": "2026-10-14T00:00:00Z",
+        "orderItemId": "item-fixture",
+        "ticketTypeId": "ticket-fixture",
+        "ticketName": "บัตรทดสอบ",
+        "ticketKind": "primary",
+        "qrPayload": "SYNTHETIC-FIXTURE-ONLY",
+        "sessions": []
+      }
+    ]
+  },
+  "/api/academy/courses/101": {
+    "id": 101,
+    "title": "หลักสูตรทดสอบสังเคราะห์",
+    "summary": "เนื้อหาสำหรับทดสอบออฟไลน์",
+    "coverUrl": "http://127.0.0.1:4319/assets/synthetic.svg",
+    "durationLabel": "30 นาที",
+    "cpeLabel": "1 CPE",
+    "categoryName": "หมวดทดสอบ",
+    "categoryColor": "#85851e",
+    "instructorName": "ผู้สอนทดสอบ",
+    "instructorTitle": "Fixture",
+    "studentCount": 1,
+    "rating": 5,
+    "reviewCount": 1,
+    "outcomes": [
+      "ทดสอบแบบออฟไลน์"
+    ],
+    "isFeatured": true,
+    "format": "online",
+    "venue": null,
+    "trainingStartsAt": null,
+    "trainingEndsAt": null,
+    "cpeCredits": "1",
+    "conferenceCode": null,
+    "price": "0",
+    "audience": "all",
+    "instructorExpertise": null,
+    "instructorImageUrl": null,
+    "lessons": [
+      {
+        "id": 101,
+        "title": "บทเรียนสังเคราะห์",
+        "description": "ออฟไลน์",
+        "videoUrl": null,
+        "completed": true,
+        "documents": [],
+        "quiz": []
+      }
+    ],
+    "enrolled": true,
+    "progressPercent": 100,
+    "examPassed": true,
+    "exam": []
+  },
+  "/api/academy/courses/101/certificate": {
+    "code": "CERT-FIXTURE",
+    "issuedAt": "2026-10-14T00:00:00Z",
+    "learnerName": "Fixture Member",
+    "pharmacistLicense": "FIX-0001",
+    "courseTitle": "หลักสูตรทดสอบสังเคราะห์",
+    "cpeCredits": "1",
+    "conferenceCode": null
+  },
+  "/api/academy/enrollments": [
+    {
+      "courseId": 101,
+      "title": "หลักสูตรทดสอบสังเคราะห์",
+      "status": "active",
+      "progressPercent": 100
+    }
+  ],
+  "/news/upload-image": {}
+}

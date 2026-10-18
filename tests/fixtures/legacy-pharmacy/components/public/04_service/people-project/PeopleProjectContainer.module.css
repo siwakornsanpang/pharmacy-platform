@@ -1,0 +1,159 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0;
+    font-family: inherit;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1.25rem;
+    color: #9ca3af;
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 3rem;
+    border-radius: 9999px;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    color: #1f2937;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+    background-color: white;
+    border-color: #737300;
+    box-shadow: 0 0 0 4px rgba(115, 115, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.emptyState {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 5rem 0;
+    color: #9ca3af;
+    font-size: 1.125rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.pageBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.pageBtn:hover {
+    background-color: #f3f4f6;
+    color: #737300;
+}
+
+.activePage {
+    background-color: #737300 !important;
+    color: white !important;
+}
+
+.pageArrow {
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.pageArrow:hover:not(:disabled) {
+    color: #737300;
+}
+
+.pageArrow:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.ellipsis {
+    color: #9ca3af;
+    padding: 0 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .sectionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .searchContainer {
+        max-width: 100%;
+    }
+}
